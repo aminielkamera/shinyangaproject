@@ -29,8 +29,8 @@
                             data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
                             data-frames='[{"delay":200,"speed":1000,"sfx_effect":"blockfromleft","sfxcolor":"#ffffff","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                             data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
-                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]">We
-                            Are LogZee</div>
+                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]">We 
+                            Are Magsam</div>
 
                         <!-- LAYER NR. 11 -->
                         <div class="tp-caption medium_light_white tp-resizeme" id="slide-82-layer-3"
@@ -41,8 +41,7 @@
                             data-frames='[{"delay":500,"speed":1000,"sfx_effect":"blockfromleft","sfxcolor":"#ffffff","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                             data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                             data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                            data-fontsize="['28','28','28','28']" data-lineheight="['34','34','34','50']">From Pickup to
-                            Destination</div>
+                            data-fontsize="['28','28','28','28']" data-lineheight="['34','34','34','50']">Best In Gold Mining</div>
 
                         <!-- LAYER NR. 12 -->
                         <div class="tp-caption tp-resizeme small_light_white " id="slide-82-layer-4"
@@ -51,11 +50,10 @@
                             data-width="none" data-height="none" data-whitespace="nowrap" data-type="text"
                             data-responsive_offset="on"
                             data-frames='[{"delay":600,"speed":1000,"sfx_effect":"blockfromleft","sfxcolor":"#ffffff","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[-10,-10,-10,-10]"
                             data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                            data-fontsize="['16','16','16','13']" data-lineheight="['30','30','30','20']">We deliver
-                            your products on time with pure safety. Sed ut perspiciatis unde<br> omnis iste natus error
-                            sit voluptatem accusantium doloremque laudantium,</div>
+                            data-fontsize="['16','16','16','20']" data-lineheight="['25','25','25','20']">Magsam Resources is a Gold producer with <br> global operating,development and  
+                            exploration experience.</div>
 
                         <!-- LAYER NR. 12 -->
                         <div class="tp-caption tp-resizeme btn-theme bg-navy-blue rev-btn" id="slide-82-layer-5"
@@ -67,7 +65,7 @@
                             data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                             data-paddingright="[30,30,30,30]" data-paddingbottom="[0,0,0,0]"
                             data-paddingleft="[30,30,30,30]" data-fontsize="['14','14','14','14']"
-                            data-lineheight="['16','16','16','16']">Learn More <i class="icofont-rounded-right"></i>
+                            data-lineheight="['30','30','30','16']">About Us<i class="icofont-rounded-right"></i>
                         </div>
                     </li>
                     <!-- SLIDE  -->
@@ -93,7 +91,7 @@
                             data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
                             data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-start="700" data-splitin="none"
                             data-splitout="none" data-responsive_offset="on" style="z-index: 1; white-space: nowrap;">
-                            <span class="slider-small">Ready For Any</span> <br>Obstacle
+                            <span class="slider-small">We Sell Quality</span> <br>Gold
                         </div>
 
                         <!-- LAYER NR. 2 -->
@@ -123,7 +121,7 @@
                             data-actions='[{"event":"click","action":"jumptoslide","slide":"next","delay":""}]'
                             data-responsive_offset="on" data-responsive="off"
                             style="z-index: 3; white-space: nowrap; font-weight: 800;background-color:rgba(41, 46, 49, 1.00);border-color:rgba(255, 255, 255, 0);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;">
-                            READ MORE
+                            About Us
                         </div>
                     </li>
                 </ul>
