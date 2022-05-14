@@ -1,8 +1,20 @@
+<style>
+ .overlay::after{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    background: linear-gradient(to right, rgb(0, 0, 0, .743) 40%, #00000026);
+    }
+</style>
 <div class="slider bg-navy-blue">
         <div id="rev_slider_1078_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container"
             data-alias="classic4export" data-source="gallery"
             style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
             <!-- START REVOLUTION SLIDER 5.4.1 fullwidth mode -->
+         
             <div id="rev_slider_1078_1" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.4.1">
                 <ul>
                     <li data-index="rs-82" data-transition="fade" data-slotamount="default" data-hideafterloop="0"
@@ -12,7 +24,7 @@
                         data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9=""
                         data-param10="" data-description="" data-slicey_shadow="0px 0px 50px 0px transparent">
                         <!-- MAIN IMAGE -->
-                        <img src="assets/images/slider1.png" alt="" data-bgposition="center center"
+                        <img src="assets/images/banner-09.jpg" alt="" data-bgposition="center center"
                             data-kenburns="on" data-duration="7000" data-ease="Linear.easeNone" data-scalestart="100"
                             data-scaleend="150" data-rotatestart="0" data-rotateend="0" data-blurstart="0"
                             data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" class="rev-slidebg"
@@ -40,10 +52,10 @@
                             data-frames='[{"delay":500,"speed":1000,"sfx_effect":"blockfromleft","sfxcolor":"#ffffff","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                             data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                             data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                            data-fontsize="['28','28','28','28']" data-lineheight="['34','34','34','50']">Best In Gold Mining</div>
+                            data-fontsize="['32','32','32','32']" data-lineheight="['34','34','34','50']">Best In Gold Mining</div>
 
                         <!-- LAYER NR. 12 -->
-                        <!-- <div class="tp-caption tp-resizeme small_light_white " id="slide-82-layer-4"
+                        <div class="tp-caption tp-resizeme small_light_white " id="slide-82-layer-4"
                             data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
                             data-y="['middle','middle','middle','middle']" data-voffset="['-30','60','60','60']"
                             data-width="none" data-height="none" data-whitespace="nowrap" data-type="text"
@@ -51,9 +63,7 @@
                             data-frames='[{"delay":600,"speed":1000,"sfx_effect":"blockfromleft","sfxcolor":"#ffffff","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                             data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                             data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                            data-fontsize="['16','16','16','13']" data-lineheight="['30','30','30','20']">We deliver
-                            your products on time with pure safety. Sed ut perspiciatis unde<br> omnis iste natus error
-                            sit voluptatem accusantium doloremque laudantium,</div> -->
+                            data-fontsize="['23','23','23','13']" data-lineheight="['30','30','30','20']">Magsam Resources we have two mines which combining underground <br> and open pit gold mine located in Shinyanga district, Region of Tanzania.</div>
 
                         <!-- LAYER NR. 12 -->
                         <div class="tp-caption tp-resizeme btn-theme bg-navy-blue rev-btn" id="slide-82-layer-5"
@@ -77,7 +87,7 @@
                         data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9=""
                         data-param10="" data-description="">
                         <!-- MAIN IMAGE -->
-                        <img src="assets/images/banner_slider_3.jpg" alt="" data-bgposition="center center"
+                        <img src="assets/images/banner-03.jpg" alt="" data-bgposition="center center"
                             data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg"
                             data-no-retina>
                         <!-- LAYERS -->

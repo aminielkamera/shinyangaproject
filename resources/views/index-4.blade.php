@@ -12,7 +12,7 @@
                             <div class="icon-box-with-img bg-orange">
                                 <img src="{{ asset('assets/images/icon-box-img-1.jpg')}}" alt="">
                                 <div class="text">
-                                    Freight Forwarding
+                                    Exploration
                                 </div>
                             </div>
                         </a>
@@ -25,7 +25,7 @@
                             <div class="icon-box-with-img bg-orange">
                                 <img src="{{ asset('assets/images/icon-box-img-2.jpg')}}" alt="">
                                 <div class="text">
-                                    Road Freight
+                                    Gold Mining
                                 </div>
                             </div>
                         </a>
@@ -38,7 +38,7 @@
                             <div class="icon-box-with-img bg-orange">
                                 <img src="{{ asset('assets/images/icon-box-img-3.jpg')}}" alt="">
                                 <div class="text">
-                                    Car transportation
+                                    Processing
                                 </div>
                             </div>
                         </a>

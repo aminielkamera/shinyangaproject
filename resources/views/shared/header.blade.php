@@ -24,25 +24,14 @@
 
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav ms-auto mb-2 mb-md-0">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="{{url('/')}}" data-bs-toggle="dropdown" aria-expanded="false">Home <i
-                                class="icofont-rounded-down"></i></a>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="{{url('/')}}"  aria-expanded="false">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" aria-expanded="false">About Us </a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link" href="#" data-bs-toggle="dropdown" aria-expanded="false">About Us <i
-                                class="icofont-rounded-down"></i></a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="about-us.html">About Us</a></li>
-                                <li><a class="dropdown-item" href="services.html">Services</a></li>
-                                <li><a class="dropdown-item" href="shortcodes-element.html">Shortcode Elements</a></li>
-                                <li><a class="dropdown-item" href="typography.html">Typography</a></li>
-                                <li><a class="dropdown-item" href="request-page.html">Request Quote</a></li>
-                                <li><a class="dropdown-item" href="pricing-plan.html">Our Pricing</a></li>
-                                <li><a class="dropdown-item" href="404-page.html">404 Page</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="#" data-bs-toggle="dropdown" aria-expanded="false">Process <i
+                            <a class="nav-link" href="#" data-bs-toggle="dropdown" aria-expanded="false">Operations <i
                                 class="icofont-rounded-down"></i></a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="project-grid.html">Projects Grid</a></li>
@@ -51,7 +40,7 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link" href="#" data-bs-toggle="dropdown" aria-expanded="false">Services <i
+                            <a class="nav-link" href="#" data-bs-toggle="dropdown" aria-expanded="false">Sustainability <i
                                 class="icofont-rounded-down"></i></a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="blog-list.html">Blog List</a></li>
@@ -60,13 +49,8 @@
                                 <li><a class="dropdown-item" href="blog-single.html">Blog Single</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="#" data-bs-toggle="dropdown" aria-expanded="false">Contact <i
-                                class="icofont-rounded-down"></i></a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="contact-us.html">Contact Us</a></li>
-                                <li><a class="dropdown-item" href="contact-us-option.html">Contact Us Option</a></li>
-                            </ul>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#"  aria-expanded="false">Contact Us</a>
                         </li>
 
                     </ul>
