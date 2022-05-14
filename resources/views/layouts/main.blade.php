@@ -206,19 +206,18 @@
 
     <!-- Theme Custom FIle -->
     <script src="{{ asset('assets/js/site-custom.js')}}"></script>
-
     <script type="text/javascript">
         var tpj = jQuery;
 
         var revapi1078;
-        tpj(document).ready(function() {
+        tpj(document).ready(function () {
             if (tpj("#rev_slider_1078_1").revolution == undefined) {
                 revslider_showDoubleJqueryError("#rev_slider_1078_1");
             } else {
                 revapi1078 = tpj("#rev_slider_1078_1").show().revolution({
                     sliderType: "standard",
                     jsFileLocation: "revolution/js/",
-                    sliderLayout: "fullscreen",
+                    sliderLayout: "",
                     dottedOverlay: "none",
                     delay: 9000,
                     navigation: {
@@ -233,7 +232,8 @@
                             swipe_min_touches: 1,
                             swipe_direction: "horizontal",
                             drag_block_vertical: false
-                        },
+                        }
+                        ,
                         arrows: {
                             style: "metis",
                             enable: true,
@@ -255,7 +255,8 @@
                                 h_offset: 30,
                                 v_offset: 0
                             }
-                        },
+                        }
+                        ,
                         bullets: {
                             style: 'hades',
                             tmp: '<span class="tp-bullet-image"></span>',
@@ -283,7 +284,7 @@
                     responsiveLevels: [1240, 1024, 778, 480],
                     visibilityLevels: [1240, 1024, 778, 480],
                     gridwidth: [1240, 1024, 778, 480],
-                    gridheight: [600, 600, 500, 400],
+                    gridheight: [800, 700, 600, 500],
                     lazyType: "none",
                     parallax: {
                         type: "mouse",
@@ -313,6 +314,9 @@
             }
         }); /*ready*/
     </script>
+    
 </body>
 
 </html>
+
+

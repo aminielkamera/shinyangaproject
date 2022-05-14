@@ -1,4 +1,3 @@
-<!-- Fullscreen Slider Start -->
 <div class="slider bg-navy-blue">
         <div id="rev_slider_1078_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container"
             data-alias="classic4export" data-source="gallery"
@@ -13,7 +12,7 @@
                         data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9=""
                         data-param10="" data-description="" data-slicey_shadow="0px 0px 50px 0px transparent">
                         <!-- MAIN IMAGE -->
-                        <img src="{{ asset('assets/images/banner_slider.jpg')}}" alt="" data-bgposition="center center"
+                        <img src="assets/images/slider1.png" alt="" data-bgposition="center center"
                             data-kenburns="on" data-duration="7000" data-ease="Linear.easeNone" data-scalestart="100"
                             data-scaleend="150" data-rotatestart="0" data-rotateend="0" data-blurstart="0"
                             data-blurend="0" data-offsetstart="0 0" data-offsetend="0 0" class="rev-slidebg"
@@ -24,19 +23,19 @@
                         <div class="tp-caption tp-resizeme NotGeneric-Title" id="slide-82-layer-2"
                             data-blendmode=”color-dodge“ data-x="['center','center','center','center']"
                             data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
-                            data-voffset="['-70','-70','-70','-70']" data-fontsize="['70','60','60','55']"
+                            data-voffset="['-160','-70','-70','-70']" data-fontsize="['70','60','60','55']"
                             data-lineheight="['80','70','70','40']" data-width="none" data-height="none"
                             data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
                             data-frames='[{"delay":200,"speed":1000,"sfx_effect":"blockfromleft","sfxcolor":"#ffffff","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                             data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
-                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]">We 
+                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]">We
                             Are Magsam</div>
 
                         <!-- LAYER NR. 11 -->
                         <div class="tp-caption medium_light_white tp-resizeme" id="slide-82-layer-3"
                             data-blendmode=”color-dodge“ data-x="['center','center','center','center']"
                             data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"
-                            data-voffset="['-10','-10','-10','-10']" data-width="none" data-height="none"
+                            data-voffset="['-90','-10','-10','-10']" data-width="none" data-height="none"
                             data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
                             data-frames='[{"delay":500,"speed":1000,"sfx_effect":"blockfromleft","sfxcolor":"#ffffff","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                             data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
@@ -44,28 +43,29 @@
                             data-fontsize="['28','28','28','28']" data-lineheight="['34','34','34','50']">Best In Gold Mining</div>
 
                         <!-- LAYER NR. 12 -->
-                        <div class="tp-caption tp-resizeme small_light_white " id="slide-82-layer-4"
+                        <!-- <div class="tp-caption tp-resizeme small_light_white " id="slide-82-layer-4"
                             data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-                            data-y="['middle','middle','middle','middle']" data-voffset="['60','60','60','60']"
+                            data-y="['middle','middle','middle','middle']" data-voffset="['-30','60','60','60']"
                             data-width="none" data-height="none" data-whitespace="nowrap" data-type="text"
                             data-responsive_offset="on"
                             data-frames='[{"delay":600,"speed":1000,"sfx_effect":"blockfromleft","sfxcolor":"#ffffff","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[-10,-10,-10,-10]"
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                             data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                            data-fontsize="['16','16','16','20']" data-lineheight="['25','25','25','20']">Magsam Resources is a Gold producer with <br> global operating,development and  
-                            exploration experience.</div>
+                            data-fontsize="['16','16','16','13']" data-lineheight="['30','30','30','20']">We deliver
+                            your products on time with pure safety. Sed ut perspiciatis unde<br> omnis iste natus error
+                            sit voluptatem accusantium doloremque laudantium,</div> -->
 
                         <!-- LAYER NR. 12 -->
                         <div class="tp-caption tp-resizeme btn-theme bg-navy-blue rev-btn" id="slide-82-layer-5"
                             data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-                            data-y="['middle','middle','middle','middle']" data-voffset="['140','140','140','140']"
+                            data-y="['middle','middle','middle','middle']" data-voffset="['45','140','140','140']"
                             data-width="none" data-height="none" data-whitespace="nowrap" data-type="text"
                             data-responsive_offset="on"
                             data-frames='[{"delay":750,"speed":1000,"sfx_effect":"blockfromleft","sfxcolor":"#ffffff","frame":"0","from":"z:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                             data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                             data-paddingright="[30,30,30,30]" data-paddingbottom="[0,0,0,0]"
                             data-paddingleft="[30,30,30,30]" data-fontsize="['14','14','14','14']"
-                            data-lineheight="['30','30','30','16']">About Us<i class="icofont-rounded-right"></i>
+                            data-lineheight="['16','16','16','16']">About Us <i class="icofont-rounded-right"></i>
                         </div>
                     </li>
                     <!-- SLIDE  -->
@@ -77,7 +77,7 @@
                         data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9=""
                         data-param10="" data-description="">
                         <!-- MAIN IMAGE -->
-                        <img src="{{ asset('assets/images/banner_slider_2.jpg')}}" alt="" data-bgposition="center center"
+                        <img src="assets/images/banner_slider_3.jpg" alt="" data-bgposition="center center"
                             data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg"
                             data-no-retina>
                         <!-- LAYERS -->
@@ -91,7 +91,7 @@
                             data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
                             data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-start="700" data-splitin="none"
                             data-splitout="none" data-responsive_offset="on" style="z-index: 1; white-space: nowrap;">
-                            <span class="slider-small">We Sell Quality</span> <br>Gold
+                            <span class="slider-small">We See Quality</span> <br>Gold
                         </div>
 
                         <!-- LAYER NR. 2 -->
@@ -103,9 +103,7 @@
                             data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;"
                             data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-start="1400" data-splitin="none"
                             data-splitout="none" data-responsive_offset="on"
-                            style="z-index: 2; white-space: nowrap; font-size: 18px; line-height: 30px;">Proin gravida
-                            nibh vel velit auctor aliquet. Aenean sollicitudin,<br> lorem quis bibendum auctor, nisi
-                            elit consequat ipsum, nec <br>sagittis sem nibh id elit.
+                            style="z-index: 2; white-space: nowrap; font-size: 18px; line-height: 30px;">Magsam Resources </br> Is a Gold producer with global operating, <br> development and exploration experience .
                         </div>
 
                         <!-- LAYER NR. 3 -->
@@ -121,7 +119,7 @@
                             data-actions='[{"event":"click","action":"jumptoslide","slide":"next","delay":""}]'
                             data-responsive_offset="on" data-responsive="off"
                             style="z-index: 3; white-space: nowrap; font-weight: 800;background-color:rgba(41, 46, 49, 1.00);border-color:rgba(255, 255, 255, 0);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;">
-                            About Us
+                            READ MORE
                         </div>
                     </li>
                 </ul>
@@ -130,4 +128,3 @@
             </div>
         </div>
     </div>
-    <!-- Fullscreen Slider End -->
