@@ -107,7 +107,7 @@ a:focus {
 .navbar-expand-lg .navbar-nav .nav-link {
     padding: 0.6rem 0.70rem;
     border-radius: 3px;
-    font-weight: 700;
+    font-weight: 600;
     transition: all .3s;
 }
 
@@ -217,7 +217,7 @@ a:focus {
 /*------------------------------------------*/
 
 .heading-main {
-    color: var(--primary-color);
+    color: #91772E;
     font-size: 2.25rem;
     font-weight: 700;
     text-align: center;
@@ -226,12 +226,12 @@ a:focus {
 }
 
 .heading-main span {
-    color: rgba(6, 22, 58, 0.5);
-    text-transform: uppercase;
+    color: rgba(6, 22, 58, 0.7);
+    text-transform: capitalize;
     padding-bottom: 5px;
     display: block;
-    font-size: 0.875rem;
-    font-weight: 700;
+    font-size: 1rem;
+    font-weight: 600;
     letter-spacing: -0.07rem;
 }
 
