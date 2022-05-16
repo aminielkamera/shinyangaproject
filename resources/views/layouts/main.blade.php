@@ -48,8 +48,6 @@
 
     @include('shared.pageloader')
     @include('shared.header')
-    @include('shared.main-slider')
-
     <!-- Main Body Content Start -->
     <main id="body-content" style="overflow: initial;">
         @yield('content')

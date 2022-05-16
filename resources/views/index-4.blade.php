@@ -1,6 +1,7 @@
 @extends('layouts.main')
 
 @section('content')
+@include('shared.main-slider')
 <!-- Welcome To Cargo Start -->
         <section class="wide-tb-100 p-0 bg-light-theme home-welcome">
             <div class="container">
@@ -50,8 +51,75 @@
         </section>
         <!-- Welcome To Cargo End -->
 
-        <!-- What Makes Us Special Start -->
-        <section class="bg-light-theme wide-tb-100">
+        <!-- About Us Start -->
+        <section class="bg-white wide-tb-100 mb-spacer-md">
+            <div class="container">
+                <!-- Heading Main -->
+                <div class="col-sm-12 wow fadeInDown" data-wow-duration="0" data-wow-delay="0s">
+                    <h1 class="heading-main">
+                        <span>Who we are</span>
+                        About Us
+                    </h1>
+                </div>
+                <!-- Heading Main -->
+
+                <div class="row wow fadeInUp" data-wow-duration="0" data-wow-delay="0.2s">
+                    <div class="col-lg-8">
+                        <!-- Blockquote Start -->
+                        <div class="about-bg bg-light-theme">
+                            <div class="row d-flex align-items-end">
+                                <div class="col-12 pt-5 order-sm-12 col-sm-6">
+                                    <blockquote class="blockquote style-one">
+                                        <p class="mb-0">There is no design without discipline. There is no discipline
+                                            without intelligence.</p>
+                                        <footer class="blockquote-footer"><cite title="Source Title">Steven Snell
+                                                Google</cite></footer>
+                                    </blockquote>
+                                </div>
+                                <div class="col-12 mb-0 order-md-first col-sm-6">
+                                    <img src="{{ asset('assets/images/about_img.png')}}" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Blockquote Start -->
+                    </div>
+
+                    <!-- Spacer For Medium -->
+                    <div class="w-100 d-none d-sm-block d-lg-none spacer-30"></div>
+                    <!-- Spacer For Medium -->
+
+                    <!-- Right Text Start -->
+                    <div class="col-lg-4">
+                        <div class="align-self-stretch h-100 align-items-center d-flex bg-with-text">
+                            Whether you require distribution or fulfillment, defined freight forwarding, or a complete
+                            supply chain solution, we are here for you.
+                        </div>
+                    </div>
+                    <!-- Right Text Start -->
+                </div>
+
+
+                <div class="row text-center mobile-100">
+                    <div class="col-sm-12">
+                        <div class="spacer-50"></div>
+                        <a href="#" class="btn-theme bg-navy-blue">Request Quote <i
+                                class="icofont-rounded-right"></i></a>
+                        <a href="#" class="ms-5 link-oragne icon-left play-video"><i class="icofont-play"></i> Watch Our
+                            Short Video</a>
+                    </div>
+                    <div class="video-box">
+                        <!-- close-video -->
+                        <div class="close-video">
+                            <i class="icofont-close-line"></i>
+                        </div><!-- /close-video -->
+                    </div><!-- /video-box -->
+                </div>
+            </div>
+        </section>
+        <!-- About Us End -->
+
+         <!-- What Makes Us Special Start -->
+         <section class="bg-light-theme wide-tb-100">
             <div class="container pos-rel">
                 <div class="row">
                     <!-- Heading Main -->
@@ -128,73 +196,6 @@
             </div>
         </section>
         <!-- What Makes Us Special End -->
-
-        <!-- About Us Start -->
-        <section class="bg-white wide-tb-100 mb-spacer-md">
-            <div class="container">
-                <!-- Heading Main -->
-                <div class="col-sm-12 wow fadeInDown" data-wow-duration="0" data-wow-delay="0s">
-                    <h1 class="heading-main">
-                        <span>Who we are</span>
-                        About Us
-                    </h1>
-                </div>
-                <!-- Heading Main -->
-
-                <div class="row wow fadeInUp" data-wow-duration="0" data-wow-delay="0.2s">
-                    <div class="col-lg-8">
-                        <!-- Blockquote Start -->
-                        <div class="about-bg bg-light-theme">
-                            <div class="row d-flex align-items-end">
-                                <div class="col-12 pt-5 order-sm-12 col-sm-6">
-                                    <blockquote class="blockquote style-one">
-                                        <p class="mb-0">There is no design without discipline. There is no discipline
-                                            without intelligence.</p>
-                                        <footer class="blockquote-footer"><cite title="Source Title">Steven Snell
-                                                Google</cite></footer>
-                                    </blockquote>
-                                </div>
-                                <div class="col-12 mb-0 order-md-first col-sm-6">
-                                    <img src="{{ asset('assets/images/about_img.png')}}" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Blockquote Start -->
-                    </div>
-
-                    <!-- Spacer For Medium -->
-                    <div class="w-100 d-none d-sm-block d-lg-none spacer-30"></div>
-                    <!-- Spacer For Medium -->
-
-                    <!-- Right Text Start -->
-                    <div class="col-lg-4">
-                        <div class="align-self-stretch h-100 align-items-center d-flex bg-with-text">
-                            Whether you require distribution or fulfillment, defined freight forwarding, or a complete
-                            supply chain solution, we are here for you.
-                        </div>
-                    </div>
-                    <!-- Right Text Start -->
-                </div>
-
-
-                <div class="row text-center mobile-100">
-                    <div class="col-sm-12">
-                        <div class="spacer-50"></div>
-                        <a href="#" class="btn-theme bg-navy-blue">Request Quote <i
-                                class="icofont-rounded-right"></i></a>
-                        <a href="#" class="ms-5 link-oragne icon-left play-video"><i class="icofont-play"></i> Watch Our
-                            Short Video</a>
-                    </div>
-                    <div class="video-box">
-                        <!-- close-video -->
-                        <div class="close-video">
-                            <i class="icofont-close-line"></i>
-                        </div><!-- /close-video -->
-                    </div><!-- /video-box -->
-                </div>
-            </div>
-        </section>
-        <!-- About Us End -->
 
         <!-- Counter Start -->
         <section class="wide-tb-100 bg-scroll counter-bg pos-rel">

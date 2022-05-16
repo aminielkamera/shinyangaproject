@@ -84,7 +84,7 @@
                             href="#">Faq's</a>
                     </div>
                     <div class="col-sm-12 col-md-6 text-md-end text-center">
-                        Designed by <a href="#" rel="nofollow">MannatStudio</a> © 2021 All Rights Reserved
+                        <a href="#" rel="nofollow">Magsam Resources</a> &copy; {{date('Y')}}. All Rights are Reserved
                     </div>
                 </div>
             </div>

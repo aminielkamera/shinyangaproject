@@ -24,11 +24,11 @@
 
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav ms-auto mb-2 mb-md-0">
-                        <li class="nav-item ">
+                        <li  class="{{ Request::is('/') ? 'current' : '' }} nav-item ">
                             <a class="nav-link" href="{{url('/')}}"  aria-expanded="false">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" aria-expanded="false">About Us </a>
+                        <li class="{{ Request::is('about-us') ? 'current' : '' }}  nav-item">
+                            <a class="nav-link" href="{{url('about-us')}}" aria-expanded="false">About Us </a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link" href="#" data-bs-toggle="dropdown" aria-expanded="false">Operations <i
