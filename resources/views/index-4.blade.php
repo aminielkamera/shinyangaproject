@@ -9,7 +9,7 @@
                     <!-- Icon Box 1 -->
                     <div class="col-md-4">
                         <a href="service-details.html">
-                            <div class="icon-box-with-img bg-orange">
+                            <div class="icon-box-with-img bg-liner-gradient">
                                 <img src="{{ asset('assets/images/icon-box-img-1.jpg')}}" alt="">
                                 <div class="text">
                                     Exploration
@@ -22,7 +22,7 @@
                     <!-- Icon Box 1 -->
                     <div class="col-md-4">
                         <a href="service-details.html">
-                            <div class="icon-box-with-img bg-orange">
+                            <div class="icon-box-with-img bg-liner-gradient">
                                 <img src="{{ asset('assets/images/icon-box-img-2.jpg')}}" alt="">
                                 <div class="text">
                                     Gold Mining
@@ -35,7 +35,7 @@
                     <!-- Icon Box 1 -->
                     <div class="col-md-4">
                         <a href="service-details.html">
-                            <div class="icon-box-with-img bg-orange">
+                            <div class="icon-box-with-img bg-liner-gradient">
                                 <img src="{{ asset('assets/images/icon-box-img-3.jpg')}}" alt="">
                                 <div class="text">
                                     Processing
