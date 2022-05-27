@@ -15,8 +15,8 @@
 
     .shaped {
         float: left;
-        height: 100vh;
-        width: 40vw;
+        height: 40vh;
+        width: 30vw;
         float: right;
         background: black url('assets/images/bg-text.jpg');
         background-repeat: no-repeat;

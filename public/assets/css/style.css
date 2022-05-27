@@ -15,9 +15,9 @@ html {
 
 body {
     font-family: 'Montserrat', sans-serif;
-    font-size: 0.875rem;
+    font-size: 1.03rem;
     font-weight: 400;
-    color: #999;
+    color: rgba(3, 12, 32, 0.9);
     line-height: 1.7;
     overflow-x: hidden;
 }
@@ -1505,7 +1505,8 @@ h2.h2-xl {
     padding-top: 30px;
     padding-bottom: 30px;
 }
-.wide-tb-110{
+
+.wide-tb-110 {
     padding-top: 30px;
     padding-bottom: 100px;
 }
