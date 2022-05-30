@@ -56,15 +56,15 @@
     .pageOption {
         overflow: hidden;
         position: relative;
-        width: 400px;
-        height: 400px;
+        width: 300px;
+        height: 300px;
         position: absolute;
     }
 
     .option,
     .option img {
-        width: 85%;
-        height: 85%;
+        width: 100%;
+        height: 100%;
     }
 
     .option {
@@ -91,7 +91,7 @@
 <!-- Welcome To Cargo Start -->
 <div class='pageOption'>
     <a href='#' class='option' data-inf='photo'>
-        <img src="{{ asset('assets/images/bg_12.jpg')}}">
+        <img src="{{ asset('assets/images/bg_14.jpg')}}">
     </a>
     <a href='#' class='option' data-inf='photo'>
     </a>
