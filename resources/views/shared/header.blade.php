@@ -5,7 +5,7 @@
             <div class="container">
                 <div class="d-flex align-items-center">
                     <a class="navbar-brand rounded-bottom light-bg" href="index.html">
-                        <img src="assets/images/logo_footer.svg" alt="">
+                        <img src="{{ asset('assets/images/logo_2.png')}}" alt="">
                     </a>
                 </div>
                 <!-- Topbar Request Quote Start -->
