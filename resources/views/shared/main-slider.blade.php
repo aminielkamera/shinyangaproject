@@ -7,7 +7,7 @@
         left: 0;
         top: 0;
         z-index: 0;
-        background: linear-gradient(to right, rgb(3, 27, 56, .743) 60%, #00000026);
+        background: linear-gradient(to right, rgb(0, 0, 0, .743) 60%, #00000026);
     }
 
     .section-title-1 {

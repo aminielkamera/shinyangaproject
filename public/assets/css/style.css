@@ -37,7 +37,7 @@ img {
     --shadow-primary: 0px 6px 10px 0px rgba(254, 135, 4, 0.2);
     --shadow-secondary: 0px 6px 10px 0px rgba(254, 135, 4, 0.2);
     --secondary-rgba: rgba( 35, 33, 53, 0.8);
-    --shodow-header: 0px 6px 10px 0px rgba(187, 161, 79, 0.4);
+    --shodow-header: 0px 6px 10px 0px rgba(187, 161, 79, 0.37);
 }
 
 
@@ -100,7 +100,8 @@ a:focus {
 
 .navbar {
     padding: 0 15px;
-    background: var(--bg-white);
+    background: linear-gradient(180deg, rgb(23, 12, 7) 100%, transparent);
+    box-shadow: var(--shodow-header);
 }
 
 .navbar-expand-md .navbar-nav .nav-link,
@@ -4100,7 +4101,7 @@ footer .social-icons a:hover {
 
 @media (min-width: 991px) {
     .header-fullpage.fixed {
-        background: #FFF;
+        background: linear-gradient(180deg, rgb(23, 12, 7) 90%, transparent);
         position: fixed;
         top: 0;
         width: 100%;
@@ -4340,12 +4341,12 @@ footer .social-icons a:hover {
 
 .navbar-brand {
     padding: 0;
-    /* width: 230px; */
+    width: 167px;
     margin: 0;
 }
 
 .navbar-nav .nav-link {
-    color: rgba(6, 22, 58, 0.5);
+    color: #DEEBFF;
 }
 
 .navbar-nav .active .nav-link,
@@ -4356,8 +4357,9 @@ footer .social-icons a:hover {
 }
 
 .current {
-    border-bottom: solid 5px #b78727;
-    color: #BBA14F;
+    border-bottom: solid 2px #946D20;
+    background-color: #946D20;
+    opacity: 1;
 }
 
 
