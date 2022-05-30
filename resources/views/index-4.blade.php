@@ -56,8 +56,8 @@
     .pageOption {
         overflow: hidden;
         position: relative;
-        width: 40em;
-        height: 40em;
+        width: 400px;
+        height: 400px;
         position: absolute;
     }
 
