@@ -38,9 +38,11 @@
     .bg-navy-blue-btn {
         background: linear-gradient(to right, #AE8625, #F7EF8A, #D2AC47, #EDC967);
     }
-    .arrow>a{
+
+    .arrow>a {
         color: #AE8625;
     }
+
     .arrow::after {
         display: inline-block;
         padding-left: 8px;
@@ -51,8 +53,49 @@
     .arrow:hover::after {
         transform: translateX(6px);
     }
+    .pageOption {
+        overflow: hidden;
+        position: relative;
+        width: 40em;
+        height: 40em;
+        position: absolute;
+    }
+
+    .option,
+    .option img {
+        width: 85%;
+        height: 85%;
+    }
+
+    .option {
+        overflow: hidden;
+        position: absolute;
+        transform: skewX(-55.98deg);
+    }
+
+    .option:first-child {
+        left: -.25em;
+        transform-origin: 100% 0;
+    }
+
+    .option:last-child {
+        right: -.25em;
+        transform-origin: 0 100%;
+    }
+
+    .option img {
+        transform: skewX(55.98deg);
+        transform-origin: inherit;
+    }
 </style>
 <!-- Welcome To Cargo Start -->
+<div class='pageOption'>
+    <a href='#' class='option' data-inf='photo'>
+        <img src="{{ asset('assets/images/bg_12.jpg')}}">
+    </a>
+    <a href='#' class='option' data-inf='photo'>
+    </a>
+</div>
 <section class="wide-tb-110 p-0 bg-light-theme home-welcome">
     <div class="container">
         <div class="row">
@@ -220,11 +263,11 @@
                     <!-- Icon Box -->
                 </div>
                 <div class="row text-center">
-                        <div class="spacer-30"></div>
-                        <div class="col-md-12">
-                            <a href="{{url('about-us')}}" class="btn-theme bg-navy-blue-btn">View All <i class="icofont-rounded-right"></i></a>
-                        </div>
+                    <div class="spacer-30"></div>
+                    <div class="col-md-12">
+                        <a href="{{url('about-us')}}" class="btn-theme bg-navy-blue-btn">View All <i class="icofont-rounded-right"></i></a>
                     </div>
+                </div>
             </div>
 
             <div class="img-business-man">
