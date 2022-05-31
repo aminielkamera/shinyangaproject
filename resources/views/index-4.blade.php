@@ -4,8 +4,6 @@
 @include('shared.main-slider')
 
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
-
     .content {
         height: 100%;
         padding: 20px 20px 10px;
@@ -17,8 +15,8 @@
 
     .shaped {
         float: left;
-        height: 90vh;
-        width: 40vw;
+        height: 45vh;
+        width: 30vw;
         float: right;
         background: black url('assets/images/bg-text.jpg');
         background-repeat: no-repeat;
@@ -90,25 +88,28 @@
         transform: skewX(55.98deg);
         transform-origin: inherit;
     }
-   .card1 {
+
+    .card1 {
         position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        height: 230px;
-        width: 355px;
+        height: 290px;
         border-radius: 5px;
         background-color: #ffffff;
         box-shadow: 2px 0 30px rgba(0, 0, 0, 0.3);
         overflow: hidden;
+        border-bottom: 5px solid transparent;
+        border-image: -webkit-linear-gradient(left, #8f6B29, #FDE08D, #DF9F28);
+        border-image-slice: 1;
     }
 
     h2 {
         position: absolute;
         left: 0;
         top: 0;
-        margin: 20px 0px 0px 20px;
+        margin: 46px 0px 0px 20px;
         font-size: 17px;
         font-weight: 600;
         text-transform: uppercase;
@@ -131,7 +132,7 @@
         height: 100%;
         width: 100%;
         border-radius: 50%;
-        background-color: #946D20;
+        background: linear-gradient(70deg, rgba(39, 30, 15, 255) 40%, rgba(108, 84, 40, 255) 70%);
         margin-top: -330px;
         margin-left: 200px;
     }
@@ -139,7 +140,7 @@
     #triangle {
         height: 100%;
         width: 100%;
-        background-color: #946D20;
+        background: linear-gradient(70deg, rgba(39, 30, 15, 255) 60%, rgba(108, 84, 40, 255) 80%);
         border-radius: 20px;
         transform: rotate(70deg);
         margin-top: -430px;
@@ -151,15 +152,11 @@
         right: 0;
         bottom: 0;
         margin: 20px;
-        height: 30px;
-        width: 30px;
         cursor: pointer;
-        background-color: #000000;
-        color: #ffffff;
+        color: #545454;
         font-size: 14px;
         padding: 6px 15px;
-        border-radius: 50px;
-        box-shadow: 10px 0 50px rgba(0, 0, 0, 0.1);
+        box-shadow: 10px 0 50px rgba(0, 0, 0, 0.2);
     }
 </style>
 <!-- Welcome To Cargo Start -->
@@ -176,30 +173,31 @@
             <div class="col-md-4 mb-4">
                 <div class="card1">
                     <div id="circle"></div>
-                    <h2>Circle</h2>
+                    <h2>Exploration</h2>
                     <p id="p">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
                     <div class="content1">
-                    <a href=""> <i class="icofont-rounded-right"></i></a>
+                        <a href="">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card1">
+                    <div id="overlay"></div>
+                    <div id="triangle"></div>
+                    <h2>Gold Mining</h2>
+                    <p id="p">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                    <div class="content1">
+                        <a href="">Read More</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card1">
                     <div id="triangle"></div>
-                    <h2>Triangle</h2>
+                    <h2>Processing</h2>
                     <p id="p">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
                     <div class="content1">
-                        <a>More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card1">
-                    <div id="triangle"></div>
-                    <h2>Triangle</h2>
-                    <p id="p">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-                    <div class="content1">
-                        <a>More</a>
+                        <a href="">Read More</a>
                     </div>
                 </div>
             </div>

@@ -100,7 +100,7 @@ a:focus {
 
 .navbar {
     padding: 0 15px;
-    background: linear-gradient(180deg, rgb(23, 12, 7) 100%, transparent);
+    background: linear-gradient(180deg, rgba(39, 30, 15, 255) 100%, transparent);
     box-shadow: var(--shodow-header);
 }
 
@@ -4101,7 +4101,7 @@ footer .social-icons a:hover {
 
 @media (min-width: 991px) {
     .header-fullpage.fixed {
-        background: linear-gradient(180deg, rgb(23, 12, 7) 90%, transparent);
+        background: linear-gradient(180deg, rgba(39, 30, 15, 255) 90%, transparent);
         position: fixed;
         top: 0;
         width: 100%;
