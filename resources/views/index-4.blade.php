@@ -18,7 +18,7 @@
         height: 45vh;
         width: 30vw;
         float: right;
-        background: black url('assets/images/bg-text.jpg');
+        background: black url('assets/images/bg_color_3.jpg');
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
