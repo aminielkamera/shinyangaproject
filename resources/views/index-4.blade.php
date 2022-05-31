@@ -4,6 +4,8 @@
 @include('shared.main-slider')
 
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
     .content {
         height: 100%;
         padding: 20px 20px 10px;
@@ -15,8 +17,8 @@
 
     .shaped {
         float: left;
-        height: 40vh;
-        width: 30vw;
+        height: 90vh;
+        width: 40vw;
         float: right;
         background: black url('assets/images/bg-text.jpg');
         background-repeat: no-repeat;
@@ -53,6 +55,7 @@
     .arrow:hover::after {
         transform: translateX(6px);
     }
+
     .pageOption {
         overflow: hidden;
         position: relative;
@@ -87,6 +90,77 @@
         transform: skewX(55.98deg);
         transform-origin: inherit;
     }
+   .card1 {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 230px;
+        width: 355px;
+        border-radius: 5px;
+        background-color: #ffffff;
+        box-shadow: 2px 0 30px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+    }
+
+    h2 {
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin: 20px 0px 0px 20px;
+        font-size: 17px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 15px;
+        color: #fff;
+        mix-blend-mode: difference;
+    }
+
+    #p {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        margin: 0 20px 60px 20px;
+        font-size: 16px;
+        color: #ffffff;
+        mix-blend-mode: difference;
+    }
+
+    #circle {
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        background-color: #946D20;
+        margin-top: -330px;
+        margin-left: 200px;
+    }
+
+    #triangle {
+        height: 100%;
+        width: 100%;
+        background-color: #946D20;
+        border-radius: 20px;
+        transform: rotate(70deg);
+        margin-top: -430px;
+        margin-left: 200px;
+    }
+
+    .content1 a {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        margin: 20px;
+        height: 30px;
+        width: 30px;
+        cursor: pointer;
+        background-color: #000000;
+        color: #ffffff;
+        font-size: 14px;
+        padding: 6px 15px;
+        border-radius: 50px;
+        box-shadow: 10px 0 50px rgba(0, 0, 0, 0.1);
+    }
 </style>
 <!-- Welcome To Cargo Start -->
 <div class='pageOption'>
@@ -96,11 +170,46 @@
     <a href='#' class='option' data-inf='photo'>
     </a>
 </div>
-<section class="wide-tb-110 p-0 bg-light-theme home-welcome">
+<section class="wide-tb-110 pb-5 bg-light-theme home-welcome">
     <div class="container">
         <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card1">
+                    <div id="circle"></div>
+                    <h2>Circle</h2>
+                    <p id="p">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                    <div class="content1">
+                    <a href=""> <i class="icofont-rounded-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card1">
+                    <div id="triangle"></div>
+                    <h2>Triangle</h2>
+                    <p id="p">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                    <div class="content1">
+                        <a>More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card1">
+                    <div id="triangle"></div>
+                    <h2>Triangle</h2>
+                    <p id="p">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                    <div class="content1">
+                        <a>More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-            <!-- Icon Box 1 -->
+<!-- <section class="wide-tb-110 p-0 bg-light-theme home-welcome">
+    <div class="container">
+        <div class="row">
             <div class="col-md-4 mb-4">
                 <a href="service-details.html">
                     <div class="icon-box-with-img bg-liner-gradient">
@@ -111,9 +220,6 @@
                     </div>
                 </a>
             </div>
-            <!-- Icon Box 1 -->
-
-            <!-- Icon Box 1 -->
             <div class="col-md-4 mb-4">
                 <a href="service-details.html">
                     <div class="icon-box-with-img bg-liner-gradient">
@@ -124,9 +230,6 @@
                     </div>
                 </a>
             </div>
-            <!-- Icon Box 1 -->
-
-            <!-- Icon Box 1 -->
             <div class="col-md-4 mb-4">
                 <a href="service-details.html">
                     <div class="icon-box-with-img bg-liner-gradient">
@@ -137,11 +240,10 @@
                     </div>
                 </a>
             </div>
-            <!-- Icon Box 1 -->
 
         </div>
     </div>
-</section>
+</section> -->
 <!-- Welcome To Cargo End -->
 
 <!-- About Us Start -->
@@ -150,13 +252,14 @@
         <!-- Heading Main -->
         <div class="col-sm-12 wow fadeInDown" data-wow-duration="0" data-wow-delay="0s">
             <h1 class="heading-main text-left" style="text-align: left;">
-                <span>Who we are</span>
+                <!-- <span>Who we are</span> -->
                 About Us
             </h1>
         </div>
         <!-- Heading Main -->
         <div class="">
-            <div class="shaped"></div>
+            <div class="shaped">
+            </div>
             <div class="service-inner-content media-body text-left">
                 <h4 class="h4-md">Magsam Resources</h4>
                 <!-- <p>Help agencies to define their new business objectives and then create professional software.</p> -->
@@ -166,26 +269,13 @@
                     <br><br>
                     You will receive exceptional customer service through the entire project with clear and open communication. We encourage client participation guaranteeing you of effective outcomes. You can relax knowing that your project is being managed by a knowledgeable, experienced team. We offer skilled, expert advice on both the structure and style of your home.
                 </p>
-            </div>
-        </div>
-
-        <div class="row text-center mobile-100">
-            <div class="row">
-                <div class="spacer-50"></div>
-                <div class="col-md-6">
-                    <a href="{{url('about-us')}}" class="btn-theme bg-navy-blue-btn">Read More <i class="icofont-rounded-right"></i></a>
-                </div>
-                <div class="col-md-6">
-                    <a href="#" class="ms-5 link-oragne icon-left play-video"><i class="icofont-play"></i> Watch Our
-                        Short Video</a>
+                <div class="row">
+                    <div class="spacer-10"></div>
+                    <div class="col-md-12 mb-2">
+                        <a href="{{url('about-us')}}" class="btn-theme bg-navy-blue-btn">Read More <i class="icofont-rounded-right"></i></a>
+                    </div>
                 </div>
             </div>
-            <div class="video-box">
-                <!-- close-video -->
-                <div class="close-video">
-                    <i class="icofont-close-line"></i>
-                </div><!-- /close-video -->
-            </div><!-- /video-box -->
         </div>
     </div>
 </section>
