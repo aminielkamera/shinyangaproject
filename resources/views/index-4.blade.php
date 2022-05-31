@@ -362,7 +362,7 @@
             </div>
 
             <div class="img-business-man">
-                <img src="{{ asset('assets/images/courier-man.png')}}" alt="">
+                <img src="{{ asset('assets/images/bg_color_18.png')}}" alt="">
             </div>
         </div>
 
