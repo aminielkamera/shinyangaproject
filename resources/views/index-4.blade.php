@@ -98,7 +98,7 @@
         height: 290px;
         border-radius: 5px;
         background-color: #ffffff;
-        box-shadow: 2px 0 30px rgba(0, 0, 0, 0.3);
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
         overflow: hidden;
         border-bottom: 5px solid transparent;
         border-image: -webkit-linear-gradient(left, #8f6B29, #FDE08D, #DF9F28);
@@ -308,8 +308,7 @@
                                 </div>
                                 <div class="service-inner-content media-body">
                                     <h4 class="h4-md">Responsible Mining</h4>
-                                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
-                                        cubilia Curae. Praesent pellentesque diam vitae nibh aliquam faucibus.
+                                    <p>The Magsam Way of doing business reflects our culture and commitment to responsible mining, managing our impacts and, more broadly, contributing to the communities in which we work and live...
                                     </p>
                                     <div class="see-project arrow"><a href="">Read More</a></div>
                                 </div>
@@ -327,10 +326,9 @@
                                 </div>
                                 <div class="service-inner-content media-body">
                                     <h4 class="h4-md">Safety & Health</h4>
-                                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
-                                        cubilia Curae. Praesent pellentesque diam vitae nibh aliquam faucibus.
+                                    <p>Our safety performance and culture is aligned to our core values to achieve workforce health, safety, hygiene and wellbeing. Every person is essential in supporting...
                                     </p>
-                                    <div class="see-project arrow">Read More</div>
+                                    <div class="see-project arrow"><a href="">Read More</a></div>
                                 </div>
                             </div>
                         </div>
@@ -346,10 +344,9 @@
                                 </div>
                                 <div class="service-inner-content media-body">
                                     <h4 class="h4-md">Environment Management</h4>
-                                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
-                                        cubilia Curae. Praesent pellentesque diam vitae nibh aliquam faucibus.
+                                    <p>Magsam Gold mines is committed to responsible environmental management across all our business activities...
                                     </p>
-                                    <div class="see-project arrow">Read More</div>
+                                    <div class="see-project arrow"><a href="">Read More</a></div>
                                 </div>
                             </div>
                         </div>
