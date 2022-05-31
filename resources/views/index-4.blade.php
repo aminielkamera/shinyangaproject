@@ -122,10 +122,10 @@
         position: absolute;
         left: 0;
         bottom: 0;
-        margin: 0 20px 60px 20px;
-        font-size: 16px;
-        color: #ffffff;
-        mix-blend-mode: difference;
+        margin: 10px 20px 60px 20px;
+        font-size: 1.03rem;
+        color: rgba(3, 12, 32, 0.9);
+        line-height:1.7;
     }
 
     #circle {
@@ -145,6 +145,7 @@
         transform: rotate(70deg);
         margin-top: -430px;
         margin-left: 200px;
+        margin-bottom: 10px;
     }
 
     .content1 a {
@@ -157,6 +158,11 @@
         font-size: 14px;
         padding: 6px 15px;
         box-shadow: 10px 0 50px rgba(0, 0, 0, 0.2);
+    }
+    .content1 a:hover {
+        color: rgba(108, 84, 40, 255);
+        font-size: 15px;
+        box-shadow: 10px 0 50px rgba(0, 0, 0, 0.09);
     }
 </style>
 <!-- Welcome To Cargo Start -->
