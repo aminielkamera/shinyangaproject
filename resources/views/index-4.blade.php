@@ -180,7 +180,7 @@
                 <div class="card1">
                     <div id="circle"></div>
                     <h2>Exploration</h2>
-                    <p id="p">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                    <p id="p">Magsam conducting mineral exploration as the initial stage to determine if a mineral resource...</p>
                     <div class="content1">
                         <a href="">Read More</a>
                     </div>
@@ -191,7 +191,7 @@
                     <div id="overlay"></div>
                     <div id="triangle"></div>
                     <h2>Gold Mining</h2>
-                    <p id="p">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                    <p id="p">The findings from exploration drilling are then used to develop what we call a resource model...</p>
                     <div class="content1">
                         <a href="">Read More</a>
                     </div>
@@ -201,7 +201,7 @@
                 <div class="card1">
                     <div id="triangle"></div>
                     <h2>Processing</h2>
-                    <p id="p">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                    <p id="p">Gold at Magsam is known as 'Quality Ore', which means now our ore goes through a three-stage...</p>
                     <div class="content1">
                         <a href="">Read More</a>
                     </div>
