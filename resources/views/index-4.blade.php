@@ -353,34 +353,33 @@
                     </div>
                     <!-- Icon Box -->
                 </div>
-                <div class="row text-center">
-                    <div class="spacer-30"></div>
-                    <div class="col-md-12">
-                        <a href="{{url('about-us')}}" class="btn-theme bg-navy-blue-btn">View All <i class="icofont-rounded-right"></i></a>
-                    </div>
-                </div>
             </div>
 
             <div class="img-business-man">
                 <img src="{{ asset('assets/images/bg_color_18.png')}}" alt="">
             </div>
         </div>
-
+        <div class="row text-center">
+                    <div class="spacer-30"></div>
+                    <div class="col-md-12">
+                        <a href="{{url('about-us')}}" class="btn-theme bg-navy-blue-btn">View All <i class="icofont-rounded-right"></i></a>
+                    </div>
+                </div>
     </div>
 </section>
 <!-- What Makes Us Special End -->
 
 <!-- Counter Start -->
 <section class="wide-tb-110 bg-scroll counter-bg pos-rel">
-    <div class="bg-overlay blue opacity-50"></div>
+    <div class="bg-overlay blue opacity-70"></div>
     <div class="container">
         <div class="row">
             <!-- Counter Col Start -->
             <div class="col counter-style-1 col-6 col-lg-3 col-sm-6 wow fadeInLeft" data-wow-duration="0" data-wow-delay="0s">
-                <p><i class="icofont-google-map"></i></p>
-                <span class="counter">15</span>
+                <p><i class="icofont-users-alt-3"></i></p>
+                <span class="counter">225</span>
                 <div>
-                    Our Locations
+                Employers
                 </div>
             </div>
             <!-- Counter Col End -->
@@ -388,7 +387,7 @@
             <!-- Counter Col Start -->
             <div class="col counter-style-1 col-6 col-lg-3 col-sm-6 wow fadeInLeft" data-wow-duration="0" data-wow-delay="0s">
                 <p><i class="icofont-globe"></i></p>
-                <span class="counter">110</span>
+                <span class="counter">11</span>
                 <span>+</span>
                 <div>
                     Clients Worldwide
@@ -402,7 +401,7 @@
 
             <!-- Counter Col Start -->
             <div class="col counter-style-1 col-6 col-lg-3 col-sm-6 wow fadeInRight" data-wow-duration="0" data-wow-delay="0">
-                <p><i class="icofont-vehicle-delivery-van"></i></p>
+                <p><i class="icofont-excavator"></i></p>
                 <span class="counter">240</span>
                 <span>+</span>
                 <div>
@@ -413,10 +412,10 @@
 
             <!-- Counter Col Start -->
             <div class="col counter-style-1 col-6 col-lg-3 col-sm-6 wow fadeInRight" data-wow-duration="0" data-wow-delay="0s">
-                <p><i class="icofont-umbrella-alt"></i></p>
+                <p><i class="icofont-bars"></i></p>
                 <span class="counter">2340</span>
                 <div>
-                    Tonnes Transported
+                 Kilograms Extracted
                 </div>
             </div>
             <!-- Counter Col End -->
@@ -462,7 +461,7 @@
 
         <div class="row pb-5">
             <!-- Team Column One -->
-            <div class="col-12 col-lg-3 col-sm-6 wow fadeInUp" data-wow-duration="0" data-wow-delay="0s">
+            <div class="col-12 col-lg-4 col-sm-6 wow fadeInUp" data-wow-duration="0" data-wow-delay="0s">
                 <div class="team-section-one">
                     <img src="{{ asset('assets/images/team/team-1.jpg')}}" alt="" class="rounded-circle">
                     <h4 class="h4-md txt-blue">John Morise</h4>
@@ -472,7 +471,7 @@
             <!-- Team Column One -->
 
             <!-- Team Column One -->
-            <div class="col-12 col-lg-3 col-sm-6 wow fadeInUp" data-wow-duration="0" data-wow-delay="0.1s">
+            <div class="col-12 col-lg-4 col-sm-6 wow fadeInUp" data-wow-duration="0" data-wow-delay="0.1s">
                 <div class="team-section-one">
                     <img src="{{ asset('assets/images/team/team-2.jpg')}}" alt="" class="rounded-circle">
                     <h4 class="h4-md txt-blue">Kevin Mash</h4>
@@ -486,7 +485,7 @@
             <!-- Spacer For Medium -->
 
             <!-- Team Column One -->
-            <div class="col-12 col-lg-3 col-sm-6 wow fadeInUp" data-wow-duration="0" data-wow-delay="0.2s">
+            <div class="col-12 col-lg-4 col-sm-6 wow fadeInUp" data-wow-duration="0" data-wow-delay="0.2s">
                 <div class="team-section-one">
                     <img src="{{ asset('assets/images/team/team-3.jpg')}}" alt="" class="rounded-circle">
                     <h4 class="h4-md txt-blue">Mike Douglos</h4>
@@ -496,13 +495,13 @@
             <!-- Team Column One -->
 
             <!-- Team Column One -->
-            <div class="col-12 col-lg-3 col-sm-6 wow fadeInUp" data-wow-duration="0" data-wow-delay="0.3s">
+            <!-- <div class="col-12 col-lg-3 col-sm-6 wow fadeInUp" data-wow-duration="0" data-wow-delay="0.3s">
                 <div class="team-section-one">
                     <img src="{{ asset('assets/images/team/team-4.jpg')}}" alt="" class="rounded-circle">
                     <h4 class="h4-md txt-blue">Jeff Fashkin</h4>
                     <h5 class="h5-md txt-ligt-gray">Head Operational</h5>
                 </div>
-            </div>
+            </div> -->
             <!-- Team Column One -->
         </div>
     </div>
@@ -699,66 +698,6 @@
     </div>
 </section>
 <!-- Company News End -->
-
-<!-- Clients Start -->
-<section class="wide-tb-110 bg-fixed clients-bg pos-rel">
-    <div class="bg-overlay blue opacity-80"></div>
-    <div class="container">
-        <div class="row">
-            <!-- Heading Main -->
-            <div class="col-sm-12 wow fadeInDown" data-wow-duration="0" data-wow-delay="0s">
-                <h1 class="heading-main">
-                    <span>SOME OF OUR</span>
-                    Clients
-                </h1>
-            </div>
-            <!-- Heading Main -->
-
-            <div class="col-sm-12 wow fadeInUp" data-wow-duration="0" data-wow-delay="0.2s">
-                <div class="owl-carousel owl-theme" id="home-clients">
-
-                    <!-- Client Logo -->
-                    <div class="item">
-                        <img src="{{ asset('assets/images/clients/client1.png')}}" alt="">
-                    </div>
-                    <!-- Client Logo -->
-
-                    <!-- Client Logo -->
-                    <div class="item">
-                        <img src="{{ asset('assets/images/clients/client2.png')}}" alt="">
-                    </div>
-                    <!-- Client Logo -->
-
-                    <!-- Client Logo -->
-                    <div class="item">
-                        <img src="{{ asset('assets/images/clients/client3.png')}}" alt="">
-                    </div>
-                    <!-- Client Logo -->
-
-                    <!-- Client Logo -->
-                    <div class="item">
-                        <img src="{{ asset('assets/images/clients/client4.png')}}" alt="">
-                    </div>
-                    <!-- Client Logo -->
-
-                    <!-- Client Logo -->
-                    <div class="item">
-                        <img src="{{ asset('assets/images/clients/client5.png')}}" alt="">
-                    </div>
-                    <!-- Client Logo -->
-
-                    <!-- Client Logo -->
-                    <div class="item">
-                        <img src="{{ asset('assets/images/clients/client6.png')}}" alt="">
-                    </div>
-                    <!-- Client Logo -->
-
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Clients End -->
 
 <!-- Google Map Start -->
 <section class="map-bg">

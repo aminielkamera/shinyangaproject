@@ -329,7 +329,8 @@
         margin-bottom: 0;
     }
     .img-business-man {
-        display: none;
+        display: block;
+        bottom: -3px;
     }
     .copyright-links {
         margin-bottom: 10px !important;

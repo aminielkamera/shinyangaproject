@@ -29,7 +29,7 @@ img {
 :root {
     scroll-behavior: inherit;
     --primary-color: #fe8704;
-    --secondary-color: #232135;
+    --secondary-color: rgba(39, 30, 15, 255);
     --main-dark-color: #666;
     --bg-light-theme: #fef9f5;
     --bg-white: #FFF;

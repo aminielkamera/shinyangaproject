@@ -4,9 +4,9 @@
             <div class="row">
 
                 <!-- Column First -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="logo-footer">
-                        <img src="{{ asset('assets/images/logo_4.jpg')}}" alt="">
+                <div class="col-lg-3 col-md-6 ">
+                    <div class="logo-footer justify-content-center">
+                        <img src="{{ asset('assets/images/logo_6.png')}}" alt="">
                     </div>
                     <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
                         nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>

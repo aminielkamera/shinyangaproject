@@ -5,7 +5,7 @@
             <div class="container">
                 <div class="d-flex align-items-center">
                     <a class="navbar-brand rounded-bottom light-bg" href="{{url('/')}}">
-                        <img src="{{ asset('assets/images/logo_3.png')}}" alt="">
+                        <img src="{{ asset('assets/images/logo_8.png')}}" alt="">
                     </a>
                 </div>
                 <!-- Topbar Request Quote Start -->
