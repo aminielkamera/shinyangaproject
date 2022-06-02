@@ -17,7 +17,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.03rem;
     font-weight: 400;
-    color: rgba(3, 12, 32, 0.9);
+    color: #424242;
     line-height: 1.7;
     overflow-x: hidden;
 }
@@ -1618,7 +1618,7 @@ h2.h2-xl {
 
 .service-inner-content {
     font-size: 14px;
-    color: #6f6f6f;
+    color: #424242;
     line-height: 1.571;
 }
 
@@ -1932,7 +1932,7 @@ h2.h2-xl {
 .team-section-one img {
     width: 180px;
     margin-bottom: 25px;
-    box-shadow: 0px 6px 10px 0px rgba(254, 135, 4, 0.2);
+    box-shadow: 0px 6px 10px 0px rgba(255, 230, 190, 225);
     border: 10px solid #FFF;
 }
 
@@ -3916,6 +3916,11 @@ footer .social-icons {
     color: rgb(6, 22, 58);
     text-transform: uppercase;
     line-height: 1.2;
+}
+
+.team-section-one .social-icons a {
+    padding-right: 10px;
+    color: rgba(6, 22, 58, 0.3);
 }
 
 footer .social-icons a {

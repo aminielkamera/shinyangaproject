@@ -7787,6 +7787,23 @@ fieldset:disabled .btn {
     border-radius: 0.25rem;
 }
 
+.card-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    border-bottom: 5px solid transparent;
+    border-image: -webkit-linear-gradient(left, #8f6B29, #FDE08D, #DF9F28);
+    border-image-slice: 1;
+    border-radius: 0.25rem;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .card>hr {
     margin-right: 0;
     margin-left: 0;

@@ -123,9 +123,7 @@
         left: 0;
         bottom: 0;
         margin: 10px 20px 60px 20px;
-        font-size: 1.03rem;
-        color: rgba(3, 12, 32, 0.9);
-        line-height:1.7;
+        color: #6f6f6f;
     }
 
     #circle {
@@ -159,6 +157,7 @@
         padding: 6px 15px;
         box-shadow: 10px 0 50px rgba(0, 0, 0, 0.2);
     }
+
     .content1 a:hover {
         color: rgba(108, 84, 40, 255);
         font-size: 15px;
@@ -360,11 +359,11 @@
             </div>
         </div>
         <div class="row text-center">
-                    <div class="spacer-30"></div>
-                    <div class="col-md-12">
-                        <a href="{{url('about-us')}}" class="btn-theme bg-navy-blue-btn">View All <i class="icofont-rounded-right"></i></a>
-                    </div>
-                </div>
+            <div class="spacer-30"></div>
+            <div class="col-md-12">
+                <a href="{{url('about-us')}}" class="btn-theme bg-navy-blue-btn">View All <i class="icofont-rounded-right"></i></a>
+            </div>
+        </div>
     </div>
 </section>
 <!-- What Makes Us Special End -->
@@ -379,7 +378,7 @@
                 <p><i class="icofont-users-alt-3"></i></p>
                 <span class="counter">225</span>
                 <div>
-                Employers
+                    Employers
                 </div>
             </div>
             <!-- Counter Col End -->
@@ -415,7 +414,7 @@
                 <p><i class="icofont-bars"></i></p>
                 <span class="counter">2340</span>
                 <div>
-                 Kilograms Extracted
+                    Kilograms Extracted
                 </div>
             </div>
             <!-- Counter Col End -->
@@ -461,21 +460,37 @@
 
         <div class="row pb-5">
             <!-- Team Column One -->
-            <div class="col-12 col-lg-4 col-sm-6 wow fadeInUp" data-wow-duration="0" data-wow-delay="0s">
-                <div class="team-section-one">
-                    <img src="{{ asset('assets/images/team/team-1.jpg')}}" alt="" class="rounded-circle">
-                    <h4 class="h4-md txt-blue">John Morise</h4>
-                    <h5 class="h5-md txt-ligt-gray">Founder</h5>
+            <div class="col-12 col-lg-4 col-sm-6 wow fadeInUp mb-2" data-wow-duration="0" data-wow-delay="0s">
+                <div class="card-box">
+                    <div class="team-section-one">
+                        <img src="{{ asset('assets/images/team/team-1.jpg')}}" alt="" class="rounded-circle">
+                        <h4 class="h4-md txt-blue">Mussa Maduhu Magashi</h4>
+                        <h5 class="h5-md txt-ligt-gray">Director of Operations</h5>
+                        <div class="social-icons">
+                            <a href="#"><i class="icofont-facebook"></i></a>
+                            <a href="#"><i class="icofont-twitter"></i></a>
+                            <a href="#"><i class="icofont-whatsapp"></i></a>
+                            <a href="#"><i class="icofont-linkedin"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- Team Column One -->
 
             <!-- Team Column One -->
-            <div class="col-12 col-lg-4 col-sm-6 wow fadeInUp" data-wow-duration="0" data-wow-delay="0.1s">
-                <div class="team-section-one">
-                    <img src="{{ asset('assets/images/team/team-2.jpg')}}" alt="" class="rounded-circle">
-                    <h4 class="h4-md txt-blue">Kevin Mash</h4>
-                    <h5 class="h5-md txt-ligt-gray">Head Operational</h5>
+            <div class="col-12 col-lg-4 col-sm-6 wow fadeInUp mb-2" data-wow-duration="0" data-wow-delay="0.1s">
+                <div class="card-box">
+                    <div class="team-section-one">
+                        <img src="{{ asset('assets/images/team/team-2.jpg')}}" alt="" class="rounded-circle">
+                        <h4 class="h4-md txt-blue">Emmanuel Magashi</h4>
+                        <h5 class="h5-md txt-ligt-gray">CEO</h5>
+                        <div class="social-icons">
+                            <a href="#"><i class="icofont-facebook"></i></a>
+                            <a href="#"><i class="icofont-twitter"></i></a>
+                            <a href="#"><i class="icofont-whatsapp"></i></a>
+                            <a href="#"><i class="icofont-linkedin"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- Team Column One -->
@@ -485,11 +500,19 @@
             <!-- Spacer For Medium -->
 
             <!-- Team Column One -->
-            <div class="col-12 col-lg-4 col-sm-6 wow fadeInUp" data-wow-duration="0" data-wow-delay="0.2s">
-                <div class="team-section-one">
-                    <img src="{{ asset('assets/images/team/team-3.jpg')}}" alt="" class="rounded-circle">
-                    <h4 class="h4-md txt-blue">Mike Douglos</h4>
-                    <h5 class="h5-md txt-ligt-gray">Team Lead Support</h5>
+            <div class="col-12 col-lg-4 col-sm-6 wow fadeInUp mb-2" data-wow-duration="0" data-wow-delay="0.2s">
+                <div class="card-box">
+                    <div class="team-section-one">
+                        <img src="{{ asset('assets/images/team/team-3.jpg')}}" alt="" class="rounded-circle">
+                        <h4 class="h4-md txt-blue">Salvatory Mihambo Stephen</h4>
+                        <h5 class="h5-md txt-ligt-gray">Director of Resources</h5>
+                        <div class="social-icons">
+                            <a href="#"><i class="icofont-facebook"></i></a>
+                            <a href="#"><i class="icofont-twitter"></i></a>
+                            <a href="#"><i class="icofont-whatsapp"></i></a>
+                            <a href="#"><i class="icofont-linkedin"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- Team Column One -->
