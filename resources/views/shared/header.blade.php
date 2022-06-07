@@ -31,26 +31,27 @@
                             <a class="nav-link" href="{{url('about-us')}}" aria-expanded="false">About Us </a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link" href="#" data-bs-toggle="dropdown" aria-expanded="false">Operations <i
+                            <a class="nav-link" href="#" data-bs-toggle="dropdown" aria-expanded="false">Operations<i
                                 class="icofont-rounded-down"></i></a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="project-grid.html">Projects Grid</a></li>
-                                <li><a class="dropdown-item" href="project-masonary.html">Projects Masonary</a></li>
-                                <li><a class="dropdown-item" href="project-single.html">Projects Single</a></li>
+                                <li><a class="dropdown-item" href="project-grid.html">Exploration</a></li>
+                                <li><a class="dropdown-item" href="project-masonary.html">Mining,Processing and Refining</a></li>
+                                <li><a class="dropdown-item" href="project-single.html">Sell of Product</a></li>
+                                <li><a class="dropdown-item" href="project-single.html">Rehabilitaion and Mine Close</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link" href="#" data-bs-toggle="dropdown" aria-expanded="false">Sustainability <i
                                 class="icofont-rounded-down"></i></a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="blog-list.html">Blog List</a></li>
-                                <li><a class="dropdown-item" href="blog-standard.html">Blog Standard</a></li>
-                                <li><a class="dropdown-item" href="blog-grid.html">Blog Grid</a></li>
-                                <li><a class="dropdown-item" href="blog-single.html">Blog Single</a></li>
+                                <li><a class="dropdown-item" href="blog-list.html">Responsible Mining</a></li>
+                                <li><a class="dropdown-item" href="blog-standard.html">Health & Safety</a></li>
+                                <li><a class="dropdown-item" href="blog-grid.html">Environmental Management</a></li>
+                                <li><a class="dropdown-item" href="blog-single.html">Social Performance</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item ">
-                            <a class="nav-link" href="#"  aria-expanded="false">Contact Us</a>
+                        <li class="{{ Request::is('contact-us') ? 'current' : '' }} nav-item">
+                            <a class="nav-link" href="{{url('contact-us')}}"  aria-expanded="false">Contact Us</a>
                         </li>
 
                     </ul>

@@ -1,18 +1,107 @@
 @extends('layouts.main')
 
 @section('content')
+<style>
+    .cut {
+  height: 320px;
+  margin-bottom: 1em;
+}
 
+.cut-left {
+  float: left;
+  clip-path: circle(70% at 10%);
+  shape-outside: circle(70% at 15%);
+  margin-left: 0.5em;
+}
+
+.cut-right {
+  float: right;
+  clip-path: circle(70% at 90%);
+  shape-outside: circle(70% at 85%);
+  margin-right: 0.5em;
+}
+
+.notice {
+  font-family: sans-serif;
+  background: hsl(50 100% 75%);
+  padding: 1em;
+  margin: 1em 0.5em;
+  font-weight: bold;
+  clear: both;
+  text-align: center;
+}
+
+.pull-right {
+  float: right;
+}
+
+.notice img {
+  vertical-align: top;
+  margin: 1em 0;
+}
+
+.notice.danger {
+  background: hsl(0 100% 75%);
+}
+
+.table {
+  width: 100%;
+}
+
+.table td {
+  padding: 0.5em;
+  border: 1px solid #999;
+}
+
+.card {
+  margin: 0.5em;
+  padding: 0.5em;
+  background: hsl(0 0 90%);
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.card img {
+  display: block;
+  aspect-ratio: 3/4;
+  max-width: calc(246px - 3em);
+  margin: 0 auto;
+}
+
+p {
+  padding: 0.5em;
+  padding-top: 0;
+  font-family: var(--font2);
+  line-height: 1.2em;
+  letter-spacing: 0.05em;
+}
+
+p:not(p:last-child) {
+  margin-bottom: 1em;
+}
+
+.bg-dark {
+  color: #eee;
+  background: #333;
+}
+.w-80.bg-white{
+    width: 85vw;
+    position:relative;
+    top: -6em;
+    clip-path:polygon(00 0, 100% 0, 90% 100%, 0% 100%);
+    shape-outside: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+    shape-margin: 10px;
+    border-top-right-radius: 100px 70px;
+    padding: 18px 42px 70px 6px;
+    border-bottom: 5px solid transparent;
+    border-image: -webkit-linear-gradient(left, #8f6B29, #FDE08D, #DF9F28);
+    border-image-slice: 1;
+}
+
+</style>
       <!-- Page Breadcrumbs Start -->
     <div class="slider bg-navy-blue bg-fixed pos-rel breadcrumbs-page">
         <div class="container">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#"><i class="icofont-home"></i></a></li>
-                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">About Us</li>
-                </ol>
-            </nav>
-
             <h1>About Us</h1>
             <div class="breadcrumbs-description">
                 Meet the amazing team behind this project and find out more about how we work.
@@ -21,27 +110,30 @@
     </div>
     <!-- Page Breadcrumbs End -->
         <!-- What Makes Us Special Start -->
-        <section class="wide-tb-80">
-            <div class="container pos-rel">
-                <div class="row align-items-center">
+        <section class="wide-tb-80 bg-fixed clients-bg-about pos-rel">
+            <div class="w-80 bg-white">
+                <div class="align-items-center">
 
-                    <div class="col-md-6 wow fadeInLeft" data-wow-duration="0" data-wow-delay="0s">
+                    <div class="col-md-8 wow fadeInLeft" data-wow-duration="0" data-wow-delay="0s">
                         <h2 class="mb-4 fw-7 txt-blue">
-                            About <span class="fw-6 txt-orange">LogZee</span>
+                            About <span class="fw-6 txt-gold">Magsam</span>
                         </h2>
 
-                        <p>Energistically utilize team driven niche markets rather than leveraged platforms.
+                        <p class="mr-3">Energistically utilize team driven niche markets rather than leveraged platforms.
                             Monotonectally restore tactical "outside the box" thinking and technically sound
                             deliverables. </p>
 
-                        <p>Compellingly develop fully researched process improvements through innovative opportunities.
+                        <p class="mr-3">Compellingly develop fully researched process improvements through innovative opportunities.
+                            Credibly productize highly efficient potentialities for vertical core competencies. Quickly
+                            maintain pandemic experiences rather than low-risk high-yield processes.</p>
+                            <p class="mr-3">Compellingly develop fully researched process improvements through innovative opportunities.
                             Credibly productize highly efficient potentialities for vertical core competencies. Quickly
                             maintain pandemic experiences rather than low-risk high-yield processes.</p>
                     </div>
 
 
                     <div class="col-md-6 wow fadeInRight" data-wow-duration="0" data-wow-delay="0s">
-                        <img src="{{ asset('assets/images/map-bg-orange.jpg')}}" alt="">
+                        <!-- <img src="{{ asset('assets/images/map-bg-orange.jpg')}}" alt=""> -->
                     </div>
 
                 </div>
@@ -64,14 +156,14 @@
                     <!-- Heading Main -->
 
                     <!-- Icon Box 2 -->
-                    <div class="col-12 col-lg-4 wow fadeInUp" data-wow-duration="0" data-wow-delay="0s">
+                    <div class="col-12 col-lg-4 wow fadeInUp mb-5" data-wow-duration="0" data-wow-delay="0s">
                         <div class="icon-box-2">
                             <div class="media">
                                 <div class="service-icon">
-                                    <i class="icofont-id"></i>
+                                    <i class="icofont-bullseye"></i>
                                 </div>
                                 <div class="service-inner-content media-body">
-                                    <h4 class="h4-md">Trusted Franchise</h4>
+                                    <h4 class="h4-md">Our Vision</h4>
                                     <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis.
                                         Vivamus ac ultrices diam, vitae accumsan tellus.</p>
                                 </div>
@@ -81,14 +173,14 @@
                     <!-- Icon Box -->
 
                     <!-- Icon Box 2 -->
-                    <div class="col-12 col-lg-4 wow fadeInUp" data-wow-duration="0" data-wow-delay="0.2s">
+                    <div class="col-12 col-lg-4 wow fadeInUp mb-5" data-wow-duration="0" data-wow-delay="0.2s">
                         <div class="icon-box-2">
                             <div class="media">
                                 <div class="service-icon">
-                                    <i class="icofont-live-support"></i>
+                                    <i class="icofont-rocket"></i>
                                 </div>
                                 <div class="service-inner-content media-body">
-                                    <h4 class="h4-md">Customer Support</h4>
+                                    <h4 class="h4-md">Our Mission</h4>
                                     <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis.
                                         Vivamus ac ultrices diam, vitae accumsan tellus.</p>
                                 </div>
@@ -98,14 +190,14 @@
                     <!-- Icon Box -->
 
                     <!-- Icon Box 2 -->
-                    <div class="col-12 col-lg-4 wow fadeInUp" data-wow-duration="0" data-wow-delay="0.4s">
+                    <div class="col-12 col-lg-4 wow fadeInUp mb-5" data-wow-duration="0" data-wow-delay="0.4s">
                         <div class="icon-box-2">
                             <div class="media">
                                 <div class="service-icon">
                                     <i class="icofont-history"></i>
                                 </div>
                                 <div class="service-inner-content media-body">
-                                    <h4 class="h4-md">Reliability & Punctuality</h4>
+                                    <h4 class="h4-md">Our value</h4>
                                     <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis.
                                         Vivamus ac ultrices diam, vitae accumsan tellus.</p>
                                 </div>
@@ -138,68 +230,6 @@
         </section>
         <!-- Client Testimonials End -->
 
-        <!-- Counter Start -->
-        <section class="wide-tb-100 mb-spacer-md">
-            <div class="container wide-tb-100 pb-0">
-                <div class="row d-flex align-items-center">
-                    <!-- Counter Col Start -->
-                    <div class="col col-12 col-lg-3 col-sm-6 wow slideInUp" data-wow-duration="0" data-wow-delay="0s">
-                        <div class="counter-style-1 light-bg">
-                            <p class="mb-1"><i class="icofont-google-map"></i></p>
-                            <span class="counter">15</span>
-                            <div>
-                                Our Locations
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Counter Col End -->
-
-                    <!-- Counter Col Start -->
-                    <div class="col col-12 col-lg-3 col-sm-6 wow slideInUp" data-wow-duration="0" data-wow-delay="0.3s">
-                        <div class="counter-style-1 light-bg">
-                            <p class="mb-1"><i class="icofont-globe"></i></p>
-                            <span class="counter">110</span>
-                            <span>+</span>
-                            <div>
-                                Clients Worldwide
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Counter Col End -->
-
-                    <!-- Spacer For Medium -->
-                    <div class="w-100 d-none d-sm-block d-lg-none spacer-30"></div>
-                    <!-- Spacer For Medium -->
-
-                    <!-- Counter Col Start -->
-                    <div class="col col-12 col-lg-3 col-sm-6 wow slideInUp" data-wow-duration="0" data-wow-delay="0.6s">
-                        <div class="counter-style-1 light-bg">
-                            <p class="mb-1"><i class="icofont-vehicle-delivery-van"></i></p>
-                            <span class="counter">240</span>
-                            <span>+</span>
-                            <div>
-                                Owned Vehicles
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Counter Col End -->
-
-                    <!-- Counter Col Start -->
-                    <div class="col col-12 col-lg-3 col-sm-6 wow slideInUp" data-wow-duration="0" data-wow-delay="0.9s">
-                        <div class="counter-style-1 light-bg">
-                            <p class="mb-1"><i class="icofont-umbrella-alt"></i></p>
-                            <span class="counter">2340</span>
-                            <div>
-                                Tonnes Transported
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Counter Col End -->
-                </div>
-            </div>
-        </section>
-        <!-- Counter End -->
-
         <!-- Tracking Your Freight Start -->
         <section class="pos-rel bg-light-theme">
             <div class="container-fluid">
@@ -212,8 +242,8 @@
                         <div class="p-5 about-whoose">
                             <!-- Heading Main -->
                             <h1 class="heading-main text-start mb-4">
-                                <span>Why Choose</span>
-                                LogZee
+                                <span>Why</span>
+                                Magsam
                             </h1>
                             <!-- Heading Main -->
 
@@ -246,265 +276,13 @@
         </section>
         <!-- Tracking Your Freight End -->
 
-        <!-- Our Team Start -->
-        <section class="wide-tb-100 pb-0 team-section-bottom pos-rel">
-            <div class="container">
-                <!-- Heading Main -->
-                <div class="col-sm-12">
-                    <h1 class="heading-main">
-                        <span>Face Behind Logzee</span>
-                        Our Team
-                    </h1>
-                </div>
-                <!-- Heading Main -->
-
-                <div class="row pb-4">
-                    <!-- Team Column One -->
-                    <div class="col-sm-12 col-md-4 wow fadeInUp" data-wow-duration="0" data-wow-delay="0s">
-                        <div class="team-section-two">
-                            <img src="{{ asset('assets/images/team/team-1.jpg')}}" alt="" class="rounded">
-                            <h4 class="h4-md txt-orange">John Morise</h4>
-                            <h5 class="h5-md txt-ligt-gray">Founder</h5>
-                        </div>
-                    </div>
-                    <!-- Team Column One -->
-
-                    <!-- Team Column One -->
-                    <div class="col-sm-12 col-md-4 wow fadeInUp" data-wow-duration="0" data-wow-delay="0.1s">
-                        <div class="team-section-two">
-                            <img src="{{ asset('assets/images/team/team-2.jpg')}}" alt="" class="rounded">
-                            <h4 class="h4-md txt-orange">Kevin Mash</h4>
-                            <h5 class="h5-md txt-ligt-gray">Head Operational</h5>
-                        </div>
-                    </div>
-                    <!-- Team Column One -->
-
-                    <!-- Team Column One -->
-                    <div class="col-sm-12 col-md-4 wow fadeInUp" data-wow-duration="0" data-wow-delay="0.2s">
-                        <div class="team-section-two">
-                            <img src="{{ asset('assets/images/team/team-3.jpg')}}" alt="" class="rounded">
-                            <h4 class="h4-md txt-orange">Mike Douglos</h4>
-                            <h5 class="h5-md txt-ligt-gray">Team Lead Support</h5>
-                        </div>
-                    </div>
-                    <!-- Team Column One -->
-                </div>
-            </div>
-        </section>
-        <!-- Our Team End -->
-
-        <!-- Free Quote Start -->
-        <section class="bg-white wide-tb-100 mb-spacer-md">
-            <div class="container">
-                <!-- Heading Main -->
-                <div class="col-sm-12">
-                    <h1 class="heading-main">
-                        <span>Request a </span>
-                        Free Quote
-                    </h1>
-                </div>
-                <!-- Heading Main -->
-
-                <div class="row">
-                    <!-- Right Text Start -->
-                    <div class="col-lg-4 wow fadeInRight" data-wow-duration="0" data-wow-delay="0.2s">
-                        <div class="align-self-stretch h-100 align-items-center d-flex bg-with-text">
-                            Whether you require distribution or fulfillment, defined freight forwarding, or a complete
-                            supply chain solution, we are here for you.
-                        </div>
-                    </div>
-                    <!-- Right Text Start -->
-
-                    <!-- Spacer For Medium -->
-                    <div class="w-100 d-none d-sm-block d-lg-none spacer-30"></div>
-                    <!-- Spacer For Medium -->
-
-                    <div class="col-lg-8 wow fadeInLeft" data-wow-duration="0" data-wow-delay="0.2s">
-                        <!-- Free Quote From -->
-                        <form action="#" method="post" novalidate="novalidate" class="rounded-field gray-field">
-                            <div class="row g-4 mb-4">
-                                <div class="col">
-                                    <input type="text" name="name" class="form-control" placeholder="Your Name">
-                                </div>
-                                <div class="col">
-                                    <input type="text" name="email" class="form-control" placeholder="Email">
-                                </div>
-                            </div>
-                            <div class="row g-4 mb-4">
-                                <div class="col">
-                                    <select title="Please choose a package" required="" name="package"
-                                        class="form-control wide" aria-required="true" aria-invalid="false">
-                                        <option value="">Transport Type</option>
-                                        <option value="Type 1">Type 1</option>
-                                        <option value="Type 2">Type 2</option>
-                                        <option value="Type 3">Type 3</option>
-                                        <option value="Type 4">Type 4</option>
-                                    </select>
-                                </div>
-                                <div class="col">
-                                    <select title="Please choose a package" required="" name="package"
-                                        class="form-control wide" aria-required="true" aria-invalid="false">
-                                        <option value="">Type of freight</option>
-                                        <option value="Type 1">Type 1</option>
-                                        <option value="Type 2">Type 2</option>
-                                        <option value="Type 3">Type 3</option>
-                                        <option value="Type 4">Type 4</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="row g-4 mb-4">
-                                <div class="col">
-                                    <textarea rows="7" placeholder="Message" class="form-control"></textarea>
-                                </div>
-                            </div>
-                            <div class="form-row text-center">
-                                <button type="submit" class="form-btn mx-auto btn-theme bg-orange">Request Quote <i
-                                        class="icofont-rounded-right"></i></button>
-                            </div>
-                        </form>
-                        <!-- Free Quote From -->
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        <!-- Free Quote End -->
-
-        <!-- Clients Start -->
-        <section class="wide-tb-100 bg-fixed clients-bg pos-rel">
-            <div class="bg-overlay blue opacity-80"></div>
-            <div class="container">
-                <div class="row">
-                    <!-- Heading Main -->
-                    <div class="col-sm-12 wow fadeInDown" data-wow-duration="0" data-wow-delay="0s">
-                        <h1 class="heading-main">
-                            <span>SOME OF OUR</span>
-                            Clients
-                        </h1>
-                    </div>
-                    <!-- Heading Main -->
-
-                    <div class="col-sm-12 wow fadeInUp" data-wow-duration="0" data-wow-delay="0.2s">
-                        <div class="owl-carousel owl-theme" id="home-clients">
-
-                            <!-- Client Logo -->
-                            <div class="item">
-                                <img src="{{ asset('assets/images/clients/client1.png" alt="">
-                            </div>
-                            <!-- Client Logo -->
-
-                            <!-- Client Logo -->
-                            <div class="item">
-                                <img src="{{ asset('assets/images/clients/client2.png" alt="">
-                            </div>
-                            <!-- Client Logo -->
-
-                            <!-- Client Logo -->
-                            <div class="item">
-                                <img src="{{ asset('assets/images/clients/client3.png" alt="">
-                            </div>
-                            <!-- Client Logo -->
-
-                            <!-- Client Logo -->
-                            <div class="item">
-                                <img src="{{ asset('assets/images/clients/client4.png" alt="">
-                            </div>
-                            <!-- Client Logo -->
-
-                            <!-- Client Logo -->
-                            <div class="item">
-                                <img src="{{ asset('assets/images/clients/client5.png" alt="">
-                            </div>
-                            <!-- Client Logo -->
-
-                            <!-- Client Logo -->
-                            <div class="item">
-                                <img src="{{ asset('assets/images/clients/client6.png" alt="">
-                            </div>
-                            <!-- Client Logo -->
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Clients End -->
-
-        <!-- Frequently Asked Questions Start -->
-        <section class="wide-tb-100 faqs">
-            <div class="container">
-                <div class="row">
-                    <!-- Heading Main -->
-                    <div class="col-sm-12">
-                        <h1 class="heading-main">
-                            <span>Frequently Asked</span>
-                            Questions
-                        </h1>
-                    </div>
-                    <!-- Heading Main -->
-
-                    <!-- Questions -->
-                    <div class="col-sm-12 col-md-6 wow fadeInUp" data-wow-duration="0" data-wow-delay="0s">
-                        <h4 class="h4-md mb-3">Lobortis sit magna ornare magna egestas?</h4>
-                        <p>Etiam sit amet mauris suscipit sit amet in odio. Integer congue leo metus. Vitae arcu mollis
-                            blandit ultrice ligula egestas magna suscipit lectus magna suscipit luctus undo blandit
-                            vitae purus laoreet</p>
-                    </div>
-                    <!-- Questions -->
-
-                    <!-- Questions -->
-                    <div class="col-sm-12 col-md-6 wow fadeInUp" data-wow-duration="0" data-wow-delay="0.2s">
-                        <h4 class="h4-md mb-3">Aliquam dapibus pretium ornare?</h4>
-                        <p>Feugiat eros ligula massa lipsum primis in orci luctus et ultrices posuere cubilia curae
-                            congue lorem. ante ipsum primis in faucibus bibendum sit amet in odio</p>
-                    </div>
-                    <!-- Questions -->
-
-                    <!-- Questions -->
-                    <div class="col-sm-12 col-md-6 wow fadeInUp" data-wow-duration="0" data-wow-delay="0.4s">
-                        <h4 class="h4-md mb-3">Placeat axime facere omnis volute?</h4>
-                        <p>Etiam sit amet mauris suscipit sit amet in odio. Integer congue leo metus. Vitae arcu mollis
-                            blandit ultrice ligula egestas magna suscipit lectus magna suscipit luctus undo blandit
-                            vitae purus laoreet</p>
-                    </div>
-                    <!-- Questions -->
-
-                    <!-- Questions -->
-                    <div class="col-sm-12 col-md-6 wow fadeInUp" data-wow-duration="0" data-wow-delay="0.6s">
-                        <h4 class="h4-md mb-3">Dapibus lobortis pretium ornare?</h4>
-                        <p>Feugiat eros ligula massa lipsum primis in orci luctus et ultrices posuere cubilia curae
-                            congue lorem. ante ipsum primis in faucibus bibendum sit amet in odio</p>
-                    </div>
-                    <!-- Questions -->
-
-                    <!-- Questions -->
-                    <div class="col-sm-12 col-md-6 wow fadeInUp" data-wow-duration="0" data-wow-delay="0.8s">
-                        <h4 class="h4-md mb-3">An interdum lobortis pretium ornare?</h4>
-                        <p>Etiam sit amet mauris suscipit sit amet in odio. Integer congue leo metus. Vitae arcu mollis
-                            blandit ultrice ligula egestas magna suscipit lectus magna suscipit luctus undo blandit
-                            vitae purus laoreet</p>
-                    </div>
-                    <!-- Questions -->
-
-                    <!-- Questions -->
-                    <div class="col-sm-12 col-md-6 wow fadeInUp" data-wow-duration="0" data-wow-delay="0.9s">
-                        <h4 class="h4-md mb-3">Interdum lobortis pretium ornare?</h4>
-                        <p>Feugiat eros ligula massa lipsum primis in orci luctus et ultrices posuere cubilia curae
-                            congue lorem. ante ipsum primis in faucibus bibendum sit amet in odio</p>
-                    </div>
-                    <!-- Questions -->
-                </div>
-            </div>
-        </section>
-        <!-- Frequently Asked Questions End -->
-
         <!-- Callout Start -->
         <section class="wide-tb-80 bg-scroll bg-img-6 pos-rel callout-style-1">
             <div class="bg-overlay blue opacity-60"></div>
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-4 col-md-12 mb-0 wow slideInUp" data-wow-duration="0" data-wow-delay="0.1s">
-                        <h4 class="h4-xl">Interested in working with Logzee?</h4>
+                        <h4 class="h4-xl">Interested in working with Magsam?</h4>
                     </div>
                     <div class="col wow slideInUp" data-wow-duration="0" data-wow-delay="0.2s">
                         <div class="center-text">
@@ -513,34 +291,12 @@
                         </div>
                     </div>
                     <div class="col-sm-auto wow slideInUp" data-wow-duration="0" data-wow-delay="0.3s">
-                        <a href="#" class="btn btn-theme bg-white bordered">Get In Touch <i
+                        <a href="{{url('contact-us')}}" class="btn btn-theme bg-white bordered">Get In Touch <i
                                 class="icofont-rounded-right"></i></a>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Callout End -->
-
-    <!-- Email Subscribe Start -->
-    <section class="wide-tb-50 pb-0 bg-light-theme footer-subscribe">
-        <div class="container wow fadeInDown" data-wow-duration="0" data-wow-delay="0s">
-            <div class="row">
-                <div class="col-sm-12 d-flex col-md-12 col-lg-6 offset-lg-3">
-                    <div class="d- align-items-center d-sm-inline-flex  w-100">
-                        <div class="head">
-                            <span class="d-block">SUBSCRIBE For</span> NEWSLETTER
-                        </div>
-                        <form class="flex-nowrap col ms-3">
-                            <input type="text" class="form-control" placeholder="Enter order number">
-                            <button type="submit" class="btn btn-theme bg-navy-blue">Check Now <i
-                                    class="icofont-envelope"></i></button>
-                        </form>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- Email Subscribe End -->
 
     @endsection

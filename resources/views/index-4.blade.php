@@ -200,7 +200,7 @@
                 <div class="card1">
                     <div id="triangle"></div>
                     <h2>Processing</h2>
-                    <p id="p">Gold at Magsam is known as 'Quality Ore', which means now our ore goes through a three-stage...</p>
+                    <p id="p">Gold at Magsam is known as 'Quality Ore', which means now our ore goes through a three-stage ...</p>
                     <div class="content1">
                         <a href="">Read More</a>
                     </div>
@@ -566,84 +566,6 @@
     </div>
 </section>
 <!-- Free Quote End -->
-
-<!-- Client Testimonials Start -->
-<section class="wide-tb-110">
-    <div class="container">
-        <div class="row">
-            <!-- Heading Main -->
-            <div class="col-sm-12 wow fadeInDown" data-wow-duration="0" data-wow-delay="0s">
-                <h1 class="heading-main">
-                    <span>What Our</span>
-                    Customers Saying
-                </h1>
-            </div>
-            <!-- Heading Main -->
-            <div class="col-sm-12">
-                <div class="owl-carousel owl-theme" id="home-client-testimonials">
-
-                    <!-- Client Testimonials Slider Item -->
-                    <div class="item">
-                        <div class="client-testimonial bg-wave">
-                            <div class="media">
-                                <div class="client-testimonial-icon rounded-circle bg-navy-blue">
-                                    <img src="{{ asset('assets/images/team_1.jpg')}}" alt="">
-                                </div>
-                                <div class="client-inner-content media-body">
-                                    <p>Far far away, behind the word mountains, far from the countries Vokalia
-                                        and Consonantia, there live the blind texts. Aliquam gravida, urna quis
-                                        ornare imperdiet, </p>
-                                    <footer class="blockquote-footer"><cite title="Source Title">John Gerry
-                                            Design Hunt</cite></footer>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Client Testimonials Slider Item -->
-
-                    <!-- Client Testimonials Slider Item -->
-                    <div class="item">
-                        <div class="client-testimonial bg-wave">
-                            <div class="media">
-                                <div class="client-testimonial-icon rounded-circle bg-navy-blue">
-                                    <img src="{{ asset('assets/images/team_2.jpg')}}" alt="">
-                                </div>
-                                <div class="client-inner-content media-body">
-                                    <p>Far far away, behind the word mountains, far from the countries Vokalia
-                                        and Consonantia, there live the blind texts. Aliquam gravida, urna quis
-                                        ornare imperdiet, </p>
-                                    <footer class="blockquote-footer"><cite title="Source Title">John Gerry
-                                            Design Hunt</cite></footer>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Client Testimonials Slider Item -->
-
-                    <!-- Client Testimonials Slider Item -->
-                    <div class="item">
-                        <div class="client-testimonial bg-wave">
-                            <div class="media">
-                                <div class="client-testimonial-icon rounded-circle bg-navy-blue">
-                                    <img src="{{ asset('assets/images/team_3.jpg')}}" alt="">
-                                </div>
-                                <div class="client-inner-content media-body">
-                                    <p>Far far away, behind the word mountains, far from the countries Vokalia
-                                        and Consonantia, there live the blind texts. Aliquam gravida, urna quis
-                                        ornare imperdiet, </p>
-                                    <footer class="blockquote-footer"><cite title="Source Title">John Gerry
-                                            Design Hunt</cite></footer>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Client Testimonials Slider Item -->
-
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 <!-- Client Testimonials End -->
 
 <!-- Callout Start -->
@@ -660,7 +582,7 @@
                 </div>
             </div>
             <div class="col-sm-auto">
-                <a href="#" class="btn-theme bg-white light">Get In Touch <i class="icofont-rounded-right"></i></a>
+                <a href="{{url('contact-us')}}" class="btn-theme bg-white light">Get In Touch <i class="icofont-rounded-right"></i></a>
             </div>
         </div>
     </div>
@@ -684,10 +606,16 @@
             <div class="col-sm-12 col-md-4 wow fadeInLeft" data-wow-duration="0" data-wow-delay="0.1s">
                 <div class="blog-warp">
                     <img src="{{ asset('assets/images/blog_img_1.jpg')}}" alt="" class="rounded">
-                    <div class="meta-box"><a href="#">Business</a> <span>/</span> September 28, 2018</div>
-                    <h4 class="h4-md mb-3"><a href="#">Freight Payment and Auditing Services</a></h4>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                        laudantiumg</p>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="meta-box p-3"> September 28, 2018</div>
+                        </div>
+                        <div class="col-md-8">
+                            <h4 class="h4-md mb-3"><a href="#">Freight Payment and Auditing Services</a></h4>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantiumg</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- Blog Items -->
@@ -696,10 +624,16 @@
             <div class="col-sm-12 col-md-4 wow fadeInUp" data-wow-duration="0" data-wow-delay="0.1s">
                 <div class="blog-warp">
                     <img src="{{ asset('assets/images/blog_img_2.jpg')}}" alt="" class="rounded">
-                    <div class="meta-box"><a href="#">Business</a> <span>/</span> September 28, 2018</div>
-                    <h4 class="h4-md mb-3"><a href="#">Freight Payment and Auditing Services</a></h4>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                        laudantiumg</p>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="meta-box p-3"> September 28, 2018</div>
+                        </div>
+                        <div class="col-md-8">
+                            <h4 class="h4-md mb-3"><a href="#">Freight Payment and Auditing Services</a></h4>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantiumg</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- Blog Items -->
@@ -708,10 +642,16 @@
             <div class="col-sm-12 col-md-4 wow fadeInRight" data-wow-duration="0" data-wow-delay="0.1s">
                 <div class="blog-warp">
                     <img src="{{ asset('assets/images/blog_img_3.jpg')}}" alt="" class="rounded">
-                    <div class="meta-box"><a href="#">Business</a> <span>/</span> September 28, 2018</div>
-                    <h4 class="h4-md mb-3"><a href="#">Freight Payment and Auditing Services</a></h4>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                        laudantiumg</p>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="meta-box p-3"> September 28, 2018</div>
+                        </div>
+                        <div class="col-md-8">
+                            <h4 class="h4-md mb-3"><a href="#">Freight Payment and Auditing Services</a></h4>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantiumg</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- Blog Items -->

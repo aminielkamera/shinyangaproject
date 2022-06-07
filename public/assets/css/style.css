@@ -130,7 +130,7 @@ a:focus {
 .dropdown-menu {
     padding: 0;
     min-width: 200px;
-    background: #FFF;
+    background: #F7F4F2;
     margin: 0;
     border: 0;
     border-radius: 5px;
@@ -164,7 +164,7 @@ a:focus {
     font-size: 0.75rem;
     padding: 13px 15px;
     text-transform: capitalize;
-    color: #565656;
+    color: var(--secondary-color);
     border-bottom: 1px solid #ececec;
     text-decoration: none;
     font-weight: 600;
@@ -179,7 +179,11 @@ a:focus {
 .dropdown-item:hover,
 .dropdown-item:active,
 .dropdown-menu>li.show>a {
-    color: var(--primary-color);
+    color: #946D20;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    border-image: -webkit-linear-gradient(left, #8f6B29, #FDE08D, #DF9F28);
+    border-image-slice: 1;
     text-decoration: none;
     background-color: transparent;
 }
@@ -463,6 +467,15 @@ h2.h2-xl {
 
 .txt-orange {
     color: var(--primary-color);
+}
+
+.txt-gold{
+    color: #91772E;
+    font-size: 2.25rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+    letter-spacing: -0.08rem;
 }
 
 .txt-ligt-gray {
@@ -1454,7 +1467,9 @@ h2.h2-xl {
 .center-text {
     padding: 0 4rem;
 }
-
+.bg-image{
+    background: url(../images/bg-image.jpg) no-repeat 0 0;
+}
 
 /*------------------------------------------*/
 
@@ -1590,6 +1605,9 @@ h2.h2-xl {
 
 .icon-box-2 .media {
     display: flex;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    background: #ffffff;
+    padding: 10px 10px 10px 10px;
 }
 
 .icon-box-2 .service-icon {
@@ -1604,13 +1622,14 @@ h2.h2-xl {
     border-radius: 50%;
     margin-right: 20px;
     background-color: rgb(255, 255, 255);
-    box-shadow: var(--shadow-primary);
+    box-shadow: 0px 6px 10px 0px rgb(255 230 190);
+    background: linear-gradient(145deg, rgba(125,95,45,255) 40%, rgba(237,217,176,255) 100%);
     width: 65px;
     height: 65px;
     z-index: 101;
     text-align: center;
     font-size: 24px;
-    color: var(--primary-color);
+    color: #fef9f5;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -2331,6 +2350,35 @@ h2.h2-xl {
 }
 
 
+.clients-bg-about {
+    background-image: url(../images/bg_3.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.clients-bg-about .item {
+    background: #FFF;
+}
+
+.clients-bg-about .heading-main span,
+.clients-bg-about .heading-main {
+    color: #FFF;
+}
+
+.clients-bg-about .heading-main {
+    margin-bottom: 30px;
+}
+
+.clients-bg-about .owl-carousel .owl-item {
+    text-align: center;
+}
+
+.clients-bg-about .owl-carousel .owl-item img {
+    display: inline-block;
+    width: auto;
+}
+
+
 /*------------------------------------------*/
 
 
@@ -2793,7 +2841,7 @@ input:-webkit-autofill:active {
     font-weight: 400;
     text-align: center;
     top: 0;
-    background: var(--primary-color) url(../images/bg-wave.svg) no-repeat;
+    background:  rgba(108, 84, 40, 255) url(../images/bg-wave.svg) no-repeat;
     background-size: contain;
     background-position: bottom center;
 }
@@ -3248,7 +3296,7 @@ input:-webkit-autofill:active {
 /*------------------------------------------*/
 
 .blog-warp {
-    text-align: center;
+    text-align: left;
     font-size: 14px;
     line-height: 1.714;
 }
@@ -3279,6 +3327,8 @@ input:-webkit-autofill:active {
 }
 
 .meta-box {
+    background: #91772E;
+    color: white;
     margin-bottom: 15px;
     font-size: 0.8125rem;
     font-weight: 600;
@@ -3716,7 +3766,7 @@ input:-webkit-autofill:active {
 }
 
 .contact-detail-shadow a {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .free-quote-form.contact-page {
@@ -3899,8 +3949,6 @@ footer {
 }
 
 .logo-footer {
-    width: 155px;
-    margin-bottom: 25px;
 }
 
 .footer-heading {
@@ -3933,7 +3981,7 @@ footer .social-icons a:hover {
 }
 
 .copyright-wrap {
-    margin-top: 70px;
+    margin-top: 30px;
     color: #FFF;
     font-size: 0.75rem;
 }
@@ -4653,7 +4701,9 @@ footer .social-icons a:hover {
 .breadcrumbs-description {
     padding: 0.75rem 1.5rem;
     color: #FFF;
-    border-left: 2px solid var(--primary-color);
+    border-left: 2px solid transparent;
+    border-image: -webkit-linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
+    border-image-slice: 1;
     max-width: 50%;
     margin-top: 15px;
 }
@@ -4751,7 +4801,7 @@ footer .social-icons a:hover {
 }
 
 .footer-widget-menu ul li a span {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .footer-widget-menu ul li a i {

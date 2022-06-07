@@ -18,12 +18,15 @@ Route::get('/', function () {
 });
 #END HOME ROUTES
 #START ABOUT-US ROUTES
-Route::get('about-us', 
- function () {
+Route::get('about-us', function () {
      return view('about-us');
- }
-);
+ });
 #END ABOUT-US ROUTES
+#START CONTACTS US ROUTES
+Route::get('contact-us', function(){
+    return view('contact-us');
+});
+#END CONTACTS US ROUTES
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
