@@ -34,17 +34,17 @@
                             <a class="nav-link" href="#" data-bs-toggle="dropdown" aria-expanded="false">Operations<i
                                 class="icofont-rounded-down"></i></a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="project-grid.html">Exploration</a></li>
-                                <li><a class="dropdown-item" href="project-masonary.html">Mining,Processing and Refining</a></li>
-                                <li><a class="dropdown-item" href="project-single.html">Sell of Product</a></li>
-                                <li><a class="dropdown-item" href="project-single.html">Rehabilitaion and Mine Close</a></li>
+                                <li><a class="dropdown-item" href="{{url('exploration')}}">Exploration</a></li>
+                                <li><a class="dropdown-item" href="{{url('mining_processing')}}">Mining,Processing and Refining</a></li>
+                                <li><a class="dropdown-item" href="{{url('sale_product')}}">Sale of Product</a></li>
+                                <li><a class="dropdown-item" href="{{url('rehabilitation')}}">Rehabilitation & Closure</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link" href="#" data-bs-toggle="dropdown" aria-expanded="false">Sustainability <i
                                 class="icofont-rounded-down"></i></a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="blog-list.html">Responsible Mining</a></li>
+                                <li><a class="dropdown-item" href="{{url('responsible_mining')}}">Responsible Mining</a></li>
                                 <li><a class="dropdown-item" href="blog-standard.html">Health & Safety</a></li>
                                 <li><a class="dropdown-item" href="blog-grid.html">Environmental Management</a></li>
                                 <li><a class="dropdown-item" href="blog-single.html">Social Performance</a></li>

@@ -28,7 +28,7 @@ img {
 
 :root {
     scroll-behavior: inherit;
-    --primary-color: #fe8704;
+    --primary-color: #b78727;
     --secondary-color: rgba(39, 30, 15, 255);
     --main-dark-color: #666;
     --bg-light-theme: #fef9f5;
@@ -152,7 +152,7 @@ a:focus {
     height: 0;
     border-style: solid;
     border-width: 0 7px 7px 7px;
-    border-color: transparent transparent #FFF transparent;
+    border-color: transparent transparent #F7F4F2 transparent;
 }
 
 .dropdown-menu li>.dropdown-menu:after {
@@ -258,7 +258,18 @@ a:focus {
 
 /*    Typography
 /*------------------------------------------*/
-
+.skills .skills-right {
+    margin-top: 3rem;
+    height: 500px;
+    background: url(../images/skills.jpg);
+    background-attachment: fixed;
+    background-origin: content-box;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 600px solid transparent;
+    border-left: 150px solid #fff;
+}
 
 /* Header H5 */
 
@@ -2378,6 +2389,46 @@ h2.h2-xl {
     width: auto;
 }
 
+.clients-bg-sustaina {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .clients-bg-sustaina > .circle {
+    height: 200vh;
+    width: 200vh;
+    position: absolute;
+    bottom: -100vh;
+    right: -100vh;
+    border-radius: 50%;
+    border: 5px solid #8f6B29;
+    background-image: url(../images/bg_3.jpg);
+  }
+
+.clients-bg-sustaina .item {
+    background: #FFF;
+}
+
+.clients-bg-sustaina .heading-main span,
+.clients-bg-sustaina .heading-main {
+    color: #FFF;
+}
+
+.clients-bg-sustaina .heading-main {
+    margin-bottom: 30px;
+}
+
+.clients-bg-sustaina .owl-carousel .owl-item {
+    text-align: center;
+}
+
+.clients-bg-sustaina .owl-carousel .owl-item img {
+    display: inline-block;
+    width: auto;
+}
+
 
 /*------------------------------------------*/
 
@@ -3419,7 +3470,7 @@ input:-webkit-autofill:active {
 }
 
 .widget-wrap {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 
 .widget-wrap h3 {

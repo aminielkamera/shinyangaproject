@@ -298,5 +298,4 @@ p:not(p:last-child) {
             </div>
         </section>
         <!-- Callout End -->
-
-    @endsection
+ @endsection
