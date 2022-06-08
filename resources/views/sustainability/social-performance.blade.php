@@ -93,7 +93,7 @@
 <!-- Page Breadcrumbs Start -->
 <div class="slider bg-navy-blue bg-fixed pos-rel breadcrumbs-page">
     <div class="container">
-        <h1>Responsible Mining</h1>
+        <h1>Social Performance</h1>
         <div class="breadcrumbs-description">
             Meet the amazing team behind this project and find out more about how we work.
         </div>
@@ -109,27 +109,24 @@
                 <div class="icon-box-2">
                     <div class="media">
                         <div class="service-inner-content media-body">
-                            <h4 class="h4-md mb-3 fw-7 txt-blue">Responsible Mining</h4>
+                            <h4 class="h4-md mb-3 fw-7 txt-blue">Social Performance</h4>
                             <p>
-                                As a Magsam Resources Ltd we base on responsible mining,
-                                our sustainable performance shapes our purpose, vision and mission,
-                                and guides our individual and collective actions every day.
-                                Our purpose is mining gold for a better future.
-                                The gold we produce help:-
+                            <q><b style="color: #999;">We are committed to creating positive legacies and supporting shared value and opportunities across our business</b></q><br><br>
+                            This approach delivers benefits to our employees and our contractors,
+                            and communities. We put this into action each day at a corporate,
+                            operational, and business unit level to ensure we continue to
+                            achieve the expectations we aspire to as a leading organisation,
+                            and those of the communities we live and work in.
                             </p>
-                            <div class="content">
-                                <ul class="list-unstyled icons-listing theme-orange w-half mb-0">
-                                    <li class="wow fadeInUp" data-wow-duration="0" data-wow-delay="0s"><i class="icofont-check"></i>Power the community economy and national economy.
-                                    </li>
-                                    <li class="wow fadeInUp" data-wow-duration="0" data-wow-delay="0.1s"><i class="icofont-check"></i>Transport sectors.</li>
-                                    <li class="wow fadeInUp" data-wow-duration="0" data-wow-delay="0.2s"><i class="icofont-check"></i>Life-saving through medical devices around Kahama societies.</li>
-                                    <li class="wow fadeInUp" data-wow-duration="0" data-wow-delay="0.3s"><i class="icofont-check"></i>Technology growth</li>
-                                </ul>
-                            </div>
+                            <h4 class="h4-md mb-3 fw-7 txt-blue">Communities</h4>
                             <p>
-                                The Magsam Way of doing business reflects our culture and commitment
-                                to responsible mining, managing our impacts and, more broadly,
-                                contributing to Shinyanga communities in which we work and live.
+                            We are committed to engaging with the communities we live and work in
+                            through meaningful dialogue, respecting local cultures, and acting in
+                            good faith ensuring transparency to create a positive legacy beyond
+                            the life of the mine. In doing so, we strive to be a good neighbour
+                            and leave a positive legacy. This is fundamental to our values and
+                            our vision, from early exploration, to project development, operations,
+                            and the transition to closure.
                             </p>
                         </div>
                     </div>

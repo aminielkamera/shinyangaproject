@@ -54,6 +54,24 @@ Route::get('responsible_mining', function () {
 });
 #END SUSTAINABILITY-responsible-mining ROUTES
 
+#START SUSTAINABILITY-health-safety ROUTES
+Route::get('health_safety', function () {
+    return view('sustainability.health-safety');
+});
+#END SUSTAINABILITY-health-safety ROUTES
+
+#START SUSTAINABILITY-environmental-management ROUTES
+Route::get('environmental_management', function () {
+    return view('sustainability.environmental-management');
+});
+#END SUSTAINABILITY-environmental-management ROUTES
+
+#START SUSTAINABILITY-social-performance ROUTES
+Route::get('social_performance', function () {
+    return view('sustainability.social-performance');
+});
+#END SUSTAINABILITY-social-performance ROUTES
+
 #START CONTACTS US ROUTES
 Route::get('contact-us', function () {
     return view('contact-us');

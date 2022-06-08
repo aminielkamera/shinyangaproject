@@ -93,7 +93,7 @@
 <!-- Page Breadcrumbs Start -->
 <div class="slider bg-navy-blue bg-fixed pos-rel breadcrumbs-page">
     <div class="container">
-        <h1>Responsible Mining</h1>
+        <h1>Environmental Management</h1>
         <div class="breadcrumbs-description">
             Meet the amazing team behind this project and find out more about how we work.
         </div>
@@ -109,28 +109,31 @@
                 <div class="icon-box-2">
                     <div class="media">
                         <div class="service-inner-content media-body">
-                            <h4 class="h4-md mb-3 fw-7 txt-blue">Responsible Mining</h4>
+                            <h4 class="h4-md mb-3 fw-7 txt-blue">Environmental Management</h4>
                             <p>
-                                As a Magsam Resources Ltd we base on responsible mining,
-                                our sustainable performance shapes our purpose, vision and mission,
-                                and guides our individual and collective actions every day.
-                                Our purpose is mining gold for a better future.
-                                The gold we produce help:-
+                              Magsam is committed to responsible environmental management
+                              across all our business activities. This encompasses the conservation
+                              of designated protected areas, sharing information and practices on
+                              biodiversity management, and supporting, developing, and implementing
+                              inclusive and transparent procedures for integrated land use.
+                            </p>
+                            <h4 class="h4-md mb-3 fw-7 txt-blue">Environmental Policy</h4>
+                             <p>
+                             Magsam Environment Policy is supported by six Statements of Position
+                             that detail how we manage our environmental material risk areas of water,
+                             closure, biodiversity, cyanide, tailings management and energy and
+                             greenhouse gas.
                             </p>
                             <div class="content">
                                 <ul class="list-unstyled icons-listing theme-orange w-half mb-0">
-                                    <li class="wow fadeInUp" data-wow-duration="0" data-wow-delay="0s"><i class="icofont-check"></i>Power the community economy and national economy.
+                                    <li class="wow fadeInUp" data-wow-duration="0" data-wow-delay="0s"><i class="icofont-check"></i>Water management
                                     </li>
-                                    <li class="wow fadeInUp" data-wow-duration="0" data-wow-delay="0.1s"><i class="icofont-check"></i>Transport sectors.</li>
-                                    <li class="wow fadeInUp" data-wow-duration="0" data-wow-delay="0.2s"><i class="icofont-check"></i>Life-saving through medical devices around Kahama societies.</li>
-                                    <li class="wow fadeInUp" data-wow-duration="0" data-wow-delay="0.3s"><i class="icofont-check"></i>Technology growth</li>
+                                    <li class="wow fadeInUp" data-wow-duration="0" data-wow-delay="0.1s"><i class="icofont-check"></i>Closure and rehabilitation management</li>
+                                    <li class="wow fadeInUp" data-wow-duration="0" data-wow-delay="0.2s"><i class="icofont-check"></i>Biodiversity management</li>
+                                    <li class="wow fadeInUp" data-wow-duration="0" data-wow-delay="0.3s"><i class="icofont-check"></i>Cyanide management</li>
+                                    <li class="wow fadeInUp" data-wow-duration="0" data-wow-delay="0.3s"><i class="icofont-check"></i>Climate change, energy use greenhouse gas</li>
                                 </ul>
                             </div>
-                            <p>
-                                The Magsam Way of doing business reflects our culture and commitment
-                                to responsible mining, managing our impacts and, more broadly,
-                                contributing to Shinyanga communities in which we work and live.
-                            </p>
                         </div>
                     </div>
                 </div>

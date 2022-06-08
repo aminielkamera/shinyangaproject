@@ -93,7 +93,7 @@
 <!-- Page Breadcrumbs Start -->
 <div class="slider bg-navy-blue bg-fixed pos-rel breadcrumbs-page">
     <div class="container">
-        <h1>Responsible Mining</h1>
+        <h1>Health & Safety</h1>
         <div class="breadcrumbs-description">
             Meet the amazing team behind this project and find out more about how we work.
         </div>
@@ -109,27 +109,24 @@
                 <div class="icon-box-2">
                     <div class="media">
                         <div class="service-inner-content media-body">
-                            <h4 class="h4-md mb-3 fw-7 txt-blue">Responsible Mining</h4>
+                            <h4 class="h4-md mb-3 fw-7 txt-blue">Health & Safety</h4>
                             <p>
-                                As a Magsam Resources Ltd we base on responsible mining,
-                                our sustainable performance shapes our purpose, vision and mission,
-                                and guides our individual and collective actions every day.
-                                Our purpose is mining gold for a better future.
-                                The gold we produce help:-
+                              The health, safety and wellbeing of our employees, contractors and host
+                              communities is paramount at Magsam Resource Ltd. It is the foundation
+                              upon which we build our values, culture, and success and is embedded
+                              in every facet of our organisation. We continuously strive to improve
+                              and advance our health and safety systems through employee engagement,
+                              and the highest standards and performance. Our safety performance and
+                              culture is aligned to our core values to achieve workforce health,
+                              safety, hygiene and wellbeing. Every person is essential in supporting,
+                              embracing and promoting our safety performance and culture across the
+                              business.
                             </p>
-                            <div class="content">
-                                <ul class="list-unstyled icons-listing theme-orange w-half mb-0">
-                                    <li class="wow fadeInUp" data-wow-duration="0" data-wow-delay="0s"><i class="icofont-check"></i>Power the community economy and national economy.
-                                    </li>
-                                    <li class="wow fadeInUp" data-wow-duration="0" data-wow-delay="0.1s"><i class="icofont-check"></i>Transport sectors.</li>
-                                    <li class="wow fadeInUp" data-wow-duration="0" data-wow-delay="0.2s"><i class="icofont-check"></i>Life-saving through medical devices around Kahama societies.</li>
-                                    <li class="wow fadeInUp" data-wow-duration="0" data-wow-delay="0.3s"><i class="icofont-check"></i>Technology growth</li>
-                                </ul>
-                            </div>
+                            <h4 class="h4-md mb-3 fw-7 txt-blue">Policies and standards</h4>
                             <p>
-                                The Magsam Way of doing business reflects our culture and commitment
-                                to responsible mining, managing our impacts and, more broadly,
-                                contributing to Shinyanga communities in which we work and live.
+                             Our Health and Safety Policy outlines our commitment to protect and
+                             promote the safety, and occupational health of our workforce
+                             (employees and contractors) and local communities.
                             </p>
                         </div>
                     </div>

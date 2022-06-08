@@ -45,9 +45,9 @@
                                 class="icofont-rounded-down"></i></a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="{{url('responsible_mining')}}">Responsible Mining</a></li>
-                                <li><a class="dropdown-item" href="blog-standard.html">Health & Safety</a></li>
-                                <li><a class="dropdown-item" href="blog-grid.html">Environmental Management</a></li>
-                                <li><a class="dropdown-item" href="blog-single.html">Social Performance</a></li>
+                                <li><a class="dropdown-item" href="{{url('health_safety')}}">Health & Safety</a></li>
+                                <li><a class="dropdown-item" href="{{url('environmental_management')}}">Environmental Management</a></li>
+                                <li><a class="dropdown-item" href="{{url('social_performance')}}">Social Performance</a></li>
                             </ul>
                         </li>
                         <li class="{{ Request::is('contact-us') ? 'current' : '' }} nav-item">
