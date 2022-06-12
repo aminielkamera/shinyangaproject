@@ -163,6 +163,9 @@
         font-size: 15px;
         box-shadow: 10px 0 50px rgba(0, 0, 0, 0.09);
     }
+    .white{
+        color: #ffffff;
+    }
 </style>
 <!-- Welcome To Cargo Start -->
 <div class='pageOption'>
@@ -556,7 +559,7 @@
                             <textarea rows="7" placeholder="Message" class="form-control"></textarea>
                         </div>
                         <div class="form-row text-center">
-                            <button type="submit" class="form-btn mx-auto btn-theme bg-orange">Submit Now <i class="icofont-rounded-right"></i></button>
+                            <button type="submit" class="form-btn mx-auto btn-theme bg-orange white">Submit Now <i class="icofont-rounded-right"></i></button>
                         </div>
                     </form>
                     <!-- Free Quote From -->
@@ -573,7 +576,7 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-4 col-md-12 mb-0">
-                <h4 class="h4-xl">Interested in working with Logzee?</h4>
+                <h4 class="h4-xl">Interested in working with Magsam?</h4>
             </div>
             <div class="col">
                 <div class="center-text">

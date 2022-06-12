@@ -2,7 +2,16 @@
 
 @section('content')
 <!-- Page Breadcrumbs Start -->
+<style>
+  .contact-location{
+      position: relative;
+      top: 13.5em;
+      left: 15.6em;
+  }
+</style>
+
 <div class="slider bg-navy-blue bg-fixed pos-rel breadcrumbs-page">
+<div class="bg-overlay-bread blue opacity-70"></div>
     <div class="container">
         <h1>Contact Us</h1>
         <div class="breadcrumbs-description">
@@ -17,7 +26,9 @@
         <div class="contact-map-bg option">
             <img src="assets/images/map-bg.png" alt="">
         </div>
-
+        <div class="contact-location">
+          <i class="icofont-google-map"></i>
+        </div>
         <div class="row">
             <div class="col-md-6">
                 <h2 class="h2-md mb-4 fw-7 txt-blue">Our Address</h2>

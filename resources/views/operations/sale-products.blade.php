@@ -5,6 +5,7 @@
 <!-- What We Offer Start -->
 <!-- Page Breadcrumbs Start -->
 <div class="slider bg-navy-blue bg-fixed pos-rel breadcrumbs-page">
+<div class="bg-overlay-bread blue opacity-70"></div>
     <div class="container">
         <h1>Sale of Product(Gold)</h1>
         <div class="breadcrumbs-description">
@@ -23,7 +24,7 @@
                     <!-- Blog Items -->
                     <div class="col-md-12">
                         <div class="text-left">
-                            <img src="assets/images/blog_single.jpg" alt="" class="rounded mb-4">
+                            <img src="assets/images/blog_single_29.jpg" alt="" class="rounded mb-4">
                             <h4 class="h4-md mb-3 fw-7 txt-blue">Sale Gold
                             </h4>
                             <p>
@@ -125,7 +126,7 @@
             <!-- END SKILLS LEFT SIDE -->
 
             <!-- START SKILLS RIGHT SIDE -->
-            <div class="col-lg-6 mx-auto skills-right">
+            <div class="col-lg-6 mx-auto skills-right-3">
 
             </div>
             <!-- END SKILLS RIGHT SIDE -->

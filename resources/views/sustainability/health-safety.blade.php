@@ -92,6 +92,7 @@
 </style>
 <!-- Page Breadcrumbs Start -->
 <div class="slider bg-navy-blue bg-fixed pos-rel breadcrumbs-page">
+<div class="bg-overlay-bread blue opacity-70"></div>
     <div class="container">
         <h1>Health & Safety</h1>
         <div class="breadcrumbs-description">
@@ -142,7 +143,7 @@
             <!-- Icon Boxes -->
             <div class="col-lg-4 text-center clients-bg pos-rel txt-white">
                 <div class="bg-overlay black opacity-60"></div>
-                <div class="px-5 wide-tb-100" style="position: relative; z-index: 999;">
+                <div class="px-5 wide-tb-50" style="position: relative; z-index: 999;">
                     <h4 class="h4-xl">Interested in working with Magsam?</h4>
                     <div class="col-sm-auto wow slideInUp" data-wow-duration="0" data-wow-delay="0.3s">
                         <a href="{{url('contact-us')}}" class="btn btn-theme bg-white bordered">Get In Touch <i class="icofont-rounded-right"></i></a>

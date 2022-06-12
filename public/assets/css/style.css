@@ -58,6 +58,16 @@ input[type=text] {
     -ms-transition: all 400ms ease-in-out;
     transition: all 400ms ease-in-out;
 }
+button[type="submit"],
+input[type=text] {
+    color: #fff;
+    text-decoration: none;
+    -webkit-transition: all 400ms ease-in-out;
+    -moz-transition: all 400ms ease-in-out;
+    -o-transition: all 400ms ease-in-out;
+    -ms-transition: all 400ms ease-in-out;
+    transition: all 400ms ease-in-out;
+}
 
 a:hover {
     color: #666;
@@ -258,10 +268,10 @@ a:focus {
 
 /*    Typography
 /*------------------------------------------*/
-.skills .skills-right {
+.skills .skills-right-1 {
     margin-top: 3rem;
     height: 500px;
-    background: url(../images/skills.jpg);
+    background: url(../images/skills-2.jpg);
     background-attachment: fixed;
     background-origin: content-box;
     background-position: center;
@@ -271,6 +281,44 @@ a:focus {
     border-left: 150px solid #fff;
 }
 
+.skills .skills-right-2 {
+    margin-top: 3rem;
+    height: 500px;
+    background: url(../images/skills-3.jpeg);
+    background-attachment: fixed;
+    background-origin: content-box;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 600px solid transparent;
+    border-left: 150px solid #fff;
+}
+
+.skills .skills-right-3 {
+    margin-top: 3rem;
+    height: 500px;
+    background: url(../images/skills-4.jpg);
+    background-attachment: fixed;
+    background-origin: content-box;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 600px solid transparent;
+    border-left: 150px solid #fff;
+}
+
+.skills .skills-right-4 {
+    margin-top: 3rem;
+    height: 500px;
+    background: url(../images/skills-5.jpg);
+    background-attachment: fixed;
+    background-origin: content-box;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 600px solid transparent;
+    border-left: 150px solid #fff;
+}
 /* Header H5 */
 
 h5.h5-xs {
@@ -1508,6 +1556,11 @@ h2.h2-xl {
     padding-bottom: 70px;
 }
 
+.wide-tb-footer-70 {
+    padding-top: 10px;
+    padding-bottom: 70px;
+}
+
 .wide-tb-70 {
     padding-top: 70px;
     padding-bottom: 70px;
@@ -2053,9 +2106,29 @@ h2.h2-xl {
     left: 0;
 }
 
+.bg-overlay-bread {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    left: 0;
+}
+
 .bg-overlay+.container {
     position: relative;
     z-index: 99;
+}
+
+.bg-overlay-bread+.container {
+    position: relative;
+    z-index: 99;
+}
+
+.bg-overlay-bread.blue {
+    background-image: radial-gradient(farthest-corner at 40px 40px,
+    rgba(39, 30, 15, 255) 30%, transparent 100%);
 }
 
 .bg-overlay.blue {
@@ -2087,6 +2160,10 @@ h2.h2-xl {
 }
 
 .bg-overlay.opacity-70 {
+    opacity: 0.7;
+}
+
+.bg-overlay-bread.opacity-70 {
     opacity: 0.7;
 }
 
@@ -4722,7 +4799,7 @@ footer .social-icons a:hover {
 /*------------------------------------------*/
 
 .breadcrumbs-page {
-    background-image: url(../images/breadcrumbs_bg.jpg);
+    background-image: url(../images/breadcrumbs_bg_1.jpg);
     background-repeat: no-repeat;
     padding: 7rem 0;
     background-position: center center;
