@@ -137,6 +137,9 @@ Route::get('/admin-dashboard', function() {
  Route::get('/admin_social_performance', function(){
      return view('admin.admin_social_performance');
  });
+ Route::get('admin/company/profile',function(){
+    return view('admin.admin_company_profile');
+ });
  Route::post('contactUs','ContactUsController@contact_Us_emailSend');
 
  Route::post('/admin-home-about','AdminController@submitHomeAboutImage');

@@ -59,15 +59,13 @@
                     <li><a href="{{url('admin_social_performance')}}">Social Performance</a></li>
                 </ul>
             </li>
-            <!-- <li class="menu-title" key="t-apps">Apps</li>
-
             <li>
-                <a href="calendar.html" class=" waves-effect">
-                    <i class="bx bx-calendar"></i>
-                    <span key="t-calendar">Calendar</span>
+                <a href="{{url('admin/company/profile')}}" class="waves-effect">
+                    <i class="bx bx-file"></i>
+                    <span key="t-calendar">Company Profile</span>
                 </a>
             </li>
-
+            <!-- <li class="menu-title" key="t-apps">Apps</li>
             <li>
                 <a href="chat.html" class=" waves-effect">
                     <i class="bx bx-chat"></i>
