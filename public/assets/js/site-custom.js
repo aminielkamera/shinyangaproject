@@ -98,7 +98,7 @@ $(document).ready(function () {
 
     });
 
-    // Animated Skill Bars      
+    // Animated Skill Bars
     $('.skillbar').appear();
     $('.skillbar').on('appear', function () {
         $(this).find('.skillbar-bar').animate({
@@ -247,8 +247,8 @@ $(document).ready(function () {
                 '<div><a href="mailto:info@logzee.com">info@logzee.com</a></div>' +
                 '</div>' +
                 '</address>',
-            latitude: -33.87695388579145,
-            longitude: 151.22183918952942,
+            latitude: -3.8350442059942975,
+            longitude: 32.59612480678853,
             icon: {
                 image: "./assets/images/pin.png",
                 iconsize: [35, 48],
@@ -260,9 +260,9 @@ $(document).ready(function () {
             iconsize: [35, 48],
             iconanchor: [17, 48]
         },
-        latitude: -33.87695388579145,
-        longitude: 151.22183918952942,
-        zoom: 16
+        latitude: -3.8350442059942975,
+        longitude: 32.59612480678853,
+        zoom: 13
     });
 
     jQuery("#contactusForm").validate({

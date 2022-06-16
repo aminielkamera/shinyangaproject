@@ -79,7 +79,7 @@
             <div class="container">
                 <div class="row text-md-start text-center">
                     <div class="col-sm-12 col-md-6 copyright-links">
-                        <a href="#"><a href="#">Company Profile</a> <span>|</span>
+                        <a href="{{ url('assets/images/company_profile/CURRICULAMVITAE.pdf')}}" download>Company Profile</a> <span>|</span>
                     </div>
                     <div class="col-sm-12 col-md-6 text-md-end text-center">
                         <a href="{{url('/')}}" rel="nofollow">Magsam Resources</a> &copy; {{date('Y')}}. All Rights are Reserved

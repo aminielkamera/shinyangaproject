@@ -184,7 +184,7 @@
                     <h2>Exploration</h2>
                     <p id="p">Magsam conducting mineral exploration as the initial stage to determine if a mineral resource...</p>
                     <div class="content1">
-                        <a href="">Read More</a>
+                        <a href="{{url('exploration')}}">Read More</a>
                     </div>
                 </div>
             </div>
@@ -195,7 +195,7 @@
                     <h2>Gold Mining</h2>
                     <p id="p">The findings from exploration drilling are then used to develop what we call a resource model...</p>
                     <div class="content1">
-                        <a href="">Read More</a>
+                        <a href="{{url('mining_processing')}}">Read More</a>
                     </div>
                 </div>
             </div>
@@ -205,7 +205,7 @@
                     <h2>Processing</h2>
                     <p id="p">Gold at Magsam is known as 'Quality Ore', which means now our ore goes through a three-stage ...</p>
                     <div class="content1">
-                        <a href="">Read More</a>
+                        <a href="{{url('mining_processing')}}">Read More</a>
                     </div>
                 </div>
             </div>
@@ -312,7 +312,7 @@
                                     <h4 class="h4-md">Responsible Mining</h4>
                                     <p>The Magsam Way of doing business reflects our culture and commitment to responsible mining, managing our impacts and, more broadly, contributing to the communities in which we work and live...
                                     </p>
-                                    <div class="see-project arrow"><a href="">Read More</a></div>
+                                    <div class="see-project arrow"><a href="{{url('responsible_mining')}}">Read More</a></div>
                                 </div>
                             </div>
                         </div>
@@ -330,7 +330,7 @@
                                     <h4 class="h4-md">Safety & Health</h4>
                                     <p>Our safety performance and culture is aligned to our core values to achieve workforce health, safety, hygiene and wellbeing. Every person is essential in supporting...
                                     </p>
-                                    <div class="see-project arrow"><a href="">Read More</a></div>
+                                    <div class="see-project arrow"><a href="{{url('health_safety')}}">Read More</a></div>
                                 </div>
                             </div>
                         </div>
@@ -348,7 +348,7 @@
                                     <h4 class="h4-md">Environment Management</h4>
                                     <p>Magsam Gold mines is committed to responsible environmental management across all our business activities...
                                     </p>
-                                    <div class="see-project arrow"><a href="">Read More</a></div>
+                                    <div class="see-project arrow"><a href="{{url('environmental_management')}}">Read More</a></div>
                                 </div>
                             </div>
                         </div>
@@ -669,19 +669,16 @@
 <section class="map-bg">
     <div class="contact-details row d-flex">
         <div class="col">
-            <h4>Germany</h4>
-            <p><i class="icofont-phone"></i> +1 (408) 786 - 5117</p>
-            <div class="text-nowrap"><i class="icofont-email"></i> <a href="#">germany@logzee.com</a></div>
-        </div>
-        <div class="col">
-            <h4>Spain</h4>
-            <p><i class="icofont-phone"></i> +1 (408) 786 - 5117</p>
-            <div class="text-nowrap"><i class="icofont-email"></i> <a href="#">spain@logzee.com</a></div>
+            <h4>Kahama, Shinyanga Tanzania</h4>
+            <p><i class="icofont-phone"></i> +255-755-907-381</p>
+            <div class="text-nowrap"><i class="icofont-email"></i> <a href="#">info@magsamresources.com</a></div>
+            <div class="text-nowrap"><i class="icofont-email"></i> <a href="#">support@magsamresources.com</a></div>
         </div>
     </div>
     <div id="map-holder" class="pos-rel">
         <div id="map_extended">
             <p>This will be replaced with the Google Map.</p>
+            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d164920.7351707179!2d32.469635494845484!3d-3.8111154469222432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19c9a4e166eb891b%3A0x1685a8660fa3fded!2sKahama!5e0!3m2!1sen!2stz!4v1655193918289!5m2!1sen!2stz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
         </div>
     </div>
     <!-- Google Map Start -->

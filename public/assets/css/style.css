@@ -2478,7 +2478,7 @@ h2.h2-xl {
     overflow: hidden;
   }
 
-  .clients-bg-sustaina > .circle {
+  .clients-bg-sustaina > .circle-1 {
     height: 200vh;
     width: 200vh;
     position: absolute;
@@ -2486,9 +2486,41 @@ h2.h2-xl {
     right: -100vh;
     border-radius: 50%;
     border: 5px solid #8f6B29;
-    background-image: url(../images/bg_3.jpg);
+    background-image: url(../images/bg_31.jpg);
   }
 
+  .clients-bg-sustaina > .circle-2 {
+    height: 200vh;
+    width: 200vh;
+    position: absolute;
+    bottom: -100vh;
+    right: -100vh;
+    border-radius: 50%;
+    border: 5px solid #8f6B29;
+    background-image: url(../images/bg_36.jpg);
+  }
+
+  .clients-bg-sustaina > .circle-3 {
+    height: 200vh;
+    width: 200vh;
+    position: absolute;
+    bottom: -100vh;
+    right: -100vh;
+    border-radius: 50%;
+    border: 5px solid #8f6B29;
+    background-image: url(../images/bg_39.jpg);
+  }
+
+  .clients-bg-sustaina > .circle-4 {
+    height: 200vh;
+    width: 200vh;
+    position: absolute;
+    bottom: -100vh;
+    right: -100vh;
+    border-radius: 50%;
+    border: 5px solid #8f6B29;
+    background-image: url(../images/bg_41.png);
+  }
 .clients-bg-sustaina .item {
     background: #FFF;
 }
@@ -4825,6 +4857,52 @@ footer .social-icons a:hover {
 }
 
 .breadcrumbs-page h1 {
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.breadcrumbs-description {
+    padding: 0.75rem 1.5rem;
+    color: #FFF;
+    border-left: 2px solid transparent;
+    border-image: -webkit-linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
+    border-image-slice: 1;
+    max-width: 50%;
+    margin-top: 15px;
+}
+
+
+
+
+.breadcrumbs-page-1 {
+    background-image: url(../images/breadcrumbs_bg_2.jpg);
+    background-repeat: no-repeat;
+    padding: 7rem 0;
+    background-position: center center;
+}
+
+.breadcrumbs-page-1 .breadcrumb {
+    background: transparent;
+    color: #FFF;
+    padding: 0;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.breadcrumbs-page-1 .breadcrumb a,
+.breadcrumbs-page-1 .breadcrumb-item+.breadcrumb-item::before,
+.breadcrumb-item.active {
+    color: #FFF;
+}
+
+.breadcrumbs-page-1 .breadcrumb-item+.breadcrumb-item::before {
+    top: 1px;
+    position: relative;
+}
+
+.breadcrumbs-page-1 h1 {
     color: #FFF;
     text-transform: uppercase;
     font-size: 2rem;

@@ -103,7 +103,7 @@
 <!-- Page Breadcrumbs End -->
 <!-- What Makes Us Special Start -->
 <section class="wide-tb-120 bg-light-theme bg-fixed clients-bg-sustaina pos-rel  pos-rel">
-    <div class='circle'></div>
+    <div class='circle-1'></div>
     <div class="container h-100 pos-rel">
         <div class="row align-items-start">
             <div class="col-12 col-lg-8 wow fadeInUp" data-wow-duration="0" data-wow-delay="0s">

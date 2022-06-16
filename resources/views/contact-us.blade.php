@@ -10,7 +10,7 @@
   }
 </style>
 
-<div class="slider bg-navy-blue bg-fixed pos-rel breadcrumbs-page">
+<div class="slider bg-navy-blue bg-fixed pos-rel breadcrumbs-page-1">
 <div class="bg-overlay-bread blue opacity-70"></div>
     <div class="container">
         <h1>Contact Us</h1>
