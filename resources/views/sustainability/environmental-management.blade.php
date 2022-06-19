@@ -160,7 +160,7 @@
             <!-- Icon Boxes -->
             <div class="col-lg-4 text-center">
                 <div class="px-5 wide-tb-50">
-                    <a href="#" class="btn-theme"> <i class="icofont-file-pdf icofont-2x"></i> &nbsp; Company Profile.pdf</a>
+                <a href="{{url('storage/Companyprofile_attachments/'.$data['attachmentData'])}}" target="_blank" class="btn-theme"> <i class="icofont-file-pdf icofont-2x"></i> &nbsp; {{$data['title']}}.pdf</a>
                 </div>
             </div>
             <!-- Icon Boxes -->

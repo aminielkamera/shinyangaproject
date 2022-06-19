@@ -3,15 +3,15 @@
 @section('content')
 <!-- Page Breadcrumbs Start -->
 <style>
-  .contact-location{
-      position: relative;
-      top: 13.5em;
-      left: 15.6em;
-  }
+    .contact-location {
+        position: relative;
+        top: 13.5em;
+        left: 15.6em;
+    }
 </style>
 
 <div class="slider bg-navy-blue bg-fixed pos-rel breadcrumbs-page-1">
-<div class="bg-overlay-bread blue opacity-70"></div>
+    <div class="bg-overlay-bread blue opacity-70"></div>
     <div class="container">
         <h1>Contact Us</h1>
         <div class="breadcrumbs-description">
@@ -27,7 +27,7 @@
             <img src="assets/images/map-bg.png" alt="">
         </div>
         <div class="contact-location">
-          <i class="icofont-google-map"></i>
+            <i class="icofont-google-map"></i>
         </div>
         <div class="row">
             <div class="col-md-6">
@@ -51,31 +51,59 @@
 
 
             <div class="col-md-6 col-sm-12">
-                <h2 class="h2-md mb-4 fw-7 txt-blue">Contact Magsam! Its Free</h2>
-                <div class="">
-
-                    <div class="free-quote-form contact-page-option wow fadeInLeft" data-wow-duration="0" data-wow-delay="0s">
-                        <form action="contact_process.php" method="post" id="contactoption" novalidate="novalidate" class="rounded-field">
-                            <div class="g-4 row mb-4">
-                                <div class="col-md mb-0">
-                                    <input type="text" name="name" class="form-control" placeholder="Your Name">
-                                </div>
-                                <div class="col-md mb-0">
-                                    <input type="text" name="email" class="form-control" placeholder="Email">
-                                </div>
-                            </div>
-                            <div class="g-4 row mb-4">
-                                <div class="col-md mb-0">
-                                    <textarea name="cment" rows="7" placeholder="Message" class="form-control"></textarea>
-                                </div>
-                            </div>
-                            <div class="form-row text-end">
-
-                                <button name="contactoption" id="contactoption" type="submit" class="form-btn mx-auto btn-theme bg-orange">Send Now <i class="icofont-rounded-right"></i></button>
-                            </div>
-                        </form>
+                <div class="row">
+                    <div class="col-lg-12">
+                        @if(session()->has('danger'))
+                        <div class="alert alert-danger">
+                            <a href="#" class="close" data-dismiss="alert" aria-label="close"></a>
+                            <strong>Danger! </strong>{{ session()->get('danger') }}
+                        </div>
+                        @endif
+                        @if(session()->has('success'))
+                        <div class="alert alert-success rounded-pill white">
+                            <a href="#" class="close ml-2" data-dismiss="alert" aria-label="close"></a>
+                            <strong>Success! </strong>{{ session()->get('success') }}
+                        </div>
+                        @endif
+                        @if(session()->has('warning'))
+                        <div class="alert alert-warning rounded-pill white">
+                            <a href="#" class="close ml-2" data-dismiss="alert" aria-label="close"></a>
+                            <strong>Warning! </strong>{{ session()->get('warning') }}
+                        </div>
+                        @endif
+                        @if(session()->has('info'))
+                        <div class="alert alert-info rounded-pill white">
+                            <a href="#" class="close ml-2" data-dismiss="alert" aria-label="close"></a>
+                            <strong>Info! </strong>{{ session()->get('info') }}
+                        </div>
+                        @endif
                     </div>
+                </div>
+                <h2 class="h2-md mb-4 fw-7 txt-blue">Contact Magsam! Its Free</h2>
+                <div class="free-quote-form contact-page-option wow fadeInLeft" data-wow-duration="0" data-wow-delay="0s">
+                    <form action="{{url('client/contact-Us')}}" method="POST" id="contactoption" novalidate="novalidate" class="rounded-field">
+                        @csrf
+                        <div class="g-4 row mb-4">
+                            <div class="col-md mb-0">
+                                <input type="text" name="name" class="form-control" placeholder="Your Name">
+                            </div>
+                            <div class="col-md mb-0">
+                                <input type="text" name="email" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="col-md mb-0">
+                                <input type="text" name="subject" class="form-control" placeholder="Subject">
+                            </div>
+                        </div>
+                        <div class="g-4 row mb-4">
+                            <div class="col-md mb-0">
+                                <textarea name="message" rows="7" placeholder="Message" class="form-control"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-row text-end">
 
+                            <button name="contactoption" id="contactoption" type="submit" class="form-btn mx-auto btn-theme bg-orange">Send Now <i class="icofont-rounded-right"></i></button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -93,4 +121,13 @@
 </section>
 <!-- Google Map Start -->
 <!-- Contact Details End -->
+@endsection
+@section('script')
+<script>
+    window.setTimeout(function() {
+        $(".alert").fadeTo(1000, 0).slideUp(500, function() {
+            $(this).remove();
+        });
+    }, 3000);
+</script>
 @endsection

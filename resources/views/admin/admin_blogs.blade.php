@@ -7,24 +7,24 @@
 <link href="{{asset('admin/assets/libs/kartik-v-bootstrap-fileinput/themes/explorer-fas/theme.css')}}" media="all" rel="stylesheet" type="text/css" />
 @endsection
 @section('content')
-<!-- kartik Fileinput-->
-
 <!-- ============================================================== -->
 <!-- Start right Content here -->
 <!-- ============================================================== -->
 <div class="main-content">
+
     <div class="page-content">
         <div class="container-fluid">
+
             <!-- start page title -->
             <div class="row">
                 <div class="col-12">
                     <div class="page-title-box d-flex align-items-center justify-content-between">
-                        <h4 class="mb-0 font-size-18">Company Profile</h4>
+                        <h4 class="mb-0 font-size-18">Blogs images upload and description</h4>
 
                         <div class="page-title-right">
                             <ol class="breadcrumb m-0">
-                                <li class="breadcrumb-item"><a href="javascript: void(0);">Company Profile</a></li>
-                                <li class="breadcrumb-item active">Company Profile File Upload</li>
+                                <li class="breadcrumb-item"><a href="javascript: void(0);">Blogs</a></li>
+                                <li class="breadcrumb-item active">Blogs Image Upload</li>
                             </ol>
                         </div>
 
@@ -60,7 +60,7 @@
                 </div>
             </div>
             <!-- end page title -->
-            <form method="POST" action="{{url('company/profile/upload')}}" enctype="multipart/form-data">
+            <form method="POST" action="{{ url('admin/blog')}}" enctype="multipart/form-data">
                 @csrf
                 <div class="row">
                     <div class="col-lg-12">
@@ -69,23 +69,34 @@
                                 <div class="mb-4">
                                     <div class="form-group">
                                         <div class="file-loading">
-                                            <input id="file-1" type="file" name="attachment" multiple class="file" data-overwrite-initial="false" data-min-file-count="2" data-theme="fas">
+                                            <input id="file-1" type="file" name="image_Name" multiple class="file" data-overwrite-initial="false" data-min-file-count="2" data-theme="fas">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="mb-4">
                                     <input class="form-control form-control-sm" type="text" placeholder="Title" name="title">
                                 </div>
+                                <div class="mb-4">
+                                    <input class="form-control form-control-sm" type="date" placeholder="Date" name="date">
+                                </div>
+                                <div>
+                                    <textarea class="form-control form-control-lg" type="text" placeholder="Descriptions" name="descriptions"></textarea>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
+
                 <div class="mt-1 mb-3">
                     <button type="submit" class="btn btn-primary waves-effect waves-light">Send Files</button>
                 </div>
             </form>
-        </div>
+
+
+        </div> <!-- container-fluid -->
     </div>
+    <!-- End Page-content -->
 </div>
 <!-- END layout-wrapper -->
 @endsection

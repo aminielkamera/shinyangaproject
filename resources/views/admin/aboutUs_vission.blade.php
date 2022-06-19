@@ -1,154 +1,12 @@
 @extends('layouts.admin-main')
 
+@section('custom_css')
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.min.css" crossorigin="anonymous">
+<link href="{{asset('admin/assets/libs/kartik-v-bootstrap-fileinput/css/fileinput.css')}}" media="all" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" crossorigin="anonymous">
+<link href="{{asset('admin/assets/libs/kartik-v-bootstrap-fileinput/themes/explorer-fas/theme.css')}}" media="all" rel="stylesheet" type="text/css" />
+@endsection
 @section('content')
-<link href="{{asset('admin/assets/libs/dropzone/min/dropzone.min.css')}}" rel="stylesheet" type="text/css" />
-<style>
-    .upload-box {
-        border: 1px dashed #b1becc;
-        background: #F0F4F5;
-        border-radius: 4px;
-        padding: 50px 0 20px;
-        text-align: center;
-        text-wordwrap: true;
-    }
-
-    .dz-clickable {
-        border: 1px dashed #b1becc;
-        background: #F0F4F5;
-        border-radius: 4px;
-        padding: 50px 0 20px;
-        text-align: center
-    }
-
-    .dz-sm {
-        padding: 40px 0 20px
-    }
-
-    .dz-message {
-        padding-bottom: 30px
-    }
-
-    .dz-message span {
-        display: block;
-        color: rgba(117, 134, 152, 0.6)
-    }
-
-    .dz-message-text {
-        font-size: 13px
-    }
-
-    .dz-message-or {
-        font-size: 16px;
-        margin-bottom: 4px;
-        text-transform: uppercase
-    }
-
-    .dz-sm .dz-message {
-        padding-bottom: 20px
-    }
-
-    .dz-preview {
-        margin-top: 20px;
-        margin-left: 10px;
-        margin-right: 10px;
-        position: relative;
-        width: 120px;
-        display: inline-block
-    }
-
-    .dz-image img {
-        border-radius: 4px;
-        border: 1px solid #d3e0f3
-    }
-
-    .dz-filename {
-        font-size: 13px
-    }
-
-    .dz-progress {
-        opacity: 1;
-        z-index: 1000;
-        pointer-events: none;
-        position: absolute;
-        height: 10px;
-        top: 55px;
-        left: 50%;
-        width: 80px;
-        transform: translateX(-50%);
-        background: rgba(255, 255, 255, 0.9);
-        border-radius: 5px;
-        overflow: hidden;
-        transition: all .4s
-    }
-
-    .dz-complete .dz-progress {
-        opacity: 0
-    }
-
-    .dz-upload {
-        background: #333;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 0;
-        transition: all .3s ease-in-out
-    }
-
-    .dz-error-message,
-    .dz-success-message {
-        font-size: 13px
-    }
-
-    .dz-error-mark,
-    .dz-success-mark {
-        position: absolute;
-        top: 40px;
-        left: 50%;
-        transform: translateX(-50%);
-        display: none
-    }
-
-    .dz-error-mark svg,
-    .dz-success-mark svg {
-        height: 40px !important;
-        width: 40px !important
-    }
-
-    .dz-error-mark svg g,
-    .dz-success-mark svg g {
-        stroke-opacity: .7;
-        stroke-width: 2
-    }
-
-    .dz-error-message {
-        color: #ff6868
-    }
-
-    .dz-error-mark g {
-        stroke: rgba(255, 104, 104, 0.7) !important
-    }
-
-    .dz-error .dz-error-mark {
-        display: block
-    }
-
-    .dz-success-message {
-        color: #00d285
-    }
-
-    .dz-success-mark g {
-        stroke: rgba(0, 210, 133, 0.7) !important
-    }
-
-    .dz-success .dz-success-mark {
-        display: block
-    }
-
-    li {
-        list-style: none;
-        padding-top: 10px;
-    }
-</style>
 <!-- ============================================================== -->
 <!-- Start right Content here -->
 <!-- ============================================================== -->
@@ -202,34 +60,24 @@
                 </div>
             </div>
             <!-- end page title -->
-            <form method="POST" action="{{action('AdminController@submitAboutUsVission')}}" enctype="multipart/form-data">
+            <form method="POST" action="{{  url('admin/aboutUs/vission')}}" enctype="multipart/form-data">
                 @csrf
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="card">
                             <div class="card-body">
-                                <div>
-                                    <div class="mb-4">
-                                        <div class="upload-box">
-                                            <div class="document_one " id="proof-of-payment">
-                                                <div class="dz-message text-wrap" data-dz-message="">
-                                                    <span class="dz-message-text">Drag and drop file</span>
-                                                    <span class="dz-message-or">or</span>
-                                                    <input type="file" class="fileElem" id="fileElem" name="image_Name[]" accept="image/pdf*" style="display:none">
-                                                    <a type="button" class="fileSelect white btn btn-primary" id="fileSelect">Select</a>
-                                                    <div class="fileList center" id="fileList">
-
-                                                    </div>
-                                                </div>
-                                            </div>
+                                <div class="mb-4">
+                                    <div class="form-group">
+                                        <div class="file-loading">
+                                            <input id="file-1" type="file" name="image_Name" multiple class="file" data-overwrite-initial="false" data-min-file-count="2" data-theme="fas">
                                         </div>
                                     </div>
-                                    <div class="mb-4">
-                                        <input class="form-control form-control-sm" type="text" placeholder="Title" name="titles">
-                                    </div>
-                                    <div>
-                                        <textarea class="form-control form-control-lg" type="text" placeholder="Descriptions" name="descriptions"></textarea>
-                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <input class="form-control form-control-sm" type="text" placeholder="Title" name="titles">
+                                </div>
+                                <div>
+                                    <textarea class="form-control form-control-lg" type="text" placeholder="Descriptions" name="descriptions"></textarea>
                                 </div>
                             </div>
                         </div>
@@ -248,10 +96,19 @@
     <!-- End Page-content -->
 </div>
 <!-- END layout-wrapper -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.0/min/dropzone.min.js"></script>
-<script src="{{asset('admin/assets/libs/dropzone/min/dropzone.js')}}"></script>
-<script src="{{asset('admin/assets/libs/dropzone/min/._dropzone.min.js')}}"></script>
-<script src="{{asset('admin/assets/libs/dropzone/min/dropzone-amd-module.js')}}"></script>
+@endsection
+@section('script')
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="{{asset('admin/assets/libs/kartik-v-bootstrap-fileinput/js/plugins/piexif.js')}}" type="text/javascript"></script>
+<script src="{{asset('admin/assets/libs/kartik-v-bootstrap-fileinput/js/plugins/sortable.js')}}" type="text/javascript"></script>
+<script src="{{asset('admin/assets/libs/kartik-v-bootstrap-fileinput/js/fileinput.js')}}" type="text/javascript"></script>
+<script src="{{asset('admin/assets/libs/kartik-v-bootstrap-fileinput/js/locales/fr.js')}}" type="text/javascript"></script>
+<script src="{{asset('admin/assets/libs/kartik-v-bootstrap-fileinput/js/locales/es.js')}}" type="text/javascript"></script>
+<script src="{{asset('admin/assets/libs/kartik-v-bootstrap-fileinput/themes/gly/theme.js')}}" type="text/javascript"></script>
+<script src="{{asset('admin/assets/libs/kartik-v-bootstrap-fileinput/themes/fas/theme.js')}}" type="text/javascript"></script>
+<script src="{{asset('admin/assets/libs/kartik-v-bootstrap-fileinput/themes/explorer-fas/theme.js')}}" type="text/javascript"></script>
+
 <script>
     window.setTimeout(function() {
         $(".alert").fadeTo(1000, 0).slideUp(500, function() {
@@ -260,51 +117,18 @@
     }, 3000);
 </script>
 <script>
-    const fileSelect = document.querySelector('.fileSelect'),
-        fileElem = document.querySelector('.fileElem'),
-        fileList = document.querySelector('.fileList');
-
-
-
-    fileSelect.addEventListener("click", function(e) {
-        if (fileElem) {
-            fileElem.click();
+    $("#file-1").fileinput({
+        theme: 'fas',
+        uploadUrl: '#', // you must set a valid URL here else you will get an error
+        allowedFileExtensions: ["jpg", "jpeg", "gif", "png", "pdf"],
+        overwriteInitial: false,
+        dropZoneEnabled: false,
+        maxFileSize: 1000,
+        maxFilesNum: 10,
+        //allowedFileTypes: ['image', 'video', 'flash'],
+        slugCallback: function(filename) {
+            return filename.replace('(', '_').replace(']', '_');
         }
-        e.preventDefault(); // prevent navigation to "#"
-    }, false);
-
-    fileElem.addEventListener("change", handleFiles, false);
-
-    function handleFiles() {
-        fileList.innerHTML = "";
-        const list = document.createElement("ul");
-        fileList.appendChild(list);
-        for (let i = 0; i < this.files.length; i++) {
-            const li = document.createElement("li");
-            list.appendChild(li);
-
-            const img = document.createElement("img");
-            img.src = URL.createObjectURL(this.files[i]);
-            img.height = 70;
-            img.onload = function() {
-                URL.revokeObjectURL(this.src);
-            }
-            this.files[i].size;
-            var decimals = 2;
-            if  (this.files[i].size === 0) return '0 Bytes';
-
-            const k = 1024;
-            const dm = decimals < 0 ? 0 : decimals;
-            const sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'];
-
-            const a = Math.floor(Math.log(this.files[i].size) / Math.log(k));
-
-            this.filesizes = parseFloat((this.files[i].size / Math.pow(k, a)).toFixed(dm)) + ' ' + sizes[a];
-            li.appendChild(img);
-            const info = document.createElement("span");
-            info.innerHTML = this.files[i].name + "  " + this.filesizes;
-            li.appendChild(info);
-        }
-    }
+    });
 </script>
 @endsection

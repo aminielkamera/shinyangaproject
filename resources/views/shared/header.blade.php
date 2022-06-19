@@ -31,7 +31,7 @@
                             <a class="nav-link" href="{{url('about-us')}}" aria-expanded="false">About Us </a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link" href="#" data-bs-toggle="dropdown" aria-expanded="false">Operations<i
+                            <a class="nav-link" href="Operations" data-bs-toggle="dropdown" aria-expanded="false">Operations<i
                                 class="icofont-rounded-down"></i></a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="{{url('exploration')}}">Exploration</a></li>
@@ -41,7 +41,7 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link" href="#" data-bs-toggle="dropdown" aria-expanded="false">Sustainability <i
+                            <a class="nav-link" href="Sustainability" data-bs-toggle="dropdown" aria-expanded="false">Sustainability <i
                                 class="icofont-rounded-down"></i></a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="{{url('responsible_mining')}}">Responsible Mining</a></li>

@@ -60,6 +60,18 @@
                 </ul>
             </li>
             <li>
+                <a href="{{url('admin/blogs')}}" class="waves-effect">
+                    <i class="bx bx-file"></i>
+                    <span key="t-calendar">Blogs</span>
+                </a>
+            </li>
+            <li>
+                <a href="{{url('admin/email')}}" class="waves-effect">
+                    <i class="bx bx-envelope"></i>
+                    <span key="t-calendar">Email</span>
+                </a>
+            </li>
+            <li>
                 <a href="{{url('admin/company/profile')}}" class="waves-effect">
                     <i class="bx bx-file"></i>
                     <span key="t-calendar">Company Profile</span>

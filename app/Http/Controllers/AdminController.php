@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\AboutUs_main_content;
 use App\Models\AboutUs_mission;
 use App\Models\AboutUs_vission;
+use App\Models\Blog;
+use App\Models\CompanyProfile;
+use App\Models\ContactUs;
 use App\Models\Environmental_management;
 use App\Models\Exploration_operation;
 use App\Models\Export_of_Gold;
@@ -20,6 +23,7 @@ use App\Models\Rehabilitation_operation;
 use App\Models\Responsible_mining;
 use App\Models\Social_performance;
 use Illuminate\Http\Request;
+use Carbon\Carbon;
 use Auth;
 use Session;
 use Illuminate\Support\Facades\Validator;
@@ -47,31 +51,32 @@ class AdminController extends Controller
     public  function submitHomeAboutImage(Request $request)
     {
         $validation = Validator::make($request->all(), [
-            $home_aboutImage         = 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             $home_aboutDescriptions  = 'required|string',
         ]);
 
-        $home_aboutImage                      = $request->file('home_aboutImage');
         $home_aboutDescriptions               = $request->input('home_aboutDescriptions');
 
 
-
+        #Handle File Upload
         if ($request->hasFile('home_aboutImage')) {
-            foreach ($home_aboutImage as $index => $file) {
-                $filename =  time() . '.' . $file->getClientOriginalName();
-                $filesName[] = $filename;
-                $destination = public_path() . '/assets/images/resource';
-                $image_path  = 'assets/images/resource';
-                $file->move($destination, $filename);
-            }
-            if (!empty($home_aboutDescriptions)) {
-                Home_about::create([
-                    'image_name'   => $filename,
-                    'image_path'   => $image_path,
-                    'descriptions' => $home_aboutDescriptions,
-                ]);
-            }
+            $filenameWithExt = $request->file('home_aboutImage')->getClientOriginalName();
+            // Get just filename
+            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+            //Get just ext
+            $extension = $request->file('home_aboutImage')->getClientOriginalExtension();
+            // FileName to Store
+            $fileNameToStore = $filename . '_' . time() . '.' . $extension;
+            // Upload Image
+            $path = $request->file('home_aboutImage')->storeAs('public/About_attachments', $fileNameToStore);
+        } else {
+            $fileNameToStore = 'noattachment.jpeg';
         }
+
+        $home_about = Home_about::create([
+            'image_name'   => $fileNameToStore,
+            'image_path'   => 'public/About_attachments',
+            'descriptions' => $home_aboutDescriptions,
+        ]);
 
         return back()->with('success',  "Home about section has been uploaded");
     }
@@ -79,35 +84,38 @@ class AdminController extends Controller
     public  function submitHomeProcessImages(Request $request)
     {
         $validation = Validator::make($request->all(), [
-            $home_processImages         = 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             $titles                     = 'required|string',
             $descriptions               = 'required|string',
         ]);
-
         $home_processImages                   = $request->file('home_processImages');
         $titles                               = $request->input('titles');
         $descriptions                         = $request->input('descriptions');
 
 
-
+        #Handle File Upload
         if ($request->hasFile('home_processImages')) {
-            foreach ($home_processImages as $index => $file) {
-                $filename =  time() . '.' . $file->getClientOriginalName();
-                $filesName[] = $filename;
-                $destination = public_path() . '/assets/images/resource';
-                $image_path  = 'assets/images/resource';
-                $file->move($destination, $filename);
+            foreach ($home_processImages  as $index => $file) {
+                $filenameWithExt = $file->getClientOriginalName();
+                // Get just filename
+                $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+                //Get just ext
+                $extension = $file->getClientOriginalExtension();
+                // FileName to Store
+                $fileNameToStore = $filename . '_' . time() . '.' . $extension;
+                $fileName[] = $fileNameToStore;
+                // Upload Image
+                $path = $file->storeAs('public/Operations_attachments', $fileNameToStore);
             }
-            // dd($filesName);
-            if (!empty($descriptions && $titles)) {
-                Home_process::create([
-                    'image_names'   => serialize($filesName),
-                    'image_path'    => $image_path,
-                    'titles'        => serialize($titles),
-                    'descriptions'  => serialize($descriptions),
-                ]);
-            }
+        } else {
+            $fileNameToStore = 'noattachment.jpeg';
         }
+
+        $home_operations = Home_process::create([
+            'image_names'   => serialize($fileName),
+            'image_path'    => 'public/Operations_attachments',
+            'titles'        => serialize($titles),
+            'descriptions'  => serialize($descriptions),
+        ]);
 
         return back()->with('success',  "Home process section has been uploaded");
     }
@@ -116,35 +124,38 @@ class AdminController extends Controller
     public  function submitHomeSustanabilityImages(Request $request)
     {
         $validation = Validator::make($request->all(), [
-            $home_sustanabilityImages         = 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             $titles                     = 'required|string',
             $descriptions               = 'required|string',
         ]);
 
-        $home_sustanabilityImages                   = $request->file('home_sustanabilityImages');
+        $home_sustanabilityImages             = $request->file('home_sustanabilityImages');
         $titles                               = $request->input('titles');
         $descriptions                         = $request->input('descriptions');
 
-
-
+        #Handle File Upload
         if ($request->hasFile('home_sustanabilityImages')) {
-            foreach ($home_sustanabilityImages as $index => $file) {
-                $filename =  time() . '.' . $file->getClientOriginalName();
-                $filesName[] = $filename;
-                $destination = public_path() . '/assets/images/gallery';
-                $image_path  = 'assets/images/gallery';
-                $file->move($destination, $filename);
+            foreach ($home_sustanabilityImages  as $index => $file) {
+                $filenameWithExt = $file->getClientOriginalName();
+                // Get just filename
+                $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+                //Get just ext
+                $extension = $file->getClientOriginalExtension();
+                // FileName to Store
+                $fileNameToStore = $filename . '_' . time() . '.' . $extension;
+                $fileName[] = $fileNameToStore;
+                // Upload Image
+                $path = $file->storeAs('public/Sustanability_attachments', $fileNameToStore);
             }
-            // dd($filesName);
-            if (!empty($descriptions && $titles)) {
-                Home_sustanability::create([
-                    'image_names'   => serialize($filesName),
-                    'image_path'    => $image_path,
-                    'titles'        => serialize($titles),
-                    'descriptions'  => serialize($descriptions),
-                ]);
-            }
+        } else {
+            $fileNameToStore = 'noattachment.jpeg';
         }
+
+        $home_sustanability = Home_sustanability::create([
+            'image_names'   => serialize($fileName),
+            'image_path'    => 'public/Sustanability_attachments',
+            'titles'        => serialize($titles),
+            'descriptions'  => serialize($descriptions),
+        ]);
 
         return back()->with('success',  "Home sustanability section has been uploaded");
     }
@@ -152,7 +163,6 @@ class AdminController extends Controller
     public  function submitHomeOurTeamImages(Request $request)
     {
         $validation = Validator::make($request->all(), [
-            $home_ourTeamImages     = 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             $titles                 = 'required|string',
             $position               = 'required|string',
         ]);
@@ -161,26 +171,31 @@ class AdminController extends Controller
         $titles                     = $request->input('titles');
         $position                   = $request->input('position');
 
-
-
+        #Handle File Upload
         if ($request->hasFile('home_ourTeamImages')) {
-            foreach ($home_ourTeamImages as $index => $file) {
-                $filename =  time() . '.' . $file->getClientOriginalName();
-                $filesName[] = $filename;
-                $destination = public_path() . '/assets/images/resource';
-                $image_path  = 'assets/images/resource';
-                $file->move($destination, $filename);
+            foreach ($home_ourTeamImages  as $index => $file) {
+                $filenameWithExt = $file->getClientOriginalName();
+                // Get just filename
+                $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+                //Get just ext
+                $extension = $file->getClientOriginalExtension();
+                // FileName to Store
+                $fileNameToStore = $filename . '_' . time() . '.' . $extension;
+                $fileName[] = $fileNameToStore;
+                // Upload Image
+                $path = $file->storeAs('public/Team_attachments', $fileNameToStore);
             }
-            // dd($filesName);
-            if (!empty($position && $titles)) {
-                Home_our_team::create([
-                    'image_name'    => serialize($filesName),
-                    'titles'        => serialize($titles),
-                    'image_path'    => $image_path,
-                    'position'      => serialize($position),
-                ]);
-            }
+        } else {
+            $fileNameToStore = 'noattachment.jpeg';
         }
+
+
+        $home_our_team = Home_our_team::create([
+            'image_name'    => serialize($fileName),
+            'titles'        => serialize($titles),
+            'image_path'    => 'public/Team_attachments',
+            'position'      => serialize($position),
+        ]);
 
         return back()->with('success',  "Home our team section has been uploaded");
     }
@@ -188,7 +203,6 @@ class AdminController extends Controller
     public  function submitAboutUsMainContent(Request $request)
     {
         $validation = Validator::make($request->all(), [
-            $image_Name              = 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             $titles                  = 'required|string',
             $text                    = 'required|string',
             $videoLink               = 'required|string',
@@ -201,27 +215,29 @@ class AdminController extends Controller
         $videoLink                       = $request->input('videoLink');
         $descriptions                    = $request->input('descriptions');
 
-
-
+        #Handle File Upload
         if ($request->hasFile('image_Name')) {
-            foreach ($image_Name as $index => $file) {
-                $filename =  time() . '.' . $file->getClientOriginalName();
-                $filesName[] = $filename;
-                $destination = public_path() . '/assets/images/resource';
-                $image_path  = 'assets/images/resource';
-                $file->move($destination, $filename);
-            }
-            if (!empty($descriptions)) {
-                AboutUs_main_content::create([
-                    'image_name'   => $filename,
-                    'image_path'   => $image_path,
-                    'titles'       => $titles,
-                    'text'         => $text,
-                    'videoLink'    => $videoLink,
-                    'descriptions' => $descriptions,
-                ]);
-            }
+            $filenameWithExt = $request->file('image_Name')->getClientOriginalName();
+            // Get just filename
+            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+            //Get just ext
+            $extension = $request->file('image_Name')->getClientOriginalExtension();
+            // FileName to Store
+            $fileNameToStore = $filename . '_' . time() . '.' . $extension;
+            // Upload Image
+            $path = $request->file('image_Name')->storeAs('public/About_attachments', $fileNameToStore);
+        } else {
+            $fileNameToStore = 'noattachment.jpeg';
         }
+
+        $aboutUs_main_content =  AboutUs_main_content::create([
+            'image_name'   => $fileNameToStore,
+            'image_path'   => 'public/About_attachments',
+            'titles'       => $titles,
+            'text'         => $text,
+            'videoLink'    => $videoLink,
+            'descriptions' => $descriptions,
+        ]);
 
         return back()->with('success',  "About us section has been uploaded");
     }
@@ -229,7 +245,6 @@ class AdminController extends Controller
     public  function submitAboutUsMission(Request $request)
     {
         $validation = Validator::make($request->all(), [
-            $image_Name              = 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             $titles                  = 'required|string',
             $descriptions            = 'required|string',
         ]);
@@ -239,24 +254,26 @@ class AdminController extends Controller
         $descriptions                    = $request->input('descriptions');
 
 
-
+        #Handle File Upload
         if ($request->hasFile('image_Name')) {
-            foreach ($image_Name as $index => $file) {
-                $filename =  time() . '.' . $file->getClientOriginalName();
-                $filesName[] = $filename;
-                $destination = public_path() . '/assets/images/resource';
-                $image_path  = 'assets/images/resource';
-                $file->move($destination, $filename);
-            }
-            if (!empty($descriptions)) {
-                AboutUs_mission::create([
-                    'image_name'   => $filename,
-                    'image_path'   => $image_path,
-                    'titles'       => $titles,
-                    'descriptions' => $descriptions,
-                ]);
-            }
+            $filenameWithExt = $request->file('image_Name')->getClientOriginalName();
+            // Get just filename
+            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+            //Get just ext
+            $extension = $request->file('image_Name')->getClientOriginalExtension();
+            // FileName to Store
+            $fileNameToStore = $filename . '_' . time() . '.' . $extension;
+            // Upload Image
+            $path = $request->file('image_Name')->storeAs('public/About_attachments', $fileNameToStore);
+        } else {
+            $fileNameToStore = 'noattachment.jpeg';
         }
+        $aboutUs_mission =  AboutUs_mission::create([
+            'image_name'   => $fileNameToStore,
+            'image_path'   => 'public/About_attachments',
+            'titles'       => $titles,
+            'descriptions' => $descriptions,
+        ]);
 
         return back()->with('success',  "About us mission section has been uploaded");
     }
@@ -264,7 +281,6 @@ class AdminController extends Controller
     public  function submitAboutUsVission(Request $request)
     {
         $validation = Validator::make($request->all(), [
-            $image_Name              = 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             $titles                  = 'required|string',
             $descriptions            = 'required|string',
         ]);
@@ -274,31 +290,32 @@ class AdminController extends Controller
         $descriptions                    = $request->input('descriptions');
 
 
-
+        #Handle File Upload
         if ($request->hasFile('image_Name')) {
-            foreach ($image_Name as $index => $file) {
-                $filename =  time() . '.' . $file->getClientOriginalName();
-                $filesName[] = $filename;
-                $destination = public_path() . '/assets/images/resource';
-                $image_path  = 'assets/images/resource';
-                $file->move($destination, $filename);
-            }
-            if (!empty($descriptions)) {
-                AboutUs_vission::create([
-                    'image_name'   => $filename,
-                    'image_path'   => $image_path,
-                    'titles'       => $titles,
-                    'descriptions' => $descriptions,
-                ]);
-            }
+            $filenameWithExt = $request->file('image_Name')->getClientOriginalName();
+            // Get just filename
+            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+            //Get just ext
+            $extension = $request->file('image_Name')->getClientOriginalExtension();
+            // FileName to Store
+            $fileNameToStore = $filename . '_' . time() . '.' . $extension;
+            // Upload Image
+            $path = $request->file('image_Name')->storeAs('public/About_attachments', $fileNameToStore);
+        } else {
+            $fileNameToStore = 'noattachment.jpeg';
         }
+        $aboutUs_vission = AboutUs_vission::create([
+            'image_name'   => $fileNameToStore,
+            'image_path'   => 'public/About_attachments',
+            'titles'       => $titles,
+            'descriptions' => $descriptions,
+        ]);
 
         return back()->with('success',  "About us vission section has been uploaded");
     }
     public  function submitExplorationOp(Request $request)
     {
         $validation = Validator::make($request->all(), [
-            $image_Name              = 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             $titles                  = 'required|string',
             $descriptions            = 'required|string',
         ]);
@@ -307,25 +324,31 @@ class AdminController extends Controller
         $titles                          = $request->input('titles');
         $descriptions                    = $request->input('descriptions');
 
-
-
+        #Handle File Upload
         if ($request->hasFile('image_Name')) {
-            foreach ($image_Name as $index => $file) {
-                $filename =  time() . '.' . $file->getClientOriginalName();
-                $filesName[] = $filename;
-                $destination = public_path() . '/assets/images/resource';
-                $image_path  = 'assets/images/resource';
-                $file->move($destination, $filename);
+            foreach ($image_Name  as $index => $file) {
+                $filenameWithExt = $file->getClientOriginalName();
+                // Get just filename
+                $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+                //Get just ext
+                $extension = $file->getClientOriginalExtension();
+                // FileName to Store
+                $fileNameToStore = $filename . '_' . time() . '.' . $extension;
+                $fileName[] = $fileNameToStore;
+                // Upload Image
+                $path = $file->storeAs('public/Operations_attachments', $fileNameToStore);
             }
-            if (!empty($descriptions)) {
-                Exploration_operation::create([
-                    'image_name'   => serialize($filesName),
-                    'image_path'   => $image_path,
-                    'titles'       => serialize($titles),
-                    'descriptions' => serialize($descriptions),
-                ]);
-            }
+        } else {
+            $fileNameToStore = 'noattachment.jpeg';
         }
+
+
+        $exploration_Ops =  Exploration_operation::create([
+            'image_name'   => serialize($fileName),
+            'image_path'   => 'public/Operations_attachments',
+            'titles'       => serialize($titles),
+            'descriptions' => serialize($descriptions),
+        ]);
 
         return back()->with('success',  "Exploration Operation has been uploaded");
     }
@@ -333,7 +356,6 @@ class AdminController extends Controller
     public function submitGoldMiningOp(Request $request)
     {
         $validation = Validator::make($request->all(), [
-            $image_Name              = 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             $titles                  = 'required|string',
             $descriptions            = 'required|string',
         ]);
@@ -342,25 +364,29 @@ class AdminController extends Controller
         $titles                          = $request->input('titles');
         $descriptions                    = $request->input('descriptions');
 
-
-
+        #Handle File Upload
         if ($request->hasFile('image_Name')) {
-            foreach ($image_Name as $index => $file) {
-                $filename =  time() . '.' . $file->getClientOriginalName();
-                $filesName[] = $filename;
-                $destination = public_path() . '/assets/images/resource';
-                $image_path  = 'assets/images/resource';
-                $file->move($destination, $filename);
+            foreach ($image_Name  as $index => $file) {
+                $filenameWithExt = $file->getClientOriginalName();
+                // Get just filename
+                $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+                //Get just ext
+                $extension = $file->getClientOriginalExtension();
+                // FileName to Store
+                $fileNameToStore = $filename . '_' . time() . '.' . $extension;
+                $fileName[] = $fileNameToStore;
+                // Upload Image
+                $path = $file->storeAs('public/Operations_attachments', $fileNameToStore);
             }
-            if (!empty($descriptions)) {
-                Gold_mining_operation::create([
-                    'image_name'   => serialize($filesName),
-                    'image_path'   => $image_path,
-                    'titles'       => serialize($titles),
-                    'descriptions' => serialize($descriptions),
-                ]);
-            }
+        } else {
+            $fileNameToStore = 'noattachment.jpeg';
         }
+        $gold_mining_Ops  =   Gold_mining_operation::create([
+            'image_name'   => serialize($fileName),
+            'image_path'   => 'public/Operations_attachments',
+            'titles'       => serialize($titles),
+            'descriptions' => serialize($descriptions),
+        ]);
 
         return back()->with('success',  "Gold Mining Operation has been uploaded");
     }
@@ -368,7 +394,6 @@ class AdminController extends Controller
     public function submitProcessingOp(Request $request)
     {
         $validation = Validator::make($request->all(), [
-            $image_Name              = 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             $titles                  = 'required|string',
             $descriptions            = 'required|string',
         ]);
@@ -377,25 +402,30 @@ class AdminController extends Controller
         $titles                          = $request->input('titles');
         $descriptions                    = $request->input('descriptions');
 
-
-
+        #Handle File Upload
         if ($request->hasFile('image_Name')) {
-            foreach ($image_Name as $index => $file) {
-                $filename =  time() . '.' . $file->getClientOriginalName();
-                $filesName[] = $filename;
-                $destination = public_path() . '/assets/images/resource';
-                $image_path  = 'assets/images/resource';
-                $file->move($destination, $filename);
+            foreach ($image_Name  as $index => $file) {
+                $filenameWithExt = $file->getClientOriginalName();
+                // Get just filename
+                $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+                //Get just ext
+                $extension = $file->getClientOriginalExtension();
+                // FileName to Store
+                $fileNameToStore = $filename . '_' . time() . '.' . $extension;
+                $fileName[] = $fileNameToStore;
+                // Upload Image
+                $path = $file->storeAs('public/Operations_attachments', $fileNameToStore);
             }
-            if (!empty($descriptions)) {
-                Gold_processing_operation::create([
-                    'image_name'   => serialize($filesName),
-                    'image_path'   => $image_path,
-                    'titles'       => serialize($titles),
-                    'descriptions' => serialize($descriptions),
-                ]);
-            }
+        } else {
+            $fileNameToStore = 'noattachment.jpeg';
         }
+
+        $gold_processing_Ops = Gold_processing_operation::create([
+            'image_name'   => serialize($fileName),
+            'image_path'   => 'public/Operations_attachments',
+            'titles'       => serialize($titles),
+            'descriptions' => serialize($descriptions),
+        ]);
 
         return back()->with('success',  "Gold Processing Operation has been uploaded");
     }
@@ -403,7 +433,6 @@ class AdminController extends Controller
     public function submitRehabilitationOp(Request $request)
     {
         $validation = Validator::make($request->all(), [
-            $image_Name              = 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             $titles                  = 'required|string',
             $descriptions            = 'required|string',
         ]);
@@ -412,25 +441,30 @@ class AdminController extends Controller
         $titles                          = $request->input('titles');
         $descriptions                    = $request->input('descriptions');
 
-
-
+        #Handle File Upload
         if ($request->hasFile('image_Name')) {
-            foreach ($image_Name as $index => $file) {
-                $filename =  time() . '.' . $file->getClientOriginalName();
-                $filesName[] = $filename;
-                $destination = public_path() . '/assets/images/resource';
-                $image_path  = 'assets/images/resource';
-                $file->move($destination, $filename);
+            foreach ($image_Name  as $index => $file) {
+                $filenameWithExt = $file->getClientOriginalName();
+                // Get just filename
+                $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+                //Get just ext
+                $extension = $file->getClientOriginalExtension();
+                // FileName to Store
+                $fileNameToStore = $filename . '_' . time() . '.' . $extension;
+                $fileName[] = $fileNameToStore;
+                // Upload Image
+                $path = $file->storeAs('public/Operations_attachments', $fileNameToStore);
             }
-            if (!empty($descriptions)) {
-                Rehabilitation_operation::create([
-                    'image_name'   => serialize($filesName),
-                    'image_path'   => $image_path,
-                    'titles'       => serialize($titles),
-                    'descriptions' => serialize($descriptions),
-                ]);
-            }
+        } else {
+            $fileNameToStore = 'noattachment.jpeg';
         }
+
+        $rehabilitation  =   Rehabilitation_operation::create([
+            'image_name'   => serialize($fileName),
+            'image_path'   => 'public/Operations_attachments',
+            'titles'       => serialize($titles),
+            'descriptions' => serialize($descriptions),
+        ]);
 
         return back()->with('success',  "Rehabilitation Operation has been uploaded");
     }
@@ -448,24 +482,30 @@ class AdminController extends Controller
         $descriptions                    = $request->input('descriptions');
 
 
-
+        #Handle File Upload
         if ($request->hasFile('image_Name')) {
-            foreach ($image_Name as $index => $file) {
-                $filename =  time() . '.' . $file->getClientOriginalName();
-                $filesName[] = $filename;
-                $destination = public_path() . '/assets/images/resource';
-                $image_path  = 'assets/images/resource';
-                $file->move($destination, $filename);
+            foreach ($image_Name  as $index => $file) {
+                $filenameWithExt = $file->getClientOriginalName();
+                // Get just filename
+                $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+                //Get just ext
+                $extension = $file->getClientOriginalExtension();
+                // FileName to Store
+                $fileNameToStore = $filename . '_' . time() . '.' . $extension;
+                $fileName[] = $fileNameToStore;
+                // Upload Image
+                $path = $file->storeAs('public/Operations_attachments', $fileNameToStore);
             }
-            if (!empty($descriptions)) {
-                Export_ofGold::create([
-                    'image_name'   => serialize($filesName),
-                    'image_path'   => $image_path,
-                    'titles'       => serialize($titles),
-                    'descriptions' => serialize($descriptions),
-                ]);
-            }
+        } else {
+            $fileNameToStore = 'noattachment.jpeg';
         }
+
+        $export_gold =  Export_ofGold::create([
+            'image_name'   => serialize($fileName),
+            'image_path'   => 'public/Operations_attachments',
+            'titles'       => serialize($titles),
+            'descriptions' => serialize($descriptions),
+        ]);
 
         return back()->with('success',  "Export of Gold has been uploaded");
     }
@@ -473,7 +513,6 @@ class AdminController extends Controller
     public function submitResponsibleMining(Request $request)
     {
         $validation = Validator::make($request->all(), [
-            $image_Name              = 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             $titles                  = 'required|string',
             $descriptions            = 'required|string',
         ]);
@@ -483,24 +522,27 @@ class AdminController extends Controller
         $descriptions                    = $request->input('descriptions');
 
 
-
+        #Handle File Upload
         if ($request->hasFile('image_Name')) {
-            foreach ($image_Name as $index => $file) {
-                $filename =  time() . '.' . $file->getClientOriginalName();
-                $filesName[] = $filename;
-                $destination = public_path() . '/assets/images/resource';
-                $image_path  = 'assets/images/resource';
-                $file->move($destination, $filename);
-            }
-            if (!empty($descriptions)) {
-                Responsible_mining::create([
-                    'image_name'   => serialize($filesName),
-                    'image_path'   => $image_path,
-                    'titles'       => serialize($titles),
-                    'descriptions' => serialize($descriptions),
-                ]);
-            }
+            $filenameWithExt = $request->file('image_Name')->getClientOriginalName();
+            // Get just filename
+            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+            //Get just ext
+            $extension = $request->file('image_Name')->getClientOriginalExtension();
+            // FileName to Store
+            $fileNameToStore = $filename . '_' . time() . '.' . $extension;
+            // Upload Image
+            $path = $request->file('image_Name')->storeAs('public/Sustainability_attachments', $fileNameToStore);
+        } else {
+            $fileNameToStore = 'noattachment.jpeg';
         }
+
+        $responsibleMiningData =  Responsible_mining::create([
+            'image_name'   => $fileNameToStore,
+            'image_path'   => 'public/Sustainability_attachments',
+            'titles'       => serialize($titles),
+            'descriptions' => serialize($descriptions),
+        ]);
 
         return back()->with('success',  "Responsible Mining image and descriptions has been uploaded");
     }
@@ -508,7 +550,6 @@ class AdminController extends Controller
     public function submitHealthandSafety(Request $request)
     {
         $validation = Validator::make($request->all(), [
-            $image_Name              = 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             $titles                  = 'required|string',
             $descriptions            = 'required|string',
         ]);
@@ -519,23 +560,27 @@ class AdminController extends Controller
 
 
 
+        #Handle File Upload
         if ($request->hasFile('image_Name')) {
-            foreach ($image_Name as $index => $file) {
-                $filename =  time() . '.' . $file->getClientOriginalName();
-                $filesName[] = $filename;
-                $destination = public_path() . '/assets/images/resource';
-                $image_path  = 'assets/images/resource';
-                $file->move($destination, $filename);
-            }
-            if (!empty($descriptions)) {
-                Health_safety::create([
-                    'image_name'   => serialize($filesName),
-                    'image_path'   => $image_path,
-                    'titles'       => serialize($titles),
-                    'descriptions' => serialize($descriptions),
-                ]);
-            }
+            $filenameWithExt = $request->file('image_Name')->getClientOriginalName();
+            // Get just filename
+            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+            //Get just ext
+            $extension = $request->file('image_Name')->getClientOriginalExtension();
+            // FileName to Store
+            $fileNameToStore = $filename . '_' . time() . '.' . $extension;
+            // Upload Image
+            $path = $request->file('image_Name')->storeAs('public/Sustainability_attachments', $fileNameToStore);
+        } else {
+            $fileNameToStore = 'noattachment.jpeg';
         }
+
+        $healthSafetyData =  Health_safety::create([
+            'image_name'   => $fileNameToStore,
+            'image_path'   => 'public/Sustainability_attachments',
+            'titles'       => serialize($titles),
+            'descriptions' => serialize($descriptions),
+        ]);
 
         return back()->with('success',  "Health and Safety image and descriptions has been uploaded");
     }
@@ -543,7 +588,6 @@ class AdminController extends Controller
     public function submitEnvronmentManagement(Request $request)
     {
         $validation = Validator::make($request->all(), [
-            $image_Name              = 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             $titles                  = 'required|string',
             $descriptions            = 'required|string',
         ]);
@@ -552,25 +596,28 @@ class AdminController extends Controller
         $titles                          = $request->input('titles');
         $descriptions                    = $request->input('descriptions');
 
-
-
+        #Handle File Upload
         if ($request->hasFile('image_Name')) {
-            foreach ($image_Name as $index => $file) {
-                $filename =  time() . '.' . $file->getClientOriginalName();
-                $filesName[] = $filename;
-                $destination = public_path() . '/assets/images/resource';
-                $image_path  = 'assets/images/resource';
-                $file->move($destination, $filename);
-            }
-            if (!empty($descriptions)) {
-                Environmental_management::create([
-                    'image_name'   => serialize($filesName),
-                    'image_path'   => $image_path,
-                    'titles'       => serialize($titles),
-                    'descriptions' => serialize($descriptions),
-                ]);
-            }
+            $filenameWithExt = $request->file('image_Name')->getClientOriginalName();
+            // Get just filename
+            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+            //Get just ext
+            $extension = $request->file('image_Name')->getClientOriginalExtension();
+            // FileName to Store
+            $fileNameToStore = $filename . '_' . time() . '.' . $extension;
+            // Upload Image
+            $path = $request->file('image_Name')->storeAs('public/Sustainability_attachments', $fileNameToStore);
+        } else {
+            $fileNameToStore = 'noattachment.jpeg';
         }
+
+
+        $enviroManagementData =  Environmental_management::create([
+            'image_name'   => $fileNameToStore,
+            'image_path'   => 'public/Sustainability_attachments',
+            'titles'       => serialize($titles),
+            'descriptions' => serialize($descriptions),
+        ]);
 
         return back()->with('success',  "Environmental Management image and descriptions has been uploaded");
     }
@@ -578,7 +625,6 @@ class AdminController extends Controller
     public function submitSocialPerformance(Request $request)
     {
         $validation = Validator::make($request->all(), [
-            $image_Name              = 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             $titles                  = 'required|string',
             $descriptions            = 'required|string',
         ]);
@@ -589,25 +635,68 @@ class AdminController extends Controller
 
 
 
+        #Handle File Upload
         if ($request->hasFile('image_Name')) {
-            foreach ($image_Name as $index => $file) {
-                $filename =  time() . '.' . $file->getClientOriginalName();
-                $filesName[] = $filename;
-                $destination = public_path() . '/assets/images/resource';
-                $image_path  = 'assets/images/resource';
-                $file->move($destination, $filename);
-            }
-            if (!empty($descriptions)) {
-                Social_performance::create([
-                    'image_name'   => serialize($filesName),
-                    'image_path'   => $image_path,
-                    'titles'       => serialize($titles),
-                    'descriptions' => serialize($descriptions),
-                ]);
-            }
+            $filenameWithExt = $request->file('image_Name')->getClientOriginalName();
+            // Get just filename
+            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+            //Get just ext
+            $extension = $request->file('image_Name')->getClientOriginalExtension();
+            // FileName to Store
+            $fileNameToStore = $filename . '_' . time() . '.' . $extension;
+            // Upload Image
+            $path = $request->file('image_Name')->storeAs('public/Sustainability_attachments', $fileNameToStore);
+        } else {
+            $fileNameToStore = 'noattachment.jpeg';
         }
 
+        $socialPerformanceData =  Social_performance::create([
+            'image_name'   => $fileNameToStore,
+            'image_path'   => 'public/Sustainability_attachments',
+            'titles'       => serialize($titles),
+            'descriptions' => serialize($descriptions),
+        ]);
+
         return back()->with('success',  "Social Performance image and descriptions has been uploaded");
+    }
+
+    public  function blogs(Request $request)
+    {
+        $validation = Validator::make($request->all(), [
+            $title                   = 'required|string',
+            $date                    = 'required|string',
+            $descriptions            = 'required|string',
+        ]);
+
+        $title                           = $request->input('title');
+        $date                            = $request->input('date');
+        $descriptions                    = $request->input('descriptions');
+        $blogDate                        = Carbon::parse($date)->format('M d,Y');
+
+        #Handle File Upload
+        if ($request->hasFile('image_Name')) {
+            $filenameWithExt = $request->file('image_Name')->getClientOriginalName();
+            // Get just filename
+            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+            //Get just ext
+            $extension = $request->file('image_Name')->getClientOriginalExtension();
+            // FileName to Store
+            $fileNameToStore = $filename . '_' . time() . '.' . $extension;
+            // Upload Image
+            $path = $request->file('image_Name')->storeAs('public/Blogs_attachments', $fileNameToStore);
+        } else {
+            $fileNameToStore = 'noattachment.jpeg';
+        }
+
+        $blogs =  Blog::create([
+            'image_name'   => $fileNameToStore,
+            'image_path'   => 'public/Blogs_attachments',
+            'title'        => $title,
+            'date'         => $blogDate,
+            'descriptions' => $descriptions,
+        ]);
+
+        return back()->with('success',  "Blog details has been uploaded");
     }
 
     public function getHomeAboutdetails()
@@ -637,7 +726,7 @@ class AdminController extends Controller
             $teamPosition = unserialize($ourTeamDetails->position);
         }
         // dd($ourTeamDetails);
-        return view('home', ['details' => $details, 'titles' => $titles, 'images' => $images, 'descriptions' => $descriptions, 'imagesSustan' => $imagesSustan, 'titlesSustan' => $titlesSustan, 'descriptionsSustan' => $descriptionsSustan, 'teamImage' => $teamImage, 'teamTitles' => $teamTitles, 'teamPosition' => $teamPosition]);
+        return view('index', ['details' => $details, 'titles' => $titles, 'images' => $images, 'descriptions' => $descriptions, 'imagesSustan' => $imagesSustan, 'titlesSustan' => $titlesSustan, 'descriptionsSustan' => $descriptionsSustan, 'teamImage' => $teamImage, 'teamTitles' => $teamTitles, 'teamPosition' => $teamPosition]);
     }
 
     public function aboutUsdetails()
@@ -784,5 +873,163 @@ class AdminController extends Controller
         }
         // dd($image);
         return view('sustainability_four', ['image' => $image, 'titles' => $titles, 'descriptions' => $descriptions]);
+    }
+
+    public function uploadCompanyProfile(Request $request)
+    {
+        $valid = Validator::make($request->all(), [
+            'title'     => 'required',
+        ]);
+
+        #Handle File Upload
+        if ($request->hasFile('attachment')) {
+            $filenameWithExt = $request->file('attachment')->getClientOriginalName();
+            // Get just filename
+            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+            //Get just ext
+            $extension = $request->file('attachment')->getClientOriginalExtension();
+            // FileName to Store
+            $fileNameToStore = $filename . '_' . time() . '.' . $extension;
+            // Upload Image
+            $path = $request->file('attachment')->storeAs('public/Companyprofile_attachments', $fileNameToStore);
+        } else {
+            $fileNameToStore = 'noattachment.jpeg';
+        }
+
+        $company_profile = CompanyProfile::create([
+            'title'      => $request['title'],
+            'attachment' => $fileNameToStore,
+        ]);
+
+        return back()->with('success',  "Company Profile file has been uploaded");
+    }
+
+
+    public function home_index()
+    {
+        $companyProfileData = CompanyProfile::all();
+        foreach ($companyProfileData as $companyData) {
+            $data['title'] = $companyData->title;
+            $data['attachmentData'] = $companyData->attachment;
+        }
+
+        $blogsData = Blog::latest('created_at')->limit(3)->get();
+
+        return view('index', ['data' => $data,'blogsData'=>$blogsData]);
+    }
+
+    public function about_Us()
+    {
+        $companyProfileData = CompanyProfile::all();
+        foreach ($companyProfileData as $companyData) {
+            $data['title'] = $companyData->title;
+            $data['attachmentData'] = $companyData->attachment;
+        }
+
+        return view('about-us', ['data' => $data]);
+    }
+
+    public function exploration_Ops()
+    {
+        $companyProfileData = CompanyProfile::all();
+        foreach ($companyProfileData as $companyData) {
+            $data['title'] = $companyData->title;
+            $data['attachmentData'] = $companyData->attachment;
+        }
+
+        return view('operations.exploration', ['data' => $data]);
+    }
+
+    public function mining_processing_Ops()
+    {
+        $companyProfileData = CompanyProfile::all();
+        foreach ($companyProfileData as $companyData) {
+            $data['title'] = $companyData->title;
+            $data['attachmentData'] = $companyData->attachment;
+        }
+
+        return view('operations.mining-processing', ['data' => $data]);
+    }
+
+    public function sale_products()
+    {
+        $companyProfileData = CompanyProfile::all();
+        foreach ($companyProfileData as $companyData) {
+            $data['title'] = $companyData->title;
+            $data['attachmentData'] = $companyData->attachment;
+        }
+
+        return view('operations.sale-products', ['data' => $data]);
+    }
+
+    public function rehabilitation_Ops()
+    {
+        $companyProfileData = CompanyProfile::all();
+        foreach ($companyProfileData as $companyData) {
+            $data['title'] = $companyData->title;
+            $data['attachmentData'] = $companyData->attachment;
+        }
+
+        return view('operations.rehabilitation-closure', ['data' => $data]);
+    }
+
+    public function responsible_mining_Susta()
+    {
+        $companyProfileData = CompanyProfile::all();
+        foreach ($companyProfileData as $companyData) {
+            $data['title'] = $companyData->title;
+            $data['attachmentData'] = $companyData->attachment;
+        }
+
+        return view('sustainability.responsible-mining', ['data' => $data]);
+    }
+
+    public function environ_management_Susta()
+    {
+        $companyProfileData = CompanyProfile::all();
+        foreach ($companyProfileData as $companyData) {
+            $data['title'] = $companyData->title;
+            $data['attachmentData'] = $companyData->attachment;
+        }
+
+        return view('sustainability.environmental-management', ['data' => $data]);
+    }
+
+    public function health_safety_Susta()
+    {
+        $companyProfileData = CompanyProfile::all();
+        foreach ($companyProfileData as $companyData) {
+            $data['title'] = $companyData->title;
+            $data['attachmentData'] = $companyData->attachment;
+        }
+
+        return view('sustainability.health-safety', ['data' => $data]);
+    }
+
+    public function social_performance_Susta()
+    {
+        $companyProfileData = CompanyProfile::all();
+        foreach ($companyProfileData as $companyData) {
+            $data['title'] = $companyData->title;
+            $data['attachmentData'] = $companyData->attachment;
+        }
+
+        return view('sustainability.social-performance', ['data' => $data]);
+    }
+
+    public function contact_Us()
+    {
+        $companyProfileData = CompanyProfile::all();
+        foreach ($companyProfileData as $companyData) {
+            $data['title'] = $companyData->title;
+            $data['attachmentData'] = $companyData->attachment;
+        }
+
+        return view('contact-us', ['data' => $data]);
+    }
+
+    public function email_list(){
+        $emailData = ContactUs::latest('created_at')->get();
+        return view('admin.email-list',['emailData'=>$emailData]);
     }
 }

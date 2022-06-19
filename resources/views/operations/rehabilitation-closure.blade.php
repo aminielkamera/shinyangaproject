@@ -60,7 +60,7 @@
                         <div class="widget-wrap bg-light-theme text-center rounded py-3">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <a href="#" class="btn-theme"> <i class="icofont-file-pdf icofont-2x"></i> &nbsp; Company Profile.pdf</a>
+                                <a href="{{url('storage/Companyprofile_attachments/'.$data['attachmentData'])}}" target="_blank" class="btn-theme"> <i class="icofont-file-pdf icofont-2x"></i> &nbsp; {{$data['title']}}.pdf</a>
                                 </div>
                             </div>
                         </div>

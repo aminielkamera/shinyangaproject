@@ -4999,6 +4999,7 @@ input[type="submit"].btn-block {
     display: flex;
     padding-left: 0;
     list-style: none;
+    float: right;
     border-radius: 0.25rem;
 }
 .page-link {
@@ -5045,6 +5046,9 @@ input[type="submit"].btn-block {
     cursor: auto;
     background-color: #fff;
     border-color: #ced4da;
+}
+.dataTables_filter{
+    float: right;
 }
 .pagination-lg .page-link {
     padding: 0.75rem 1.5rem;
