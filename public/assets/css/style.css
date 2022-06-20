@@ -662,7 +662,7 @@ h2.h2-xl {
 /*------------------------------------------*/
 
 .bg-img-6 {
-    background-image: url(../images/bg_6.jpg);
+    background-image: url(../images/bg_34.jpg);
     background-repeat: no-repeat;
     background-position: center center;
 }
@@ -2415,7 +2415,7 @@ h2.h2-xl {
 /*------------------------------------------*/
 
 .clients-bg {
-    background-image: url(../images/bg_3.jpg);
+    background-image: url(../images/bg_34.jpg);
     background-repeat: no-repeat;
     background-position: center center;
 }
@@ -2444,7 +2444,7 @@ h2.h2-xl {
 
 
 .clients-bg-about {
-    background-image: url(../images/bg_3.jpg);
+    background-image: url(../images/bg_34.jpg);
     background-repeat: no-repeat;
     background-position: center center;
 }
@@ -3315,7 +3315,7 @@ input:-webkit-autofill:active {
 .video-popup {
     padding: 11rem 0;
     margin-bottom: -100px;
-    background: url(../images/popup_bg.jpg) no-repeat center center;
+    background: url(../images/popup_bg_2.jpg) no-repeat center center;
     text-align: center;
     overflow: hidden;
     color: #FFF;
@@ -4919,6 +4919,50 @@ footer .social-icons a:hover {
     margin-top: 15px;
 }
 
+
+
+.breadcrumbs-page-2 {
+    background-image: url(../images/breadcrumbs_bg_9.png);
+    background-repeat: no-repeat;
+    padding: 7rem 0;
+    background-position: center center;
+}
+
+.breadcrumbs-page-2 .breadcrumb {
+    background: transparent;
+    color: #FFF;
+    padding: 0;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.breadcrumbs-page-2 .breadcrumb a,
+.breadcrumbs-page-2 .breadcrumb-item+.breadcrumb-item::before,
+.breadcrumb-item.active {
+    color: #FFF;
+}
+
+.breadcrumbs-page-2 .breadcrumb-item+.breadcrumb-item::before {
+    top: 1px;
+    position: relative;
+}
+
+.breadcrumbs-page-2 h1 {
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.breadcrumbs-description {
+    padding: 0.75rem 1.5rem;
+    color: #FFF;
+    border-left: 2px solid transparent;
+    border-image: -webkit-linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
+    border-image-slice: 1;
+    max-width: 50%;
+    margin-top: 15px;
+}
 
 /* Page Breadcrumbs End */
 

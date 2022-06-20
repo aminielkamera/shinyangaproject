@@ -100,7 +100,7 @@
     }
 </style>
 <!-- Page Breadcrumbs Start -->
-<div class="slider bg-navy-blue bg-fixed pos-rel breadcrumbs-page">
+<div class="slider bg-navy-blue bg-fixed pos-rel breadcrumbs-page-2">
     <div class="container">
         <h1>About Us</h1>
         <div class="breadcrumbs-description">
@@ -234,7 +234,7 @@
     <div class="container-fluid">
         <div class="row align-items-center">
             <div class="col-lg-5 col-12 p-0">
-                <img src="{{ asset('assets/images/why-choose-us.jpg')}}" class="w-100" alt="">
+                <img src="{{ asset('assets/images/why-choose-us_1.jpg')}}" class="w-100" alt="">
             </div>
             <div class="col-lg-6 col-12">
 

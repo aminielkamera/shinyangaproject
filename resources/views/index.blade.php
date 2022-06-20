@@ -305,7 +305,7 @@
         <div class="row text-center">
             <div class="spacer-30"></div>
             <div class="col-md-12">
-                <a href="{{url('about-us')}}" class="btn-theme bg-navy-blue-btn">View All <i class="icofont-rounded-right"></i></a>
+                <a href="{{url('responsible_mining')}}" class="btn-theme bg-navy-blue-btn">View All <i class="icofont-rounded-right"></i></a>
             </div>
         </div>
     </div>
