@@ -3,7 +3,7 @@
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ContactUsController;
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Support\Facades\Auth;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -60,10 +60,6 @@ Route::post('client/contact-Us',[ContactUsController::class,'contact_Us']);
 #END CONTACTS US ROUTES
 
 #START ADMIN ROUTERS
-
-Route::get('/admin-dashboard', function() {
-    return view('admin.admin_home_sliders');
- });
  Route::get('/form-uploads', function(){
      return view('admin.form-uploads');
  });
@@ -149,5 +145,4 @@ Route::get('admin/email', [AdminController::class,'email_list']);
 
 
 Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/admin-dashboard', [App\Http\Controllers\HomeController::class, 'index']);
