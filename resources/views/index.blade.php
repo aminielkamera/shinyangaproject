@@ -12,6 +12,7 @@
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
     }
+
     .shaped {
         float: left;
         height: 45vh;
@@ -22,30 +23,37 @@
         background-position: center center;
         background-size: cover;
     }
+
     .shaped {
         /*...*/
         shape-outside: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
         shape-margin: 10px;
     }
+
     .shaped {
         /*...*/
         clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
     }
+
     .bg-navy-blue-btn {
         background: linear-gradient(to right, #AE8625, #F7EF8A, #D2AC47, #EDC967);
     }
+
     .arrow>a {
         color: #AE8625;
     }
+
     .arrow::after {
         display: inline-block;
         padding-left: 8px;
         content: "\2192";
         transition: transform 0.3s ease-out;
     }
+
     .arrow:hover::after {
         transform: translateX(6px);
     }
+
     .pageOption {
         overflow: hidden;
         position: relative;
@@ -53,28 +61,34 @@
         height: 300px;
         position: absolute;
     }
+
     .option,
     .option img {
         width: 100%;
         height: 100%;
     }
+
     .option {
         overflow: hidden;
         position: absolute;
         transform: skewX(-55.98deg);
     }
+
     .option:first-child {
         left: -.25em;
         transform-origin: 100% 0;
     }
+
     .option:last-child {
         right: -.25em;
         transform-origin: 0 100%;
     }
+
     .option img {
         transform: skewX(55.98deg);
         transform-origin: inherit;
     }
+
     .card1 {
         position: relative;
         display: flex;
@@ -90,6 +104,7 @@
         border-image: -webkit-linear-gradient(left, #8f6B29, #FDE08D, #DF9F28);
         border-image-slice: 1;
     }
+
     h2 {
         position: absolute;
         left: 0;
@@ -102,6 +117,7 @@
         color: #fff;
         mix-blend-mode: difference;
     }
+
     #p {
         position: absolute;
         left: 0;
@@ -109,6 +125,7 @@
         margin: 10px 20px 60px 20px;
         color: #6f6f6f;
     }
+
     #circle {
         height: 100%;
         width: 100%;
@@ -117,6 +134,7 @@
         margin-top: -330px;
         margin-left: 200px;
     }
+
     #triangle {
         height: 100%;
         width: 100%;
@@ -127,6 +145,7 @@
         margin-left: 200px;
         margin-bottom: 10px;
     }
+
     .content1 a {
         position: absolute;
         right: 0;
@@ -138,12 +157,14 @@
         padding: 6px 15px;
         box-shadow: 10px 0 50px rgba(0, 0, 0, 0.2);
     }
+
     .content1 a:hover {
         color: rgba(108, 84, 40, 255);
         font-size: 15px;
         box-shadow: 10px 0 50px rgba(0, 0, 0, 0.09);
     }
-    .white{
+
+    .white {
         color: #ffffff;
     }
 </style>
@@ -402,7 +423,7 @@
             <div class="col-12 col-lg-4 col-sm-6 wow fadeInUp mb-2" data-wow-duration="0" data-wow-delay="0.1s">
                 <div class="card-box">
                     <div class="team-section-one">
-                        <img src="{{ asset('assets/images/team/team-2.jpg')}}" alt="" class="rounded-circle">
+                        <img src="{{ asset('assets/images/team/team-6.jpg')}}" alt="" class="rounded-circle">
                         <h4 class="h4-md txt-blue">Emmanuel Magashi</h4>
                         <h5 class="h5-md txt-ligt-gray">CEO</h5>
                         <div class="social-icons">
@@ -424,7 +445,7 @@
             <div class="col-12 col-lg-4 col-sm-6 wow fadeInUp mb-2" data-wow-duration="0" data-wow-delay="0.2s">
                 <div class="card-box">
                     <div class="team-section-one">
-                        <img src="{{ asset('assets/images/team/team-3.jpg')}}" alt="" class="rounded-circle">
+                        <img src="{{ asset('assets/images/team/team-5.jpg')}}" alt="" class="rounded-circle">
                         <h4 class="h4-md txt-blue">Salvatory Mihambo Stephen</h4>
                         <h5 class="h5-md txt-ligt-gray">Director of Resources</h5>
                         <div class="social-icons">
@@ -436,16 +457,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Team Column One -->
-
-            <!-- Team Column One -->
-            <!-- <div class="col-12 col-lg-3 col-sm-6 wow fadeInUp" data-wow-duration="0" data-wow-delay="0.3s">
-                <div class="team-section-one">
-                    <img src="{{ asset('assets/images/team/team-4.jpg')}}" alt="" class="rounded-circle">
-                    <h4 class="h4-md txt-blue">Jeff Fashkin</h4>
-                    <h5 class="h5-md txt-ligt-gray">Head Operational</h5>
-                </div>
-            </div> -->
             <!-- Team Column One -->
         </div>
     </div>
@@ -527,7 +538,7 @@
             </div>
             <!-- Heading Main -->
             @foreach($blogsData As $blogs)
-              <!-- Blog Items -->
+            <!-- Blog Items -->
             <div class="col-sm-12 col-md-4 wow fadeInLeft" data-wow-duration="0" data-wow-delay="0.1s">
                 <div class="blog-warp">
                     <img src="{{ asset('storage/Blogs_attachments/'.$blogs->image_name)}}" alt="" class="rounded">

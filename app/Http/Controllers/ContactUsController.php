@@ -49,14 +49,14 @@ class ContactUsController extends Controller
            'email'   => $email
         ]);
 
-        // $data = array();
-        // $data['name']              = $name;
-        // $data['email']             = $email;
-        // $data['area']              = "Contact Us";
-        // $data['subject']           = $subject;
-        // $data['message']           = $message;
+        $data = array();
+        $data['name']              = $name;
+        $data['email']             = $email;
+        $data['area']              = "Contact Us";
+        $data['subject']           = $subject;
+        $data['message']           = $message;
 
-        // Mail::to( '2016kamera@gmail.com' )->send( new ContactUsEmail($data));
+        Mail::to( '2016kamera@gmail.com' )->send( new ContactUsEmail($data));
 
         return back()->with('success', 'Success! An email has been successfully sent.');
     }
