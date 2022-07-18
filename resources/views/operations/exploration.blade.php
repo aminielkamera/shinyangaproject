@@ -5,12 +5,11 @@
 <!-- What We Offer Start -->
 <!-- Page Breadcrumbs Start -->
 <div class="slider bg-navy-blue bg-fixed pos-rel breadcrumbs-page">
-<div class="bg-overlay-bread blue opacity-70"></div>
+    <div class="bg-overlay-bread blue opacity-70"></div>
     <div class="container">
         <h1>Exploration</h1>
         <div class="breadcrumbs-description">
-            Iterative approaches to corporate strategy foster collaborative thinking to further the overall value
-            proposition.
+            We are a responsible mining company that discovers and processes gold ore and sells gold.
         </div>
     </div>
 </div>
@@ -29,13 +28,14 @@
                             </h4>
                             <p> Mineral exploration begins with initial stage prospecting to
                                 determine if a mineral resource exists, or if a known area of
-                                mineral resource extends past its known bounds. Broad scale structural
-                                mapping and geochemical sampling are used to identify areas of interest
-                                containing anomalous gold or other metals of interest and helps
-                                to defining the zone of potential mineral resource. Areas or zones of
-                                interest are subjected to more in-depth investigation through detailed
-                                structural mapping, targeted geochemical sampling (such as soil sampling)
-                                and geophysics, to better define the specific target areas.</p>
+                                mineral resource extends past its known bounds. Broad scale
+                                structural mapping and geochemical sampling are used to identify
+                                areas of interest containing anomalous gold or other metals of
+                                interest and help define the zone of potential mineral resources.
+                                Areas or zones of interest are subjected to more in-depth
+                                investigation through detailed structural mapping, targeted
+                                geochemical sampling (such as soil sampling) and geophysics,
+                                to better define the specific target areas.</p>
 
                         </div>
                     </div>

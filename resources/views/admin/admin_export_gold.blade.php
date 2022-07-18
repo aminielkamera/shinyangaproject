@@ -60,7 +60,7 @@
                 </div>
             </div>
             <!-- end page title -->
-            <form method="POST" action="{{  url('admin/export/gold')}}" enctype="multipart/form-data">
+            <form method="POST" action="{{ url('admin/export/gold')}}" enctype="multipart/form-data">
                 @csrf
                 <div class="row">
                     <div class="col-lg-6">

@@ -5,12 +5,11 @@
 <!-- What We Offer Start -->
 <!-- Page Breadcrumbs Start -->
 <div class="slider bg-navy-blue bg-fixed pos-rel breadcrumbs-page">
-<div class="bg-overlay-bread blue opacity-70"></div>
+    <div class="bg-overlay-bread blue opacity-70"></div>
     <div class="container">
         <h1>Mining, Processing and Refining</h1>
         <div class="breadcrumbs-description">
-            Iterative approaches to corporate strategy foster collaborative thinking to further the overall value
-            proposition.
+            We are a responsible mining company that discovers and processes gold ore and sells gold.
         </div>
     </div>
 </div>
@@ -29,14 +28,14 @@
                             </h4>
                             <p>
                                 The findings from exploration drilling are then used to develop what we
-                                call a resource model. This provides the information we need to work
-                                out where to mine. Tall, wide steps called benches are drilled to define
-                                ore (rock which contains gold) and waste (rock which does not contain economic
-                                quantities of gold), and then the area is blasted. This breaks up the rock and
-                                makes it easier to transport. The ore and waste areas are marked out and a fleet
-                                of excavators and dump trucks mine each area separately. Waste rock is transported
-                                to a waste rock stack which is rehabilitated or used to stabilise and fill previously
-                                mined areas. Gold bearing ore is transported to stockpiles ready for processing.
+                                call a resource model. This provides the information we need to work out where
+                                to mine. Tall, wide steps called benches are drilled to define ore (rock which
+                                contains gold) and waste (rock which does not contain economic quantities of gold),
+                                and then the area is blasted. This breaks up the rock and makes it easier to
+                                transport. The ore and waste areas are marked out, and a fleet of excavators
+                                and dump trucks mine each area separately. Waste rock is transported to a waste
+                                rock stack, which is rehabilitated or used to stabilise and fill previously mined
+                                areas. Gold-bearing ore is transported to stockpiles ready for processing.
                             </p>
 
                         </div>
@@ -58,7 +57,7 @@
                         <div class="widget-wrap bg-light-theme text-center rounded py-3">
                             <div class="row">
                                 <div class="col-md-12">
-                                <a href="{{url('storage/Companyprofile_attachments/'.$data['attachmentData'])}}" target="_blank" class="btn-theme"> <i class="icofont-file-pdf icofont-2x"></i> &nbsp; {{$data['title']}}.pdf</a>
+                                    <a href="{{url('storage/Companyprofile_attachments/'.$data['attachmentData'])}}" target="_blank" class="btn-theme"> <i class="icofont-file-pdf icofont-2x"></i> &nbsp; {{$data['title']}}.pdf</a>
                                 </div>
                             </div>
                         </div>
@@ -115,11 +114,11 @@
 
                 <h4 class="h4-md mb-3 mt-3 fw-7 txt-blue">Gold Precessing & Refining</h4>
                 <p>
-                    Gold at Magsam is known as ‘refractory ore’, which means it is ultra-fine and
+                    Gold at Magsam is known as "refractory ore", which means it is ultra-fine and
                     resistant to the typical cyanide leach process, typical of most gold processing
-                    plants. This refractory nature of the ore led to inefficiencies recovering the
-                    gold from ore in the past. The ore now goes through a three-stage processing
-                    cycle to ensure the gold is economically recovered from the ore.
+                    plants. This refractory nature of the ore led to inefficiencies in
+                    recovering gold from ore in the past. The ore now goes through a three-stage
+                    processing cycle to ensure the gold is economically recovered from the ore.
                 </p>
             </div>
 

@@ -92,11 +92,11 @@
 </style>
 <!-- Page Breadcrumbs Start -->
 <div class="slider bg-navy-blue bg-fixed pos-rel breadcrumbs-page">
-<div class="bg-overlay-bread blue opacity-70"></div>
+    <div class="bg-overlay-bread blue opacity-70"></div>
     <div class="container">
         <h1>Responsible Mining</h1>
         <div class="breadcrumbs-description">
-            Meet the amazing team behind this project and find out more about how we work.
+            We are a responsible mining company that discovers and processes gold ore and sells gold.
         </div>
     </div>
 </div>
@@ -112,10 +112,7 @@
                         <div class="service-inner-content media-body">
                             <h4 class="h4-md mb-3 fw-7 txt-blue">Responsible Mining</h4>
                             <p>
-                                As a Magsam Resources Ltd we base on responsible mining,
-                                our sustainable performance shapes our purpose, vision and mission,
-                                and guides our individual and collective actions every day.
-                                Our purpose is mining gold for a better future.
+                                As a Magsam Resources Ltd. company based on responsible mining, our sustainable performance shapes our purpose, vision, and mission, and guides our individual and collective actions every day. Our purpose is to mine gold for a better future.
                                 The gold we produce help:-
                             </p>
                             <div class="content">
@@ -130,7 +127,7 @@
                             <p>
                                 The Magsam Way of doing business reflects our culture and commitment
                                 to responsible mining, managing our impacts and, more broadly,
-                                contributing to Shinyanga communities in which we work and live.
+                                contributing to the Shinyanga communities in which we work and live.
                             </p>
                         </div>
                     </div>
@@ -157,7 +154,7 @@
             <!-- Icon Boxes -->
             <div class="col-lg-4 text-center">
                 <div class="px-5 wide-tb-50">
-                <a href="{{url('storage/Companyprofile_attachments/'.$data['attachmentData'])}}" target="_blank" class="btn-theme"> <i class="icofont-file-pdf icofont-2x"></i> &nbsp; {{$data['title']}}.pdf</a>
+                    <a href="{{url('storage/Companyprofile_attachments/'.$data['attachmentData'])}}" target="_blank" class="btn-theme"> <i class="icofont-file-pdf icofont-2x"></i> &nbsp; {{$data['title']}}.pdf</a>
                 </div>
             </div>
             <!-- Icon Boxes -->

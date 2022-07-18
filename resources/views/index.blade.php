@@ -233,9 +233,24 @@
                 <!-- <p>Help agencies to define their new business objectives and then create professional software.</p> -->
             </div>
             <div class="content">
-                <p class="text-left">Our journey began in 2020 in the Lake Region of Tanzania when gold production first commenced at Magsam in Shinyanga. One year, our footprint has expanded to the Mwazimba mine and Nyamakwenge mine of Shinyanga region. Throughout our history, we have proudly advanced the body of knowledge in our field and delivered award-winning initiatives driven by a commitment to social, economic, operational, and environmental sustainability."Magsam Resources Ltd" we have two mines which combining underground and open pit gold mine located in Shinyanga district, Region of Tanzania. It is operated by Magsam Resources Ltd, who owned 100% of the mine.
+                <p class="text-left">Our journey began in 2020 in the Lake Region of Tanzania when
+                    gold production first commenced at Magsam in Shinyanga.
+                    In one year, our footprint has expanded to the Mwazimba mine
+                    and Nyamakwenge mine in the Shinyanga region. Throughout our
+                    history, we have proudly advanced the body of knowledge in our
+                    field and delivered award-winning initiatives driven by a
+                    commitment to social, economic, operational, and environmental
+                    sustainability. <q style="font-weight: 500;">Magsam Resources Ltd</q> has two mines which
+                    combine underground and open pit gold mining and are located
+                    in the Shinyanga district, Region of Tanzania.
+                    It is operated by <q>Magsam Resources Ltd</q>, which owns 100%
+                    of the mine.
                     <br><br>
-                    You will receive exceptional customer service through the entire project with clear and open communication. We encourage client participation guaranteeing you of effective outcomes. You can relax knowing that your project is being managed by a knowledgeable, experienced team. We offer skilled, expert advice on both the structure and style of your home.
+                    After an extensive environmental review and permitting process,
+                    we have obtained permits (subject to ongoing litigation) to construct
+                    and operate the mine, modernize and reactive processing facilities
+                    on our site that were formerly used in gold ore operations,
+                    and address legacy issues associated with gold mining operations.
                 </p>
                 <div class="row">
                     <div class="spacer-10"></div>
@@ -343,7 +358,7 @@
                 <p><i class="icofont-users-alt-3"></i></p>
                 <span class="counter">225</span>
                 <div>
-                    Employers
+                 Employees
                 </div>
             </div>
             <!-- Counter Col End -->
@@ -423,7 +438,7 @@
             <div class="col-12 col-lg-4 col-sm-6 wow fadeInUp mb-2" data-wow-duration="0" data-wow-delay="0.1s">
                 <div class="card-box">
                     <div class="team-section-one">
-                        <img src="{{ asset('assets/images/team/team-6.jpg')}}" alt="" class="rounded-circle">
+                        <img src="{{ asset('assets/images/team/team-7.jpg')}}" alt="" class="rounded-circle">
                         <h4 class="h4-md txt-blue">Emmanuel Magashi</h4>
                         <h5 class="h5-md txt-ligt-gray">CEO</h5>
                         <div class="social-icons">
@@ -445,7 +460,7 @@
             <div class="col-12 col-lg-4 col-sm-6 wow fadeInUp mb-2" data-wow-duration="0" data-wow-delay="0.2s">
                 <div class="card-box">
                     <div class="team-section-one">
-                        <img src="{{ asset('assets/images/team/team-5.jpg')}}" alt="" class="rounded-circle">
+                        <img src="{{ asset('assets/images/team/team-8.jpg')}}" alt="" class="rounded-circle">
                         <h4 class="h4-md txt-blue">Salvatory Mihambo Stephen</h4>
                         <h5 class="h5-md txt-ligt-gray">Director of Resources</h5>
                         <div class="social-icons">
@@ -489,7 +504,7 @@
                             <input type="text" name="subject" class="form-control" placeholder="Subject">
                         </div>
                         <div class="form-row mb-4">
-                            <textarea rows="7" placeholder="Message" class="form-control"></textarea>
+                            <textarea rows="7" placeholder="Message" name="message" class="form-control"></textarea>
                         </div>
                         <div class="form-row text-center">
                             <button type="submit" class="form-btn mx-auto btn-theme bg-orange white">Submit Now <i class="icofont-rounded-right"></i></button>
@@ -513,8 +528,7 @@
             </div>
             <div class="col">
                 <div class="center-text">
-                    We don’t just manage suppliers, we micro-manage them. We have a consultative, personalized
-                    approach
+                    We are a responsible mining company that discovers and processes gold ore and sells gold to the world market.
                 </div>
             </div>
             <div class="col-sm-auto">
@@ -567,7 +581,6 @@
             <h4>Kahama, Shinyanga Tanzania</h4>
             <p><i class="icofont-phone"></i> +255-755-907-381</p>
             <div class="text-nowrap"><i class="icofont-email"></i> <a href="#">info@magsamresources.com</a></div>
-            <div class="text-nowrap"><i class="icofont-email"></i> <a href="#">support@magsamresources.com</a></div>
         </div>
     </div>
     <div id="map-holder" class="pos-rel">

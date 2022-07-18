@@ -104,7 +104,7 @@
     <div class="container">
         <h1>About Us</h1>
         <div class="breadcrumbs-description">
-            Meet the amazing team behind this project and find out more about how we work.
+            We are a responsible mining company that discovers and processes gold ore and sells gold.
         </div>
     </div>
 </div>
@@ -119,16 +119,38 @@
                     About <span class="fw-6 txt-gold">Magsam</span>
                 </h2>
 
-                <p class="mr-3">Energistically utilize team driven niche markets rather than leveraged platforms.
-                    Monotonectally restore tactical "outside the box" thinking and technically sound
-                    deliverables. </p>
+                <p class="mr-3">Our journey began in 2020 in the Lake Region of Tanzania when
+                    gold production first commenced at Magsam in Shinyanga.
+                    In one year, our footprint has expanded to the Mwazimba mine
+                    and Nyamakwenge mine in the Shinyanga region. Throughout our
+                    history, we have proudly advanced the body of knowledge in our
+                    field and delivered award-winning initiatives driven by a
+                    commitment to social, economic, operational, and environmental
+                    sustainability. <q style="font-weight: 500;">Magsam Resources Ltd</q> has two mines which
+                    combine underground and open pit gold mining and are located
+                    in the Shinyanga district, Region of Tanzania.
+                    It is operated by <q>Magsam Resources Ltd</q>, which owns 100%
+                    of the mine.</p>
 
-                <p class="mr-3">Compellingly develop fully researched process improvements through innovative opportunities.
-                    Credibly productize highly efficient potentialities for vertical core competencies. Quickly
-                    maintain pandemic experiences rather than low-risk high-yield processes.</p>
-                <p class="mr-3">Compellingly develop fully researched process improvements through innovative opportunities.
-                    Credibly productize highly efficient potentialities for vertical core competencies. Quickly
-                    maintain pandemic experiences rather than low-risk high-yield processes.</p>
+                <p class="mr-3">Mining is another backbone of Shinganya region. Many of Shinyanga
+                    families have been part of the local community for generations and
+                    care deeply for the region. We are committed to doing this right.</p>
+                <p class="mr-3">After an extensive environmental review and permitting process,
+                    we have obtained permits (subject to ongoing litigation) to
+                    construct and operate the mine, modernize and reactive processing
+                    facilities on our site that were formerly used in gold ore
+                    operations, and address legacy issues associated with gold
+                    mining operations.</p>
+                <p class="mr-3">
+                    We will do this with a leadership and development team that has
+                    decades of experience developing and operating mines safely and
+                    responsibly.
+                </p>
+                <p class="mr-3">
+                    We look forward to producing these essential metals, creating good
+                    jobs, fulfilling our promises, and extending the rich mining heritage
+                    of the Shinyanga region.
+                </p>
             </div>
 
 
@@ -164,8 +186,7 @@
                         </div>
                         <div class="service-inner-content media-body">
                             <h4 class="h4-md">Our Vision</h4>
-                            <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis.
-                                Vivamus ac ultrices diam, vitae accumsan tellus.</p>
+                            <p>To be a recognized gold mining company focused on growing sustainable production, delivering on our commitments for excellence and valuing and developing our employees and communities surround our mines.</p>
                         </div>
                     </div>
                 </div>
@@ -181,8 +202,7 @@
                         </div>
                         <div class="service-inner-content media-body">
                             <h4 class="h4-md">Our Mission</h4>
-                            <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis.
-                                Vivamus ac ultrices diam, vitae accumsan tellus.</p>
+                            <p>Create and grow sustainable value for our stakeholders through the application of best practices in mining and our commitment on protecting the health and wellbeing of our employees and the environment in the communities where we work.</p>
                         </div>
                     </div>
                 </div>
@@ -198,8 +218,7 @@
                         </div>
                         <div class="service-inner-content media-body">
                             <h4 class="h4-md">Our value</h4>
-                            <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis.
-                                Vivamus ac ultrices diam, vitae accumsan tellus.</p>
+                            <p>Our five values guide all decisions made and actions taken in the conduct of our business. These values link our business activities to our environmental, social, employees and governance responsibilities.</p>
                         </div>
                     </div>
                 </div>
@@ -241,22 +260,28 @@
                 <div class="p-5 about-whoose">
                     <!-- Heading Main -->
                     <h1 class="heading-main text-start mb-4">
-                        <span>Why</span>
+                        <span>Values</span>
                         Magsam
                     </h1>
                     <!-- Heading Main -->
 
                     <!-- Tracking Form -->
                     <ul class="list-unstyled icons-listing theme-orange w-half mb-0">
-                        <li class="wow fadeInUp" data-wow-duration="0" data-wow-delay="0s"><i class="icofont-check"></i>Deliver Environmentally Responsible Client Services
+                        <li class="wow fadeInUp" data-wow-duration="0" data-wow-delay="0s" style="font-weight: 500;"><i class="icofont-check"></i>Zero-Harm <br>
+                            <small style="font-weight: normal;">Zero harm to our employees, the environment and communities is our goal</small>
                         </li>
-                        <li class="wow fadeInUp" data-wow-duration="0" data-wow-delay="0.1s"><i class="icofont-check"></i>Be an Active Community Partner</li>
-                        <li class="wow fadeInUp" data-wow-duration="0" data-wow-delay="0.2s"><i class="icofont-check"></i>Drive Continuous Improvement</li>
-                        <li class="wow fadeInUp" data-wow-duration="0" data-wow-delay="0.3s"><i class="icofont-check"></i>Clearance and compliance service</li>
-                        <li class="wow fadeInUp" data-wow-duration="0" data-wow-delay="0.4s"><i class="icofont-check"></i>Clearance and compliance service</li>
-                        <li class="wow fadeInUp" data-wow-duration="0" data-wow-delay="0.5s"><i class="icofont-check"></i>Maintain High Ethical Standards</li>
-                        <li class="wow fadeInUp" data-wow-duration="0" data-wow-delay="0.6s"><i class="icofont-check"></i>Air & Ocean Cargo Insurance</li>
-                        <li class="wow fadeInUp" data-wow-duration="0" data-wow-delay="0.7s"><i class="icofont-check"></i>We ensure complete security</li>
+                        <li class="wow fadeInUp" data-wow-duration="0" data-wow-delay="0s" style="font-weight: 500;"><i class="icofont-check"></i>Dignity and Respect <br>
+                            <small style="font-weight: normal;">Equal treatment and opportunity for all employees with transparent processes founded on dignity and respect and encouraging a sense of ownership</small>
+                        </li>
+                        <li class="wow fadeInUp" data-wow-duration="0" data-wow-delay="0s" style="font-weight: 500;"><i class="icofont-check"></i>Sustainability <br>
+                            <small style="font-weight: normal;">Sustainable growth supported by a safe, profitable and socially responsible business while developing long-term resources</small>
+                        </li>
+                        <li class="wow fadeInUp" data-wow-duration="0" data-wow-delay="0s" style="font-weight: 500;"><i class="icofont-check"></i>Collaboration <br>
+                            <small style="font-weight: normal;">Productive and ethical working relationships, transparent and responsive dialogue with surrounding communities and public agencies for the benefit of all stakeholders</small>
+                        </li>
+                        <li class="wow fadeInUp" data-wow-duration="0" data-wow-delay="0s" style="font-weight: 500;"><i class="icofont-check"></i>Excellence <br>
+                            <small style="font-weight: normal;">A commitment to focus on a culture of best business practices</small>
+                        </li>
                     </ul>
                     <!-- Tracking Form -->
                 </div>
@@ -277,8 +302,7 @@
             </div>
             <div class="col wow slideInUp" data-wow-duration="0" data-wow-delay="0.2s">
                 <div class="center-text">
-                    We don’t just manage suppliers, we micro-manage them. We have a consultative, personalized
-                    approach
+                    We are a responsible mining company that discovers and processes gold ore and sells gold to the world market.
                 </div>
             </div>
             <div class="col-sm-auto wow slideInUp" data-wow-duration="0" data-wow-delay="0.3s">

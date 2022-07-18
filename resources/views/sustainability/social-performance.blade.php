@@ -92,11 +92,11 @@
 </style>
 <!-- Page Breadcrumbs Start -->
 <div class="slider bg-navy-blue bg-fixed pos-rel breadcrumbs-page">
-<div class="bg-overlay-bread blue opacity-70"></div>
+    <div class="bg-overlay-bread blue opacity-70"></div>
     <div class="container">
         <h1>Social Performance</h1>
         <div class="breadcrumbs-description">
-            Meet the amazing team behind this project and find out more about how we work.
+            We are a responsible mining company that discovers and processes gold ore and sells gold.
         </div>
     </div>
 </div>
@@ -112,22 +112,22 @@
                         <div class="service-inner-content media-body">
                             <h4 class="h4-md mb-3 fw-7 txt-blue">Social Performance</h4>
                             <p>
-                            <q><b style="color: #999;">We are committed to creating positive legacies and supporting shared value and opportunities across our business</b></q><br><br>
-                            This approach delivers benefits to our employees and our contractors,
-                            and communities. We put this into action each day at a corporate,
-                            operational, and business unit level to ensure we continue to
-                            achieve the expectations we aspire to as a leading organisation,
-                            and those of the communities we live and work in.
+                                <q><b style="color: #999;">We are committed to creating positive legacies and supporting shared value and opportunities across our business</b></q><br><br>
+                                This approach delivers benefits to our employees and our contractors,
+                                and communities. We put this into action each day at a corporate,
+                                operational, and business unit level to ensure we continue to
+                                achieve the expectations we aspire to as a leading organisation,
+                                and those of the communities we live and work in.
                             </p>
                             <h4 class="h4-md mb-3 fw-7 txt-blue">Communities</h4>
                             <p>
-                            We are committed to engaging with the communities we live and work in
-                            through meaningful dialogue, respecting local cultures, and acting in
-                            good faith ensuring transparency to create a positive legacy beyond
-                            the life of the mine. In doing so, we strive to be a good neighbour
-                            and leave a positive legacy. This is fundamental to our values and
-                            our vision, from early exploration, to project development, operations,
-                            and the transition to closure.
+                                We are committed to engaging with the communities we live and work in
+                                through meaningful dialogue, respecting local cultures, and acting in
+                                good faith ensuring transparency to create a positive legacy beyond
+                                the life of the mine. In doing so, we strive to be a good neighbour
+                                and leave a positive legacy. This is fundamental to our values and
+                                our vision, from early exploration, to project development, operations,
+                                and the transition to closure.
                             </p>
                         </div>
                     </div>
@@ -154,7 +154,7 @@
             <!-- Icon Boxes -->
             <div class="col-lg-4 text-center">
                 <div class="px-5 wide-tb-50">
-                <a href="{{url('storage/Companyprofile_attachments/'.$data['attachmentData'])}}" target="_blank" class="btn-theme"> <i class="icofont-file-pdf icofont-2x"></i> &nbsp; {{$data['title']}}.pdf</a>
+                    <a href="{{url('storage/Companyprofile_attachments/'.$data['attachmentData'])}}" target="_blank" class="btn-theme"> <i class="icofont-file-pdf icofont-2x"></i> &nbsp; {{$data['title']}}.pdf</a>
                 </div>
             </div>
             <!-- Icon Boxes -->

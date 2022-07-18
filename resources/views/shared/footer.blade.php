@@ -8,9 +8,8 @@
                  <div class="logo-footer">
                      <img src="{{ asset('assets/images/logo_6.png')}}" height="150px" width="150px" alt="">
                  </div>
-                 <p style="text-align: left;"><b>Magsam Resources</b> we have two mines which combining underground and
-                     open pit gold mine located in Shinyanga district, Region of Tanzania.
-                     It is operated by Magsam Resources, who owned 100% of the mine</p>
+                 <p style="text-align: left;"><b>Magsam Resources</b> Magsam Resources We have two
+                  mines which combine underground and open pit gold mining and are located in the Shinyanga district, Region of Tanzania. It is operated by Magsam Resources, who owns 100% of the mine.</p>
 
                  <h3 class="footer-heading" style="text-align: left;">We're Social</h3>
                  <div class="social-icons" style="text-align: left;">
@@ -49,14 +48,12 @@
                          <i class="icofont-smart-phone me-3"></i>
                          <div class="media-body">
                              <div>+255-755-907-381 </div>
-                             <div>+255-755-907-381 </div>
                          </div>
                      </div>
                      <div class="media mb-3">
                          <i class="icofont-ui-email me-3"></i>
                          <div class="media-body">
                              <div><a href="#">info@magsamresources.com</a></div>
-                             <div><a href="#">support@magsamresources.com</a></div>
                          </div>
                      </div>
                      <div class="media mb-3">

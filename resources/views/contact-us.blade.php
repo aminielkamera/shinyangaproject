@@ -8,7 +8,7 @@
     <div class="container">
         <h1>Contact Us</h1>
         <div class="breadcrumbs-description">
-            Molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto.
+        We are a responsible mining company that discovers and processes gold ore and sells gold.
         </div>
     </div>
 </div>

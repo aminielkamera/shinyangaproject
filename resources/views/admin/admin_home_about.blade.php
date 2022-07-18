@@ -80,9 +80,7 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
-
                 <div class="mt-1 mb-3">
                     <button type="submit" class="btn btn-primary waves-effect waves-light">Send Files</button>
                 </div>

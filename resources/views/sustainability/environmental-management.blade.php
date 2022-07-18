@@ -92,11 +92,11 @@
 </style>
 <!-- Page Breadcrumbs Start -->
 <div class="slider bg-navy-blue bg-fixed pos-rel breadcrumbs-page">
-<div class="bg-overlay-bread blue opacity-70"></div>
+    <div class="bg-overlay-bread blue opacity-70"></div>
     <div class="container">
         <h1>Environmental Management</h1>
         <div class="breadcrumbs-description">
-            Meet the amazing team behind this project and find out more about how we work.
+            We are a responsible mining company that discovers and processes gold ore and sells gold.
         </div>
     </div>
 </div>
@@ -112,18 +112,18 @@
                         <div class="service-inner-content media-body">
                             <h4 class="h4-md mb-3 fw-7 txt-blue">Environmental Management</h4>
                             <p>
-                              Magsam is committed to responsible environmental management
-                              across all our business activities. This encompasses the conservation
-                              of designated protected areas, sharing information and practices on
-                              biodiversity management, and supporting, developing, and implementing
-                              inclusive and transparent procedures for integrated land use.
+                                Magsam is committed to responsible environmental management
+                                across all our business activities. This encompasses the conservation
+                                of designated protected areas, sharing information and practices on
+                                biodiversity management, and supporting, developing, and implementing
+                                inclusive and transparent procedures for integrated land use.
                             </p>
                             <h4 class="h4-md mb-3 fw-7 txt-blue">Environmental Policy</h4>
-                             <p>
-                             Magsam Environment Policy is supported by six Statements of Position
-                             that detail how we manage our environmental material risk areas of water,
-                             closure, biodiversity, cyanide, tailings management and energy and
-                             greenhouse gas.
+                            <p>
+                                Magsam Environment Policy is supported by six Statements of Position
+                                that detail how we manage our environmental material risk areas of water,
+                                closure, biodiversity, cyanide, tailings management and energy and
+                                greenhouse gas.
                             </p>
                             <div class="content">
                                 <ul class="list-unstyled icons-listing theme-orange w-half mb-0">
@@ -160,7 +160,7 @@
             <!-- Icon Boxes -->
             <div class="col-lg-4 text-center">
                 <div class="px-5 wide-tb-50">
-                <a href="{{url('storage/Companyprofile_attachments/'.$data['attachmentData'])}}" target="_blank" class="btn-theme"> <i class="icofont-file-pdf icofont-2x"></i> &nbsp; {{$data['title']}}.pdf</a>
+                    <a href="{{url('storage/Companyprofile_attachments/'.$data['attachmentData'])}}" target="_blank" class="btn-theme"> <i class="icofont-file-pdf icofont-2x"></i> &nbsp; {{$data['title']}}.pdf</a>
                 </div>
             </div>
             <!-- Icon Boxes -->

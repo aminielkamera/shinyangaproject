@@ -5,12 +5,11 @@
 <!-- What We Offer Start -->
 <!-- Page Breadcrumbs Start -->
 <div class="slider bg-navy-blue bg-fixed pos-rel breadcrumbs-page">
-<div class="bg-overlay-bread blue opacity-70"></div>
+    <div class="bg-overlay-bread blue opacity-70"></div>
     <div class="container">
         <h1>Rehabilitaion & Closure</h1>
         <div class="breadcrumbs-description">
-            Iterative approaches to corporate strategy foster collaborative thinking to further the overall value
-            proposition.
+            We are a responsible mining company that discovers and processes gold ore and sells gold.
         </div>
     </div>
 </div>
@@ -29,16 +28,14 @@
                             </h4>
                             <p>
                                 Mine rehabilitation and closure complete the mining cycle.
-                                Understanding that mining is only a temporary land use and that our
-                                community (i.e. the local farming community) have expectations on how
-                                the mine will be closed and the land handed on for future land use is
-                                a key driver for decision making in mine closure and rehabilitation.
-                                As such, closure and rehabilitation are integral aspects of the mine
-                                design process at the Magsam Operation. By including aspects for
-                                closure and rehabilitation early in the mine design process,
-                                significant environmental impacts can be avoided such as backfilling
-                                of mined open pits instead of creating new waste rock stacks and
-                                thereby limiting the environmental footprint of the mine.
+                                Understanding that mining is only a temporary land use and that our community
+                                (i.e., the local farming community) has expectations about how the mine will be
+                                closed and the land handed over for future land use is a key driver for mine closure
+                                and rehabilitation decision making. As such, closure and rehabilitation are integral
+                                aspects of the mine design process at the Magsam Operation. Significant environmental
+                                impacts can be avoided by including aspects for closure and rehabilitation early in the
+                                mine design process, such as backfilling mined open pits instead of creating new waste
+                                rock stacks, thereby limiting the mine's environmental footprint.
                             </p>
 
                         </div>
@@ -60,7 +57,7 @@
                         <div class="widget-wrap bg-light-theme text-center rounded py-3">
                             <div class="row">
                                 <div class="col-md-12">
-                                <a href="{{url('storage/Companyprofile_attachments/'.$data['attachmentData'])}}" target="_blank" class="btn-theme"> <i class="icofont-file-pdf icofont-2x"></i> &nbsp; {{$data['title']}}.pdf</a>
+                                    <a href="{{url('storage/Companyprofile_attachments/'.$data['attachmentData'])}}" target="_blank" class="btn-theme"> <i class="icofont-file-pdf icofont-2x"></i> &nbsp; {{$data['title']}}.pdf</a>
                                 </div>
                             </div>
                         </div>
@@ -101,13 +98,12 @@
             <!-- START SKILLS LEFT SIDE -->
             <div class="col-lg-6 mx-auto skills-left py-3">
                 <p>
-                    Rehabilitation is not only the practice of generating a final land use
-                    after closure, but it also assists in minimising other impacts from the
-                    mining development. These include impacts from erosion and sediment loss
-                    where vegetation and soil are disturbed, and effects the land on a broader
-                    landscape. Where possible rehabilitation is done progressively
-                    (i.e. as the mining operation is developed, to limit the extent and duration
-                    of those impacts).
+                    Rehabilitation is not only the practice of generating a final land use after
+                    closure, but it also assists in minimising other impacts from the mining
+                    development. These include impacts from erosion and sediment loss where
+                    vegetation and soil are disturbed, and effects on the land on a broader landscape.
+                    Where possible, rehabilitation is done progressively (i.e., as the mining operation
+                    is developed, to limit the extent and duration of those impacts).
                 </p>
             </div>
 

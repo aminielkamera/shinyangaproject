@@ -36,7 +36,7 @@
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="{{url('exploration')}}">Exploration</a></li>
                                 <li><a class="dropdown-item" href="{{url('mining_processing')}}">Mining,Processing and Refining</a></li>
-                                <li><a class="dropdown-item" href="{{url('sale_product')}}">Sale of Product</a></li>
+                                <!-- <li><a class="dropdown-item" href="{{url('sale_product')}}">Sale of Product</a></li> -->
                                 <li><a class="dropdown-item" href="{{url('rehabilitation')}}">Rehabilitation & Closure</a></li>
                             </ul>
                         </li>

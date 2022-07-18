@@ -5,12 +5,11 @@
 <!-- What We Offer Start -->
 <!-- Page Breadcrumbs Start -->
 <div class="slider bg-navy-blue bg-fixed pos-rel breadcrumbs-page">
-<div class="bg-overlay-bread blue opacity-70"></div>
+    <div class="bg-overlay-bread blue opacity-70"></div>
     <div class="container">
         <h1>Sale of Product(Gold)</h1>
         <div class="breadcrumbs-description">
-            Iterative approaches to corporate strategy foster collaborative thinking to further the overall value
-            proposition.
+            We are a responsible mining company that discovers and processes gold ore and sells gold.
         </div>
     </div>
 </div>
@@ -58,7 +57,7 @@
                         <div class="widget-wrap bg-light-theme text-center rounded py-3">
                             <div class="row">
                                 <div class="col-md-12">
-                                <a href="{{url('storage/Companyprofile_attachments/'.$data['attachmentData'])}}" target="_blank" class="btn-theme"> <i class="icofont-file-pdf icofont-2x"></i> &nbsp; {{$data['title']}}.pdf</a>
+                                    <a href="{{url('storage/Companyprofile_attachments/'.$data['attachmentData'])}}" target="_blank" class="btn-theme"> <i class="icofont-file-pdf icofont-2x"></i> &nbsp; {{$data['title']}}.pdf</a>
                                 </div>
                             </div>
                         </div>

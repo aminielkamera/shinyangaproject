@@ -92,11 +92,11 @@
 </style>
 <!-- Page Breadcrumbs Start -->
 <div class="slider bg-navy-blue bg-fixed pos-rel breadcrumbs-page">
-<div class="bg-overlay-bread blue opacity-70"></div>
+    <div class="bg-overlay-bread blue opacity-70"></div>
     <div class="container">
         <h1>Health & Safety</h1>
         <div class="breadcrumbs-description">
-            Meet the amazing team behind this project and find out more about how we work.
+            We are a responsible mining company that discovers and processes gold ore and sells gold.
         </div>
     </div>
 </div>
@@ -112,22 +112,22 @@
                         <div class="service-inner-content media-body">
                             <h4 class="h4-md mb-3 fw-7 txt-blue">Health & Safety</h4>
                             <p>
-                              The health, safety and wellbeing of our employees, contractors and host
-                              communities is paramount at Magsam Resource Ltd. It is the foundation
-                              upon which we build our values, culture, and success and is embedded
-                              in every facet of our organisation. We continuously strive to improve
-                              and advance our health and safety systems through employee engagement,
-                              and the highest standards and performance. Our safety performance and
-                              culture is aligned to our core values to achieve workforce health,
-                              safety, hygiene and wellbeing. Every person is essential in supporting,
-                              embracing and promoting our safety performance and culture across the
-                              business.
+                                The health, safety, and wellbeing of our employees, contractors,
+                                and host communities is paramount at Magsam Resource Ltd. It is the
+                                foundation upon which we build our values, culture, and success and is
+                                embedded in every facet of our organisation. We continuously strive to
+                                improve and advance our health and safety systems through employee
+                                engagement and the highest standards of performance.
+                                Our safety performance and culture is aligned to our core values to
+                                achieve workforce health, safety, hygiene, and wellbeing.
+                                Every person is essential in supporting, embracing, and promoting our
+                                safety performance and culture across the business.
                             </p>
                             <h4 class="h4-md mb-3 fw-7 txt-blue">Policies and standards</h4>
                             <p>
-                             Our Health and Safety Policy outlines our commitment to protect and
-                             promote the safety, and occupational health of our workforce
-                             (employees and contractors) and local communities.
+                                Our Health and Safety Policy outlines our commitment to protect and
+                                promote the safety and occupational health of our workforce (employees
+                                and contractors) and local communities.
                             </p>
                         </div>
                     </div>
@@ -154,7 +154,7 @@
             <!-- Icon Boxes -->
             <div class="col-lg-4 text-center">
                 <div class="px-5 wide-tb-50">
-                <a href="{{url('storage/Companyprofile_attachments/'.$data['attachmentData'])}}" target="_blank" class="btn-theme"> <i class="icofont-file-pdf icofont-2x"></i> &nbsp; {{$data['title']}}.pdf</a>
+                    <a href="{{url('storage/Companyprofile_attachments/'.$data['attachmentData'])}}" target="_blank" class="btn-theme"> <i class="icofont-file-pdf icofont-2x"></i> &nbsp; {{$data['title']}}.pdf</a>
                 </div>
             </div>
             <!-- Icon Boxes -->

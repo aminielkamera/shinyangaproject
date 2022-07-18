@@ -88,7 +88,7 @@
                     </div>
 
                     <!-- LAYER NR. 2 -->
-                    <div class="tp-caption NotGeneric-Title tp-resizeme" id="slide-3-layer-2" data-x="left" data-hoffset="60" data-y="center" data-voffset="10" data-width="['auto','auto','auto','auto']" data-height="['auto','auto','auto','auto']" data-transform_idle="o:1;" data-transform_in="x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-start="1400" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 2; white-space: nowrap; font-size: 18px; line-height: 30px;">Magsam Resources </br> Is a Gold producer with global operating, <br> development and exploration experience .
+                    <div class="tp-caption NotGeneric-Title tp-resizeme" id="slide-3-layer-2" data-x="left" data-hoffset="60" data-y="center" data-voffset="10" data-width="['auto','auto','auto','auto']" data-height="['auto','auto','auto','auto']" data-transform_idle="o:1;" data-transform_in="x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-start="1400" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 2; white-space: nowrap; font-size: 18px; line-height: 30px;">Magsam Resources </br> Is a Gold producer with global operating, <br> development and exploration experience.
                     </div>
 
                     <!-- LAYER NR. 3 -->
